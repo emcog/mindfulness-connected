@@ -1,0 +1,23 @@
+<section id="team">
+	<div class="heading">
+		<div class="inner"><h2>Meet the team</h2></div>
+	</div>
+	<div class="content">
+		<div class="inner cf">
+			<ul class="team cf">
+				{% for member in site.team %}
+				<li>
+					<img src="{{member.image}}" alt="{{member.name}}">
+					<div class="inner level" style="height: 435px;">
+						<h3>{{member.name}}</h3>
+						<h4>{{member.description}}</h4>
+						<ul>
+							{{ member.content }}
+						</ul>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

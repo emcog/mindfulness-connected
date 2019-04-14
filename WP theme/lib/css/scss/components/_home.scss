@@ -1,0 +1,117 @@
+#homepage {
+
+	h1, h2 {
+		font-family: $font1;
+		font-size: 35px;
+		//line-height: 60px;
+		//margin-bottom: 30px;
+	}
+
+	section {
+
+		background-position: center center !important;
+		background-size: cover !important;
+
+		.inner {
+			padding: 160px 40px 200px;
+		}
+
+		.heading {
+
+			.inner {
+				font-size: 14px;
+				padding: 40px 40px 0px;
+
+				h2 {
+					color: $brand-primary;
+				}
+
+				h3 {
+					margin-bottom: 0;
+				}
+
+				p {
+
+					font-size: 18px;
+					font-family: $font1;
+					line-height: 24px;
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+
+				hr {
+					border: 0;
+					background-color: $grey-2;
+					margin: 20px 100px 0;
+				}
+			}
+		}
+
+		.content {
+			background-position: center center;
+			background-size: cover !important;
+
+			&.content-box {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				max-width: 540px;
+				background: #00B398;
+				background: rgba(0,179,152,0.80);
+				padding: 20px 24px;
+
+				&.right {
+					left: auto;
+					right: 0;
+				}
+			}
+
+			p {
+
+				font-size: 16px;
+				line-height: 1.2em;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+#feature, #content-block {
+	.inner {
+		position: relative;
+		min-height: 600px;
+	}
+}
+
+// Media Queries
+
+@include media-upto-768 {
+
+	#homepage {
+
+		h1, h2 {
+			font-size: 28px;
+			line-height: 28px;
+		}
+
+		section {
+
+			.inner {
+				padding: 20px;
+			}
+
+			.heading {
+
+				.inner {
+					padding: 20px;
+				}
+			}
+		}
+	}
+}

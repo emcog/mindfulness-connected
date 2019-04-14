@@ -1,0 +1,90 @@
+/******************************************************************
+Stylesheet: Typography
+******************************************************************/
+
+// Font Face
+
+@font-face {
+    font-family: 'SourceSansRegular';
+    src: url('../fonts/SourceSansProRegular.eot');
+    src: url('../fonts/SourceSansProRegular.eot') format('embedded-opentype'),
+         url('../fonts/SourceSansProRegular.woff2') format('woff2'),
+         url('../fonts/SourceSansProRegular.woff') format('woff'),
+         url('../fonts/SourceSansProRegular.ttf') format('truetype'),
+         url('../fonts/SourceSansProRegular.svg#SourceSansProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansProBold';
+    src: url('../fonts/SourceSansProBold.eot');
+    src: url('../fonts/SourceSansProBold.eot') format('embedded-opentype'),
+         url('../fonts/SourceSansProBold.woff2') format('woff2'),
+         url('../fonts/SourceSansProBold.woff') format('woff'),
+         url('../fonts/SourceSansProBold.ttf') format('truetype'),
+         url('../fonts/SourceSansProBold.svg#SourceSansProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Font Stacks
+
+$font1: futura-pt, sans-serif;;
+$font2: adobe-caslon-pro, serif;
+$font3: adobe-caslon-pro, serif;
+
+
+// Headers
+
+h1 {
+    font-family: $font2;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: $font2;
+    font-size: 24px;
+    //margin-bottom: 20px;
+}
+
+h3 {
+    font-family: $font2;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: $brand-primary;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+// Media Queries
+
+@include media-upto-768 {
+
+    #homepage {
+
+        h1, h2 {
+            font-size: 28px;
+            line-height: 28px;
+            //margin-bottom: 20px;
+        }
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

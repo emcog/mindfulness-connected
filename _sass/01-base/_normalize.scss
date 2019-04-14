@@ -1,0 +1,87 @@
+/******************************************************************
+Stylesheet: Normalize
+******************************************************************/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+button {
+	-webkit-appearance: none;
+  	-moz-appearance:    none;
+   	appearance:         none;   
+   	-webkit-border-radius: 0;
+   	-moz-border-radius: 0;   
+   	border-radius: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #586060; margin: 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+a {text-decoration:none;}
+
+a:hover { text-decoration: none; }
+
+a img, :link img, :visited img { border: 0; }
+
+img {max-width:100%; height: auto;}
+
+textarea { font-family: Arial, sans-serif; }
+
+strong { font-weight: bold; }
+
+em { font-style: normal; }
+
+th, label { font-weight: normal; }
+
+.cf:before, .cf:after {clear:both; content:" "; display:block; height: 0px;}
+
+p { margin-bottom:15px;}
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit;}

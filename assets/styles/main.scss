@@ -1,0 +1,39 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@charset 'UTF-8';
+
+// 00-abstracts
+@import "00-abstracts/mixins",
+		'00-abstracts/variables';
+
+//00-dependencies
+@import "00-dependencies/animate";
+
+//01-base
+@import "01-base/normalize",
+		"01-base/typography",
+		"01-base/wordpress-core";
+
+//02-molecules
+@import "02-molecules/header",
+		"02-molecules/body",
+		"02-molecules/pagination",
+		"02-molecules/footer",
+		"02-molecules/blog",
+		"02-molecules/blog-single",
+		"02-molecules/page-default";
+
+//03-organisms
+@import "03-organisms/home-approach",
+		"03-organisms/home-team",
+		"03-organisms/home-timeline",
+		"03-organisms/home-feature",
+		"03-organisms/home-contact",
+		"03-organisms/home-content-block";
+
+//04-templates
+@import "04-templates/home";
+
+//05-themes

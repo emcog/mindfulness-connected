@@ -1,0 +1,59 @@
+section#approach {
+
+	h2 {
+		color: $brand-primary;
+		font-size: 35px;
+	}
+
+	.heading {
+		background-color: $grey-1;
+		.inner {
+			max-width: 870px;
+			p {
+				font-family: $font1;
+			}
+		}
+	}
+
+	.content {
+		background-color: $grey-1;
+
+		.inner {
+			padding: 0px 40px 40px;
+			max-width: 870px;
+
+			h3 {
+				color: $brand-primary;
+				font-family: $font1;
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 8px;
+			}
+
+			p {
+				line-height: 26px;
+				margin-bottom: 25px;
+			}
+
+			p.image-block {
+				margin-bottom: 20px;
+				text-align: center;
+
+				img {
+					display: inline-block
+				}
+			}
+		}
+	}
+}
+
+@include media-upto-768 {
+
+	#approach .content .inner {
+		padding: 20px;
+
+		p.image-block img {
+			display: block;
+		}
+	}
+}

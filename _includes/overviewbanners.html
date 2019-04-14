@@ -1,0 +1,14 @@
+<section id="content-block">
+	<ul class="block">
+		{% for banner in site.overviewbanners %}
+			<li id="{{ banner.id }}" style="background:url('{{ banner.image }}');">
+				<div class="inner cf">
+					<div class="content content-box {{ banner.position }}">
+						<h2>{{ banner.title }}</h2>
+						<p>{{ banner.subtitle }}</p>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

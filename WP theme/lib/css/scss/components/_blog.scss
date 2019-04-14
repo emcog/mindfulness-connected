@@ -1,0 +1,99 @@
+#blog {
+
+	section {
+		background-color: $grey-1;
+		padding-top: 65px;
+
+		.inner {
+			max-width: 950px;
+
+			ul {
+
+				list-style: none;
+
+				li {
+					background-color: $white;
+					box-shadow: 0 0 2px rgba(0,0,0,0.1);
+					padding: 20px;
+					margin-bottom: 40px;
+
+					&:last {
+						margin-bottom: 0;
+					}
+
+					article {
+
+						h2 a{
+							color: $black;
+							font-family: $font1;
+							font-size: 30px;
+
+							&:hover {
+								color: $brand-primary;
+							}
+						}
+
+						p {
+							font-size: 18px;
+							font-family: $font2;
+						}
+
+						.view-article {
+							display: none;
+						}
+
+						.read-more {
+							color: $grey-2;
+
+							&:hover {
+								color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Media Queries
+
+@include media-upto-768 { 
+
+	#blog {
+
+		section {
+
+			.inner {
+				padding: 20px;
+
+				ul li {
+					margin-bottom: 20px;
+
+					article {
+
+						h2 a{
+							font-size: 24px;
+	            			line-height: 24px;
+	            		}
+
+	            		p {
+	            			font-size: 16px;
+							line-height: 22px;
+	            		}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-upto-990 { 
+
+	#blog {
+
+		section {
+			padding-top: 0;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.pagination{
+	font-family: $font3;
+	text-align: center;
+
+	a {
+		color: $grey-5;
+
+		&:hover {
+			color: $grey-2
+		}
+	}
+}

@@ -1,0 +1,80 @@
+#default {
+
+	section {
+		background-color: $white;
+		padding-top: 100px;
+
+		.inner {
+			margin: 0 auto;
+			max-width: 1120px;
+			padding: 40px;
+
+			h1, h2, h3 {
+				color: $blue;
+
+				&.error {
+					color: $grey-1;
+					font-size: 250px;
+					line-height: 225px;
+					margin-bottom: 100px;
+					opacity: 0.7;
+					text-align: center;
+				}
+			}
+
+			a {
+				color: $orange;
+			}
+
+			ul {
+				margin: 20px 0 20px 40px;
+
+				li {
+					margin-bottom: 15px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.error404 {
+
+	#default {
+
+		.inner {
+			text-align: center;
+		}
+	}
+}
+
+// Media Queries
+
+@include media-upto-768 { 
+
+	#default {
+
+		section {
+
+			.inner {
+				padding: 20px;
+
+				.error {
+					font-size: 100px !important;
+					line-height: 100px !important;
+					margin-bottom: 40px !important;
+				}
+			}
+		}
+	}
+}
+
+@include media-upto-990 { 
+
+	#default section {
+		padding-top: 0;
+	}
+}

@@ -1,0 +1,32 @@
+/******************************************************************
+  Website: PFA Brussels
+  Developer: Charly Anderson // www.whitstabledesign.com
+******************************************************************/
+
+// Theme Basics
+@import "partials/normalize";
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/wordpress-core";
+@import "partials/animate";
+
+// Theme Elements
+@import "components/header";
+@import "components/body";
+@import "components/pagination";
+@import "components/footer";
+
+// Individual Page Sections
+@import "components/home";
+@import "components/home-approach";
+@import "components/home-team";
+@import "components/home-timeline";
+@import "components/home-feature";
+@import "components/home-contact";
+@import "components/home-content-block";
+
+@import "components/blog";
+@import "components/blog-single";
+
+@import "components/page-default";

@@ -1,0 +1,372 @@
+#timeline {
+
+	.content {
+		//background-color: $blue;
+
+		.inner {
+
+			padding: 40px;
+
+			.intro {
+				padding-bottom: 40px;
+
+				h2 {
+					color: $brand-primary;
+				}
+
+				p {
+					font-size: 18px;
+				}
+
+				hr {
+					border: 0;
+					background-color: $white;
+					margin: 20px 0px 40px 0;
+				}
+			}
+
+			.box {
+
+				background-color: $white;
+				border: 4px solid #979797;
+				box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    -webkit-box-sizing: border-box;
+				display: table;
+				position: relative;
+				width: 100%;
+				@include border-radius(5px);
+				z-index: 10;
+				margin-bottom: 40px;
+
+				&:before{
+					background-color: #979797;
+					content: '';
+					height: 40px;
+					left: 0;
+					margin-left: auto;
+					margin-right: auto;
+					position: absolute;
+					right: 0;
+					top: -44px;
+					width: 4px;
+					z-index: 0;
+				}
+
+				&.first:before {
+					display: none;
+				}
+
+				&.last {
+					z-index: 5;
+					&:before {
+						right: auto;
+						left: 40px;
+						top: -1000px;
+						height: 1100px;
+						z-index: -1;
+					}
+				}
+
+				> div {
+
+					margin: 0px;
+
+					.image {
+						display: table-cell;
+						background-color: #FFF;
+						padding: 25px 0 25px 25px;
+						text-align: center;
+
+						span {
+							color: $white;
+							display: block;
+							font-family: $font1;
+							font-size: 36px;
+							font-style: italic;
+							line-height: 36px;
+							margin-bottom: 40px;
+							text-align: center;
+						}
+
+						img{
+							max-width: 145px;
+							height: auto;
+							border: 1px solid #979797;
+						}
+					}
+
+					.details {
+
+						background-color: $white;
+						-webkit-border-top-right-radius: 5px;
+						-webkit-border-bottom-right-radius: 5px;
+						-moz-border-radius-topright: 5px;
+						-moz-border-radius-bottomright: 5px;
+						border-top-right-radius: 5px;
+						border-bottom-right-radius: 5px;
+						display: table-cell;
+						padding: 25px;
+						vertical-align: top;
+
+						h2 {
+							color: $brand-primary;
+							font-family: $font1;
+							font-size: 24px;
+							line-height: 20px;
+							margin-bottom: 10px;
+						}
+
+						h3 {
+							font-family: $font2;
+							font-size: 20px;
+							line-height: 20px;
+							margin-bottom: 10px;
+						}
+
+						p {
+							font-family: $font2;
+							font-size: 20px;
+							line-height: 28px;
+						}
+
+						ul {
+							// color: $grey-2;
+							font-size: 19px;
+							line-height: 28px;
+							padding-left: 20px;
+
+							list-style-image: url("../../lib/img/bluedash2.png");
+
+							// list-style: none;
+							// padding:0;
+							// margin:0;
+
+
+
+							// li:before{
+							// 	content: '<span>';
+							// }
+							// li:after{
+							// 	content: </span>;
+							// }
+
+							li {
+								margin-bottom: 3px;
+								font-family: $font2;
+								// color: $grey-2; /* or whatever color you prefer */
+								// span {
+								// 	color: $grey-2;
+								// }
+
+								&:last-child {
+									margin-bottom: 0;
+								}
+							}
+
+							// li:before {
+							// 		content: "• ";
+							// 		font-size: 19pt;
+							// 		padding-right: 5px;
+							// 		color: $blue; /* or whatever color you prefer */
+							// }
+						}
+					}
+				}
+			}
+
+			.row {
+
+				.left-col {
+					float: right;
+					// padding-right: 20px;
+					width: 80%;
+				}
+
+				.right-col {
+					float: left;
+					// padding-left: 20px;
+					width: 80%;
+
+					.bottom-line > div {
+						left: inherit;
+						right: 40px;
+						margin-right: 0;
+					}
+				}
+			}
+
+			.caption {
+				padding: 56px 0 16px;
+				position: relative;
+				margin: 0 auto;
+				width: 100%;
+
+				div.inner {
+
+					padding: 0;
+
+					&:before{
+						background-color: $white;
+						content: '';
+						height: 105px;
+						left: 0;
+						margin-left: auto;
+					    margin-right: auto;
+						position: absolute;
+						right: 0;
+						top: -10px;
+						width: 4px;
+					    z-index: 0;
+					}
+
+					&:after{
+						background-color: $white;
+						bottom: -10px;
+						content: '';
+						left: 0;
+						margin-left: auto;
+					    margin-right: auto;
+						position: absolute;
+						height: 105px;
+						right: 0;
+						width: 4px;
+					    z-index: 0;
+					}
+
+					> div {
+						background-color: $blue;
+						border: 4px solid $white;
+						color: $white;
+						display: block;
+						font-family: $font1;
+						font-size: 30px;
+						font-style: italic;
+						padding: 6px 45px;
+						position: relative;
+						text-align: center;
+						z-index: 1;
+						-webkit-border-radius: 5px;
+						-moz-border-radius: 5px;
+						border-radius: 5px;
+						width: 100%;
+
+						span {
+							display: block;
+						}
+					}
+				}
+
+				&.first {
+
+					padding: 0 0 22px;
+
+					div:before {
+						display: none;
+					}
+
+					div:after {
+						height: 80px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Media Queries
+
+@include media-upto-768 {
+
+	#timeline {
+
+		.content {
+
+			.inner {
+
+				padding: 20px;
+
+				.box {
+
+					&.last:before {
+						top: -620px;
+						height: 650px;
+					}
+
+					> div {
+
+						display: block;
+
+						.details {
+							display: block;
+							padding: 20px 10px;
+							width: 100%;
+						}
+
+						.image {
+							float: left;
+							padding: 20px 15px 10px 15px;
+
+							img {
+								max-width: 80px;
+							}
+						}
+
+						.details {
+
+							-webkit-border-bottom-left-radius: 5px;
+							-moz-border-radius-bottomleft: 5px;
+							border-bottom-left-radius: 5px;
+
+							h2, h3, li {
+								font-size: 16px;
+							}
+
+							ul:before {
+								clear:both;
+								content:" ";
+								display:block;
+								height: 0px;
+							}
+						}
+					}
+				}
+
+				.row {
+
+					&:after {
+						clear:both;
+						content:" ";
+						display:block;
+						height: 0px;
+					}
+				}
+
+				.caption {
+
+					max-width: 100%;
+
+					div.inner {
+
+						> div {
+
+							padding: 10px;
+
+							span {
+								font-size: 22px;
+								padding: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-upto-990 {
+
+	#timeline .content .inner .caption.last div:before {
+		top: -1100px;
+	}
+}

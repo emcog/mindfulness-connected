@@ -1,0 +1,39 @@
+url: http://mindfulnessconnected.com
+name: Mindfulness Connected
+description: ""
+
+
+
+# Build settings
+
+## each collection in collections_dir requires a scope to be set in defaults
+defaults:
+  - scope:
+      path: ""
+      type: "overviewbanners"
+    values:
+      layout: 
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: 
+  - scope:
+      path: ""
+      type: "timeline"
+    values:
+      layout: 
+
+include: ['_pages', '_redirects']
+
+## each collection in collections_dir requires a scope to be set in defaults
+collections_dir: collections
+collections: 
+  - overviewbanners
+  - team
+  - timeline
+
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
