@@ -1,6 +1,7 @@
 #project settings#
 ##################
 _site
+_site/*
 contact-form
 contact-form/*
 
