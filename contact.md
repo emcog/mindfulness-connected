@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /workplace-and-communities
+permalink: /contact-us
 ---
 
-<!-- would be great to have an image of the Mark here in a banner or something -->
+{include contact-form-netlify.html }

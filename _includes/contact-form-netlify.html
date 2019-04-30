@@ -1,0 +1,41 @@
+<section id="contact-form">
+  <div id="contact-inputs">
+  <div id="contact-title">
+    <h2>Contact us</h2>
+    <span>to take the next step in your journey</span>
+  </div>
+
+  <!--  -->
+<form class="contact-form__inputs" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <div class="inputs__col-1">
+    <p>
+      <label>Your name<input type="text" name="name" placeholder="Your name" required/></label>   
+    </p>
+    <p>
+      <label>Your email address<input type="email" name="email" placeholder="Your name" required/></label>
+    </p>
+    <p>
+      <label>Interested in: <select name="role[]" multiple>
+        <option value="Training for communities & organisations">Training for communities & organisations</option>
+        <option value="Training for mindfulness providers">Training for mindfulness providers</option>
+         <option value="Something else">Something else</option>
+      </select></label>
+    </p>
+  </div>
+  <p class="inputs__col-2">
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p class="inputs__col-2_below">
+    <button type="submit">Send</button>
+  </p>
+   <!-- honeypot field start -->
+  <div style="display:none;">
+     <label>Keep this field blank</label>
+     <input type="text" name="bot-field" id="honeypot" />
+  </div>
+  <!-- honeypot field end -->
+</form>
+<!--  -->
+
+</div>
+</section>
