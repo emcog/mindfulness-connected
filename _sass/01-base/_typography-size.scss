@@ -128,23 +128,23 @@
     line-height: 1.3;
 
   @include media('≥tablet') {
-    font-size: 16pt;
+    font-size: 14pt;
   }
   
   @include media('<tablet', '≥660px') {
-    font-size: 15pt;
-  }
-
-  @include media('<660px', '≥490px') {
-    font-size: 14pt;
-  }
-
-  @include media('<490px', '≥phone-plus') {
     font-size: 13pt;
   }
 
-  @include media('<phone-plus') {
+  @include media('<660px', '≥490px') {
     font-size: 12pt;
+  }
+
+  @include media('<490px', '≥phone-plus') {
+    font-size: 11pt;
+  }
+
+  @include media('<phone-plus') {
+    font-size: 10pt;
   }
 }
 
@@ -226,13 +226,13 @@ p, .body-copy {
   margin-bottom: 1rem;
 
    > a {
-    border-bottom: 1px solid;
-    padding-bottom: .125rem;
+    // border: 1px solid;
+    padding: 0 .125rem;
     text-decoration: none;
   }
 
   > a:hover {
-    border-bottom: 1px solid;
+    // border-bottom: 1px solid;
     padding-bottom: .25rem;
     text-decoration: none;
   }

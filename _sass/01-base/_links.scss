@@ -1,5 +1,11 @@
 .nav__link {
-	padding-right: 15px;
+	padding: 0 12px;
+	color: $brand-primary__dark;
+	@extend %font-size-3;
+}
+
+.nav__link:hover {
+	background: $grey__x-light-tint;
 }
 
 a.nav__link_is-active {
@@ -7,12 +13,41 @@ a.nav__link_is-active {
 }
 
 .nav__top-level,
-.nav__second-level {
+//.nav__second-level 
+{
 	display: flex
 }
 
 .nav__logo {
 	width: 140px;
-	margin-left: auto;
-	align-self: end;
+	margin: auto 0;
 }
+
+nav ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li:hover {
+	// border-top: solid #00B398;
+}
+
+
+
+p > a {
+	color: $brand-primary__dark;
+	background-color: $grey__x-light-tint;
+	// text-transform: uppercase;
+	// font-feature-settings: 'caps' 1;
+}
+
+
+
+p > a:hover { 
+	background: $grey__light-tint; 
+	border-bottom: none;
+	text-decoration: none;
+}
+
+a:link { text-decoration: none; }

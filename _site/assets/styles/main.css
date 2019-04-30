@@ -1942,16 +1942,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border: 3px solid black; }
 
 .nav__link {
-  padding-right: 15px; }
+  padding: 0 12px;
+  color: #444; }
 
-.nav__top-level,
-.nav__second-level {
+.nav__link:hover {
+  background: #DEDEDE; }
+
+.nav__top-level {
   display: flex; }
 
 .nav__logo {
   width: 140px;
-  margin-left: auto;
-  align-self: end; }
+  margin: auto 0; }
+
+nav ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+p > a {
+  color: #444;
+  background-color: #DEDEDE; }
+
+p > a:hover {
+  background: #D1D1D1;
+  border-bottom: none;
+  text-decoration: none; }
+
+a:link {
+  text-decoration: none; }
 
 .btn {
   margin-top: 0;
@@ -2402,6 +2421,7 @@ h3, #approach.g-in-depth h3 {
       font-size: 16pt; } }
 
 .font-size-3,
+.nav__link,
 .share-block__meme-quote,
 p,
 .body-copy,
@@ -2410,32 +2430,16 @@ p,
   line-height: 1.3; }
   @media (min-width: 768px) {
     .font-size-3,
+    .nav__link,
     .share-block__meme-quote,
     p,
     .body-copy,
     .card-text > .person-role,
     .card-text > ul {
-      font-size: 16pt; } }
+      font-size: 14pt; } }
 @media (max-width: 767px) and (min-width: 660px) {
   .font-size-3,
-  .share-block__meme-quote,
-  p,
-  .body-copy,
-  .card-text > .person-role,
-  .card-text > ul {
-    font-size: 15pt; } }
-
-@media (max-width: 659px) and (min-width: 490px) {
-  .font-size-3,
-  .share-block__meme-quote,
-  p,
-  .body-copy,
-  .card-text > .person-role,
-  .card-text > ul {
-    font-size: 14pt; } }
-
-@media (max-width: 489px) and (min-width: 414px) {
-  .font-size-3,
+  .nav__link,
   .share-block__meme-quote,
   p,
   .body-copy,
@@ -2443,14 +2447,35 @@ p,
   .card-text > ul {
     font-size: 13pt; } }
 
+@media (max-width: 659px) and (min-width: 490px) {
+  .font-size-3,
+  .nav__link,
+  .share-block__meme-quote,
+  p,
+  .body-copy,
+  .card-text > .person-role,
+  .card-text > ul {
+    font-size: 12pt; } }
+
+@media (max-width: 489px) and (min-width: 414px) {
+  .font-size-3,
+  .nav__link,
+  .share-block__meme-quote,
+  p,
+  .body-copy,
+  .card-text > .person-role,
+  .card-text > ul {
+    font-size: 11pt; } }
+
   @media (max-width: 413px) {
     .font-size-3,
+    .nav__link,
     .share-block__meme-quote,
     p,
     .body-copy,
     .card-text > .person-role,
     .card-text > ul {
-      font-size: 12pt; } }
+      font-size: 10pt; } }
 
 .font-size-4,
 input[type=button],
@@ -2476,11 +2501,9 @@ p, .body-copy {
   margin-top: .25rem;
   margin-bottom: 1rem; }
   p > a, .body-copy > a {
-    border-bottom: 1px solid;
-    padding-bottom: .125rem;
+    padding: 0 .125rem;
     text-decoration: none; }
   p > a:hover, .body-copy > a:hover {
-    border-bottom: 1px solid;
     padding-bottom: .25rem;
     text-decoration: none; }
 
@@ -3574,29 +3597,24 @@ div.wpcf7 img.ajax-loader {
 .nav__top-level {
   grid-column: 1/-1;
   width: 100%;
-  background: #f7f7f7; }
-
-nav ul li {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-nav ul li:hover {
-  background: grey; }
+  height: 100%;
+  background: white; }
 
 a.nav_is-left {
-  grid-column: 1/3;
   align-self: end;
-  display: flex; }
+  padding: 0 0 0 45px;
+  margin: auto 0;
+  background: #00B398; }
 
 ul.nav_is-right {
   grid-column: 4/-1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 0 45px 0 auto; }
+  margin: auto 45px auto auto; }
   ul.nav_is-right > li {
-    position: relative; }
+    position: relative;
+    float: right;
+    border-right: solid 1px; }
+  ul.nav_is-right > li:last-child {
+    border-left: solid 1px; }
 
 ul.nav__second-level {
   display: hidden;
@@ -3606,12 +3624,18 @@ ul.nav__second-level {
   left: 0;
   background: white;
   padding: 0; }
+  ul.nav__second-level > li {
+    float: left;
+    width: 100%; }
 
 ul li:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block; }
+  ul li:hover > ul > a,
+  ul li ul:hover > a {
+    color: white; }
 
 .feed__item_is-horizontal {
   display: grid;

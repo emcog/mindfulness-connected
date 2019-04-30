@@ -1,5 +1,5 @@
 <header>
-	<nav class="nav__top-level g-in-depth" aria-labelledby="primary-navigation">
+	<nav class="nav__top-level" aria-labelledby="primary-navigation">
 		{% for logo in site.data.navigation.navbar-logo %}
 		<a class ="nav_is-left" href = "{{ logo.url }}" class = ""><img class="nav__logo" src = "{{ logo.source }}"></a>
 		{% endfor %}
@@ -8,7 +8,7 @@
 				<li><a class="nav__link" href="{{ link.url }}">{{ link.page }}</a>
 					<ul class="nav__second-level">
 						{% for entry in link.navbar-l2 %}
-							<li><a class="nav__link" href="{{ entry.url }}">{{ entry.section }}</a></li>
+							<li><a class="nav__link" href="{{ entry.url }}">{{ entry.page }}</a></li>
 						{% endfor %}
 					</ul>
 				</li>
