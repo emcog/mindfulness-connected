@@ -1,0 +1,239 @@
+// body copy
+%body-copy__long_1st-p {
+  @include media ('>tablet') {
+  font-size: 18pt;
+  line-height: 1.4;
+ }
+}
+
+
+%body-copy__long {
+    @include media ('≥tablet') {
+    font-size: 17pt;
+    line-height: 1.4;
+  }
+}
+
+
+
+%headline, 
+.headline {
+  font-family: $sans-stack;
+  line-height: 1;
+  font-weight: 600;
+
+  @include media ('≥tablet') {
+    font-size: 32pt;
+  }
+}
+
+%headline_sml,
+.headline_sml {
+  font-family: $sans-stack;
+  line-height: 1;
+  font-weight: 600;
+  
+  @include media ('≥tablet') {
+    font-size: 18pt;
+  }
+}
+
+%section_title {
+  font-family: $sans-stack;
+  line-height: 1;
+  font-weight: 400;
+  
+  @include media ('≥tablet') {
+    // margin: 30px 0 0 0; todo changed for product page
+    margin: 0px 0 30px 0px;
+    font-size: 24pt;
+  }
+}
+
+%sub-section_title {
+  font-family: $sans-stack;
+  line-height: 1;
+  font-weight: 400;
+  
+  @include media ('≥tablet') {
+    // margin: 30px 0 0 0; todo changed for product page
+    margin: 0px 0 30px 0px;
+    font-size: 20pt;
+  }
+}
+
+%banner-header {
+    @include media ('≥tablet') {
+    font-size: 24pt;
+  }
+}
+
+%banner-summary {
+  @include media ('≥tablet') {
+    font-size: 17pt;
+  }
+}
+
+// headlines
+.font-size-1,
+%font-size-1 {
+  line-height: 1;
+  
+  @include media ('≥tablet') {
+  font-size: 50pt;
+  }
+
+  @include media ('≥500px', '<tablet') {
+    font-size: 45pt;
+  }
+
+  @include media('<500px', '≥phone-plus') {
+    font-size: 35pt;
+  }
+
+  @include media ('<phone-plus') {
+   font-size: 21pt;
+  }
+}
+
+
+
+// quote blocks, audio player, section titles,
+.font-size-2, 
+%font-size-2 {
+  line-height: 1.5;
+  
+  @include media('≥1000px') {
+    font-size: 32pt;
+  }
+
+  @include media('<1000px', '≥600px') {
+    font-size: 26pt;
+  }
+
+  @include media('<600px', '≥phone-plus') {
+    font-size: 18pt;
+  }
+
+  @include media ('<phone-plus') {
+    font-size: 16pt;
+  }
+}
+
+
+
+// body copy and primary nav links
+.font-size-3, 
+%font-size-3 {
+    line-height: 1.3;
+
+  @include media('≥tablet') {
+    font-size: 16pt;
+  }
+  
+  @include media('<tablet', '≥660px') {
+    font-size: 15pt;
+  }
+
+  @include media('<660px', '≥490px') {
+    font-size: 14pt;
+  }
+
+  @include media('<490px', '≥phone-plus') {
+    font-size: 13pt;
+  }
+
+  @include media('<phone-plus') {
+    font-size: 12pt;
+  }
+}
+
+
+
+// secondary nav links, folio-title
+.font-size-4, 
+%font-size-4 {
+  font-size: 14pt;
+  line-height: 1.15;
+}
+
+
+
+// small stuff, album name
+.font-size-5, 
+%font-size-5 {
+  font-size: 11pt;
+  // todo
+  // line-height: ;
+}
+
+
+
+// attribute class
+%font-size-6 {
+  font-size: 12pt;
+}
+
+
+
+// headlines
+@mixin font-size-1 {
+  font-size: 50pt;
+  line-height: 1;
+}
+
+
+
+// quote blocks, audio player, section titles,
+@mixin font-size-2 {
+  font-size: 22pt;
+  line-height: 1.5;
+}
+
+
+
+// body copy and primary nav links
+@mixin font-size-3 {
+  font-size: 16pt;
+  line-height: 1.3;
+}
+
+
+
+// secondary nav links, folio-title
+@mixin font-size-4 {
+  font-size: 13pt;
+  line-height: 1.15;
+}
+
+
+
+// small stuff, album name
+@mixin font-size-5 {
+  font-size: 09pt;
+  // todo
+  // line-height: ;
+}
+
+
+
+p, .body-copy {
+  @extend %font-size-3;
+
+  // pargraph before
+  margin-top: .25rem;
+  // paragraph after
+  margin-bottom: 1rem;
+
+   > a {
+    border-bottom: 1px solid;
+    padding-bottom: .125rem;
+    text-decoration: none;
+  }
+
+  > a:hover {
+    border-bottom: 1px solid;
+    padding-bottom: .25rem;
+    text-decoration: none;
+  }
+}

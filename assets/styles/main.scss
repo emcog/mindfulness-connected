@@ -9,31 +9,62 @@
 		'00-abstracts/variables';
 
 //00-dependencies
-@import "00-dependencies/animate";
+@import "00-dependencies/animate",
+		"00-dependencies/include-media",
+		"00-dependencies/include-media-export";
 
 //01-base
-@import "01-base/normalize",
-		"01-base/typography",
+@import "01-base/image-sizes",
+		"01-base/borders",
+		"01-base/links",
+		"01-base/inputs",
+		"01-base/normalize",
+		"01-base/grid-template-areas",
+		"01-base/images",
+		"01-base/simple-grids",
+		"01-base/effects",
+		"01-base/typography-ids-and-classes",
+		"01-base/typography-natives",
+		"01-base/typography-size",
 		"01-base/wordpress-core";
 
 //02-molecules
 @import "02-molecules/header",
+		"02-molecules/external-providers",
+		"02-molecules/cards",
+		"02-molecules/banner",
 		"02-molecules/body",
 		"02-molecules/pagination",
 		"02-molecules/footer",
 		"02-molecules/blog",
 		"02-molecules/blog-single",
+		"02-molecules/approach",
+		"02-molecules/timeline__year",
 		"02-molecules/page-default";
 
 //03-organisms
 @import "03-organisms/home-approach",
 		"03-organisms/home-team",
-		"03-organisms/home-timeline",
+		"03-organisms/timeline",
+		"03-organisms/t-line",
+		"03-organisms/horizontal-strip",
+		"03-organisms/contact-form",
+		"03-organisms/slideshow-gallery",
+		"03-organisms/signup-form",
+		// "03-organisms/home-timeline",
 		"03-organisms/home-feature",
 		"03-organisms/home-contact",
+		"03-organisms/navbar",
+		"03-organisms/feed-item",
 		"03-organisms/home-content-block";
 
 //04-templates
-@import "04-templates/home";
+@import "04-templates/home",
+		"04-templates/post";
+
 
 //05-themes
+
+// 06-overides and imports from different themes
+@import "03-organisms/banner-top",
+		"03-organisms/g-in-depth";

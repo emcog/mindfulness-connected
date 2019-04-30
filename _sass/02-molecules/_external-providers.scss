@@ -1,0 +1,67 @@
+.fixed-basket #paypal-basket {
+	// position: fixed;
+	box-shadow: 0 5px rgba(0,0,0,0.1);
+}
+
+#paypal-basket {
+	grid-column: -5/-2;
+	align-self: center;
+	padding: 0 0 0 20px;
+}
+
+.paypal-title {
+	padding-bottom: 08px;
+	@extend %body-copy__long_1st-p;
+}
+
+.paypal-dropdown {
+	@extend %font-size-4;
+}
+
+.paypal__button {
+	// float: right;
+	margin-top: 12px;
+	min-width: 145px;
+}
+
+.shipping-details {
+	margin-top: 32px;
+}
+
+.shipping-details__text-title {
+	margin-top: 6px;
+	font-family: $serif-stack;
+	@extend %font-size-4;
+}
+
+.shipping-details__text {
+	font-family: $serif-stack;
+	@extend %font-size-4;
+}
+
+// adobe publish online
+.banding-default {
+	display: hidden;
+}
+
+div.embed-branding-overlay{ 
+	& a#embed-branding-link {
+	display: hidden !important;
+	visibility: none !important;
+
+	& img.branding-defualt {
+		display: hidden !important;
+		visibility: none !important;
+		}
+	}
+}
+
+#embed-branding-link .branding-default, #embed-branding-link:hover .branding-on-hover {
+	display: hidden !important;
+	visibility: none !important;
+}
+
+#ReadNowOverlay, .embed-branding-overlay {
+	display: none !important;
+	visibility: hidden !important;
+}

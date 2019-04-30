@@ -1,0 +1,15 @@
+%drop-shadow {
+	-webkit-box-shadow: 0px 7px 20px -6px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 7px 20px -6px rgba(0,0,0,0.37);
+	box-shadow: 0px 7px 20px -6px rgba(0,0,0,0.37);
+}
+
+%no-drop-shadow {
+	-webkit-box-shadow: 0px 0px 0px 0px;
+	-moz-box-shadow: 0px 0px 0px 0px;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+%active-border {
+	
+}

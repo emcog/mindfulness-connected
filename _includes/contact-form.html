@@ -1,0 +1,95 @@
+<!-- https://github.com/bholtbholt/static-site-mailer/blob/master/README.md -->
+<!-- https://www.smashingmagazine.com/2018/05/building-serverless-contact-form-static-website/ -->
+  
+
+<!-- <form action="{{serverless.service.url}}" method="POST"> -->
+<section id="contact-form">
+  <div id="contact-inputs">
+  <div id="contact-title">
+    <h2>Contact us</h2>
+    <span>to take the next step in your journey</span>
+  </div>
+    <form  class="contact-form__inputs" action="https://15vbei6mk3.execute-api.eu-west-1.amazonaws.com/dev/static-site-mailer" method="POST">
+      <label class="inputs__col-1">
+        <span>Name</span>
+        <input type="text" name="name" placeholder="Name" required>
+      </label>
+      <label class="inputs__col-1">
+        <span>Email</span>
+        <input type="email" name="reply_to" placeholder="Email" required>
+      </label>
+      <label class="inputs__col-2">
+        <span>Message</span>
+        <textarea name="message" placeholder="Message" required></textarea>
+      </label>
+      <button class="inputs__col-2_below" type="submit">Send</button>
+  <!-- honeypot field start -->
+  <div style="display:none;">
+     <label>Keep this field blank</label>
+     <input type="text" name="honeypot" id="honeypot" />
+  </div>
+  <!-- honeypot field end -->
+  </form>
+</div>
+<div id="form-response">
+    <div class="form-response__success form-response__success_is-hidden">
+      <span>Thanks for your message, we'll get back to you in the next few days</span>
+    </div>
+     <div class="form-response__fail form-response__fail_is-hidden">
+        <span>
+          Sorry, we are having some technical problems and your message has not been sent.
+        </span>
+        <span>
+          Please try contacting us on <a href="https://www.linkedin.com/in/mark-leonard-a0997816/">Linkedin<img src="/assets/images/logo/Iinkedin-logo.png"></a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script type="text/javascript">
+
+const honeyP = document.getElementById('honeypot');
+const formSuccess = document.getElementsByClassName('form-response__success');
+const formFail = document.getElementsByClassName('form-response__fail');
+
+  (() => {
+  const form = document.querySelector('form');
+  // const formResponse = document.querySelector('js-form-response');
+
+  form.onsubmit = e => {
+    e.preventDefault();
+    // Escape if the honeypot has been filled
+    // if (!!form.children.namedItem('honeypot').value) return;
+    if (!!honeyP.value) return;
+
+    // Prepare data to send
+    const data = {};
+    const formElements = Array.from(form);
+    formElements.map(input => (data[input.name] = input.value));
+
+    // Construct an HTTP request
+    var xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action, true);
+    xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    // Send the collected data as JSON
+    xhr.send(JSON.stringify(data));
+
+    // Callback function
+    xhr.onloadend = response => {
+      if (response.target.status === 200) {
+        // The form submission was successful
+        form.reset();
+        formResponse.innerHTML = 'Thanks for the message. I’ll be in touch shortly.';
+      } else {
+        formResponse.innerHTML = 'Something went wrong';
+        console.error(JSON.parse(response.target.response).message);
+      }
+    };
+  };
+})();
+</script>

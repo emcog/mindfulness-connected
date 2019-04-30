@@ -1,7 +1,7 @@
 section#approach {
 
 	h2 {
-		color: $brand-primary;
+		color: $brand-primary__green;
 		font-size: 35px;
 	}
 
@@ -9,9 +9,9 @@ section#approach {
 		background-color: $grey-1;
 		.inner {
 			max-width: 870px;
-			p {
-				font-family: $font1;
-			}
+			// p {
+			// 	font-family: $font1;
+			// }
 		}
 	}
 
@@ -23,7 +23,7 @@ section#approach {
 			max-width: 870px;
 
 			h3 {
-				color: $brand-primary;
+				color: $brand-primary__green;
 				font-family: $font1;
 				font-size: 18px;
 				line-height: 24px;

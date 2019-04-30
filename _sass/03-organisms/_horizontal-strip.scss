@@ -1,0 +1,41 @@
+.horizontal-strip__of-3 {
+	@extend %g__24;
+
+	& > h2 {
+		grid-column: 7/-1;
+		grid-row: 1;
+	}
+
+	& > .g__u_blank-3 {
+		grid-row: 2;
+	}
+}
+
+
+
+// article.horizontal-strip__of-3:nth-of-type(2) {
+// 	grid-column: 3/5
+// }
+
+// .horizontal-strip__of-3:nth-of-type(3) {
+// 	grid-column: 5/7
+// }
+
+// .horizontal-strip__of-3:nth-of-type(4) {
+// 	grid-column: 7/9
+// }
+
+
+
+// .horizontal-strip__of-3 {
+// 	span: 2;
+
+// 	&_bank-1st {
+// 		grid-column: 1/2;
+// 		width: 100%;
+// 	}
+// 	&_bank-last {
+// 		grid-column: 11/-1;
+// 		width: 100%;
+// 	}
+// }

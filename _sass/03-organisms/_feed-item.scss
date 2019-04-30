@@ -1,0 +1,25 @@
+.feed__item_is-horizontal {
+	display: grid;
+	grid-template-columns: $medium-image-size 1fr;
+	grid-template-rows: $medium-image-size;
+	grid-gap: 12px;
+	border-top: 2px solid black;
+	padding-top: 12px;
+
+	& > .feed-item__image{
+		grid-column: 1/2;
+		grid-row: 1;
+	}
+
+	& > .feed-item__title {
+		grid-column: 2/-1;
+		grid-row: 1;
+		margin-top: -4px;
+	}
+
+	& > p {
+		grid-column: 2/-1;
+		grid-row: 1;
+		margin-top: 24px;
+	}
+}

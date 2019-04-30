@@ -1,0 +1,88 @@
+.banner__header-title {
+  align-self: end;
+  grid-column: 3/-1;
+  
+  // margin-top: -25px;
+  // margin-bottom: -61px;
+  padding: 11px 0 12px 8px; 
+
+  @include media('≥500px', '<tablet') {
+    margin: 0 0 -56px 0;
+    padding: 7px 0 17px 0;
+  }
+
+  @include media ('<500px', '≥phone-plus') {
+    margin: 0 0 -17px 0;
+    margin: 0 0 -43px 0;
+    padding: 5px 0 12px 0;
+  }
+
+
+  @include media('<phone-plus') {
+    grid-column: 2/-1;
+    margin-bottom: -17px;
+    padding: 5px 0 12px 0;
+  }
+}
+
+
+
+.banner__header-folio {
+  align-self: end;
+  grid-column: 3/4;
+  
+  margin: -6vh 0 0 0; 
+  width: 84px;
+  font-family: $slab-stack;
+  @include font-size-3();
+
+  @include media('<phone-plus') {
+    grid-column: 2/-1;
+  }
+}
+
+
+
+.banner__header,
+.banner__header-folio,
+.banner__header-title {
+  // is calculatd from 12% of 800px which is the width primary column in g-in-depth
+  z-index: 2;
+
+  @include media ('≥1000px') { 
+    margin-left: 0px;
+    margin-bottom: -19px; }
+
+  @include media('≥tablet', '<1000px') {
+    grid-column: 2/-1;
+    margin-left: 50px;
+  }
+
+  @include media('≥phone-plus', '<tablet') {
+    grid-column: 2/-1;
+    // margin-left: 20px;
+  }
+}
+
+
+
+.banner__image {
+  height: 75vh;
+  position: relative;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner__image.g-in-depth {
+  grid-template-rows: 1fr;
+}
+
+article.banner__article {
+  grid-column: -11/-5;
+  // @extend %g-12;
+
+  > p, h2, hr, iframe, form, ol, section {
+    // grid-column: 1/-6;
+  }
+}

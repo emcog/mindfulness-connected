@@ -1,0 +1,23 @@
+#approach.g-in-depth {
+
+	& > h2 {
+		@extend %section_title;
+		grid-column: 4/-4;
+		}
+		
+		p {
+			margin: 0px;
+			grid-column: 4/-4;
+			@extend %body-copy__long;
+		}
+
+		h3 {
+			@extend %sub-section_title; 
+			grid-column: 4/-4;
+		}
+
+		img {
+			margin: 20px 0 0 0;
+			grid-column: 4/-4;
+		}
+}

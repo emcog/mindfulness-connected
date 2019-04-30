@@ -1,0 +1,18 @@
+.nav__link {
+	padding-right: 15px;
+}
+
+a.nav__link_is-active {
+	// hover: underline border
+}
+
+.nav__top-level,
+.nav__second-level {
+	display: flex
+}
+
+.nav__logo {
+	width: 140px;
+	margin-left: auto;
+	align-self: end;
+}

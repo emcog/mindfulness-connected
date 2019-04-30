@@ -1,0 +1,29 @@
+#navbar
+navbar-logo: 
+  - source: /assets/images/logo/mindfulness-connected-logo.svg
+    url: /
+
+navbar:
+  - page: 'News'
+    url: /
+  - page: 'Training'
+    url: training/workplace-and-community
+    navbar-l2:
+     - section: 'Workplaces and communities'
+       url: /workplace-and-community
+     - section: 'Mindfulness providers'
+       url: /mindfulness-providers
+  - page: 'Our book'
+    url: shop/social-mindfulness
+  - page: 'Contact us'
+    url: /contact
+  # - page: 'Mindfulness Champion'
+    # url: /mindfulness-champion
+
+# footer:
+#   - page: 'Occasional news letter'
+#     url: /https://mailchi.mp/mindfulnessconnected.com/ow4xy4w3kb
+#   - page: 'Privacy policy'
+#     url: /privacy
+#   - page: 'Contact us'
+#     url: /contact

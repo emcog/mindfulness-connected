@@ -1,0 +1,25 @@
+<article id = "t-line" class="g-in-depth">
+  <div id = "timeline-title">
+    <h2>Evolution & timeline</h2>
+    <span>The history of contemporary mindfulness & background to our approach</span>
+  </div>
+  
+  {% for event in site.timeline %}
+    <article 
+      {% if forloop.first %} 
+       class="g-timeline__year timeline__year_first is-bordered"
+      {% else %}
+       class="g-timeline__year is-bordered {{ event.position }}"
+      {% endif %}
+      >
+    <img src="{{ event.image }}">
+    <div class="timeline__header_bg"></div>
+    <div class="timeline__header_txt">
+      <h3 class="headline_sml">{{ event.published }}</h3>
+      <span>{{ event.title }}</span>
+    </div>
+    {{ event.subtitle }}
+    {{ event.content }}
+  </article>
+  {% endfor %}
+</article>

@@ -1,0 +1,42 @@
+//was h2 nav – make this conditional based inside button
+ .btn {
+    margin-top: 0;
+    padding-top: .8em;
+    
+    &-cta {
+      @extend %font-size-2;
+    }
+    
+    &-filter{
+    }
+ }
+
+
+ input[type=button], 
+ input[type=submit], 
+ input[type=reset],
+ button {
+	background: $brand-primary__green;
+	border: none;
+	@extend %drop-shadow;
+	@extend %font-size-4;
+	font-family: $sans-stack;
+	color: white //todo
+ }
+
+
+
+ button:active {
+ 	@extend %no-drop-shadow;
+ }
+
+input:focus,
+textarea:focus {
+	border: solid 2px $brand-primary__green;
+}
+
+input,
+textarea {
+	font-family: Arial, sans-serif;
+	@extend %font-size-6;
+}

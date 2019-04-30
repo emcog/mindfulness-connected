@@ -1,0 +1,104 @@
+article.is-longform {
+
+  font-family: $serif-stack;
+
+  p:nth-of-type(1) {
+    @extend %body-copy__long_1st-p;
+  }
+  
+  p {
+    @extend %body-copy__long;
+  }
+}
+
+
+// cases
+.is-uppercase {
+  text-transform: uppercase;
+}
+
+.is-lowercase {
+  text-transform: lowercase;
+}
+
+
+//share block
+.attribute {
+  font-family: var(--font3);
+  color: var(--monotone);
+  font-size: 12pt;
+}
+
+.molecule__meme-text > p {
+  padding-left: 2rem;
+}
+
+
+
+.is-highlighted, 
+%is-highlighted {
+  margin-bottom: 0;   
+  color: white;
+  background: rgba(0, 179, 152, 1);
+
+  //text hightlight with nice endings
+  box-shadow: var(--highlight-pad) 0px var(--monotone), 
+  calc(var(--highlight-pad)*-1) 0px var(--monotone);
+  border: 1px solid var(--monotone);
+  box-decoration-break: clone;
+  white-space: pre-wrap;
+ }
+
+
+
+//todo
+ .is-highlighted  {
+  // font-size: 1.6rem;
+  // line-height: 2.4rem;
+  color: white; 
+}
+
+
+.share-block__meme-quote {
+  @extend %is-highlighted;
+  @extend %font-size-3;
+}
+
+
+
+.is-first-letter-follows + p::first-letter {
+  font-family: $sans-stack;
+  @extend %font-size-2;
+}
+
+
+
+// select the first letter in the first paragraph which is in an element with the class .is-first-letter
+.is-first-letter > p:first-child:first-letter {
+  font-family: $sans-stack;
+  @extend %font-size-2;
+}
+
+
+
+// hyperlinks
+.is_light-text,
+.is_light-text:hover {
+  color: $M4C-off-white;
+}
+
+
+
+.quote-n-attribute {
+  & h2 { 
+    
+    @include media('≥tablet') { line-height: .97; }
+    @include media('≥phone-plus','<tablet') { line-height: .84; }
+    @include media('<phone-plus') { line-height: .73; }
+ 
+    & q { 
+      line-height: 0; 
+      @extend %font-size-2;
+    }
+  }
+}

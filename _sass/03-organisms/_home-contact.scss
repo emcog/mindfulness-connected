@@ -48,7 +48,7 @@ section#contact {
 
 		&:focus {
 			outline: 0;
-			border-color: $brand-primary;
+			border-color: $brand-primary__green;
 		}
 
 		&[type="submit"] {

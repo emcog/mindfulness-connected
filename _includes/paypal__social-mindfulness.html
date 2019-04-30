@@ -1,0 +1,46 @@
+<div id="paypal-basket">
+	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="EHPZKEYRBQ6UE">
+		<table>
+			<tr><td class="paypal-title"><input type="hidden" name="on0" value="Buy with PayPal, ship to:">Buy with PayPal, ship to:</td></tr>
+			<tr><td>
+				<select class="paypal-dropdown" name="os0">
+				<option value="UK">UK £10.00 GBP</option>
+				<option value="Worldwide">Worldwide £13.50 GBP</option>
+				<option value="additional copy">additional copy £8.00 GBP</option>
+			</select> 
+			</td></tr>
+		</table>
+	<input type="hidden" name="currency_code" value="GBP">
+	<input class="paypal__button" type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+	<div class="shipping-details">
+		<p class="shipping-details__text-title">If ordering more than one copy, save on shipping by:</p>
+		<ol class="shipping-details__text">
+			<li>Choosing first copy</li>
+			<li>Clicking add to cart (a new, Paypal, tab will open)</li>
+			<li> Return to this page</li>
+			<li>From the dropdown menu, select "additional copy"</li> 
+			<li>Click add to cart</li>
+		</ol>
+	</div>
+</div>
+
+<!-- 
+<script type="text/javascript">
+	const basket = document.querySelector('#paypal-basket');
+	const topOfBasket = basket.offsetTop;
+
+	function fixBasket() {
+		if(window.scrollY >= topOfBasket ) {
+			document.body.classList.add('fixed-basket');
+		} else {
+			document.body.classList.remove('fixed-basket');
+		}
+
+	}
+
+	window.addEventListener('scroll', fixBasket);
+</script> -->

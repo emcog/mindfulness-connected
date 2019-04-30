@@ -1,9 +1,8 @@
+#site info
 url: http://mindfulnessconnected.com
 name: Mindfulness Connected
 description: ""
-
-
-
+contact:
 # Build settings
 
 ## each collection in collections_dir requires a scope to be set in defaults
@@ -23,15 +22,52 @@ defaults:
       type: "timeline"
     values:
       layout: 
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+        layout: "banner-page"
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "banner-page"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: 
+  - scope:
+      path: ""
+      type: "approach"
+    values:
+      layout:
+  - scope:
+      path: ""
+      type: "products__social-mindfulness"
+    values:
+      layout:
 
-include: ['_pages', '_redirects']
+# include: ['_data', '_redirects']
 
 ## each collection in collections_dir requires a scope to be set in defaults
 collections_dir: collections
+
 collections: 
-  - overviewbanners
-  - team
-  - timeline
+  overviewbanners:
+    output: false
+  team:
+    output: false
+  timeline:
+    output: false
+  drafts:
+    output: false
+  posts:
+    output: true
+  approach:
+    output: false
+  products__social-mindfulness:
+    output: false
 
 markdown: kramdown
 

@@ -1,0 +1,53 @@
+<section id="slideshow-gallery">
+{% for photo in site.products__social-mindfulness %}
+  <div class="product-photo">
+      <img src="{{ photo.img }}" alt="{{ photo.alt }}" style="width:100%">
+  </div>
+{% endfor %}
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+{% assign i = 0 %}
+<div class="slideshow__thumbnail-row">
+  {% for photo in site.products__social-mindfulness %}
+  {% assign i = i | plus:1 %}
+  <div class="slideshow__thumbnail-column">
+    <img class="demo cursor" src="{{ photo.img }}" style="width:100%" onclick="currentSlide({{ i }})" alt="{{ photo.alt }}">
+  </div>
+  {% endfor %}
+</div>
+</section> 
+
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("product-photo");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>

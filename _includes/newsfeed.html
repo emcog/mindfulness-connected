@@ -1,0 +1,9 @@
+{% for post in site.posts %}
+<a class="feed__item_wrapper" href="{{post.permalink}}">
+	<article class="feed__item_is-horizontal">
+			<img class="image-medium image-bg is-square feed-item__image" src="{{ 	post.square-preview-image }}">
+		<h2 class="feed-item__title headline_sml is-uppercase">{{ post.title }}</h2>
+		{{post.content | truncate: 120 }}
+	</article>
+</a>
+{% endfor %}

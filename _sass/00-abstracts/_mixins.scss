@@ -46,3 +46,105 @@ Stylesheet: Mixins & Constants
         @content;
     }
 }
+
+
+// imported from M4C theme
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+/// https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+// https://codepen.io/jordyvg/pen/PByqap
+@mixin ratio($width, $height) {
+  min-height: calc((#{$height} / #{$width}) * 100vw);
+}
+
+
+//breakpoints
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+
+
+// typography, using mixins so the styles can be called within media queries – please refer to base/typography 
+
+
+@mixin in-depth_left {
+  float: left;
+  width: 16%;
+  margin-top: 7px;
+}
+
+
+@mixin border-styles {
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+@mixin light-fill {
+  @include border-styles;
+  border-color: $colour_M4C-wireframe-dark;
+  color: $colour_M4C-wireframe-dark;
+  background-color: white; 
+}

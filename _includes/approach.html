@@ -1,0 +1,12 @@
+<article id="approach" class="g-in-depth">
+    {% for section in site.approach %}
+        {% if forloop.first %} 
+            <h2> {{ section.title }}</h2>
+            {{ section.content }}
+            <img src="{{ section.image }}" alt="{{ section.image-alt }}" class="approach-diagram">
+        {% else %}
+        <h3>{{ section.title }}</h3>
+        {{ section.content }}
+        {% endif %}
+    {% endfor %}
+</article>

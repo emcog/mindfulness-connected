@@ -1,14 +1,10 @@
-<section id="content-block">
-	<ul class="block">
+<section class="g-in-depth">
 		{% for banner in site.overviewbanners %}
-			<li id="{{ banner.id }}" style="background:url('{{ banner.image }}');">
-				<div class="inner cf">
-					<div class="content content-box {{ banner.position }}">
-						<h2>{{ banner.title }}</h2>
-						<p>{{ banner.subtitle }}</p>
-					</div>
+			<div class="g-in-depth banner-image {{ banner.text-position }}" style="background:url('{{ banner.image }}');">
+				<div class="banner-text">
+					<h2>{{ banner.title }}</h2>
+					<p>{{ banner.subtitle }}</p>
 				</div>
-			</li>
+			</div>
 		{% endfor %}
-	</ul>
 </section>

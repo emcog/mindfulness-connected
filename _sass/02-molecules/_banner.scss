@@ -1,0 +1,52 @@
+.banner:first-of-type {
+	margin: 0 0 90px 0;
+}
+
+.banner:last-of-type {
+	margin: 0;
+
+	& .banner-text {
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+		& > h2, 
+		p {
+			grid-column: 3/-3;
+		}
+	}
+}
+
+
+.banner {
+	margin: 40px 0 90px 0;
+}
+
+.banner-image {
+	height: 90vh;
+}
+
+.banner-text {
+	grid-column: 4/-1;
+	align-self: end;
+	margin-bottom: -51px;
+	margin-left: -$grid-gap;
+	padding: 16px 48px 16px 16px;
+	height: 120px;
+	color: white;
+	background-color: $brand-primary__green;
+
+
+	& > h2 {
+		margin: 0 0 6px 0;
+		@extend %banner-header;
+	}
+
+	& > p {
+		margin: 0;
+		@extend %banner-summary;
+	}
+}
+
+
+

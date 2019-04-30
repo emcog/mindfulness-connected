@@ -2,6 +2,19 @@
 Stylesheet: Variables
 ******************************************************************/
 
+
+// Font Stacks
+
+$font1: futura-pt, sans-serif;;
+$font2: classica-pro, serif; ;
+$font3: classica-pro, serif; ;
+
+$sans-stack: futura-pt, sans-serif;;
+$serif-stack: classica-pro, serif; ;
+$slab-stack: classica-pro, serif; ;
+
+// 
+
 $white:		#fff;
 
 $black:		#000;
@@ -23,4 +36,147 @@ $orange-2:	#d65e33;
 $orange-3:	#d86135;
 $orange-4:	#cd522b;
 
-$brand-primary: #00B398;
+$brand-primary__green: #00B398;
+
+// Breakpoints (includemedia)
+$breakpoints: (
+  'phone': 320px,
+  'phone-plus': 414px,
+  'tablet': 768px,
+  'desktop': 1024px
+) !default;
+
+
+// imported from M4C theme
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+$body-size: 16pt;
+$body-leading: 1.24;
+
+// %body-copy: {
+// 	font-size: $body-size;
+// 	line-height: $body-leading;
+// }
+
+
+$font_link_stack: $slab_stack;
+$font_link_weight: 700;
+
+$font_body_stack: $serif-stack;
+
+$font_button_stack: $sans-stack;
+$font_title_stack: $sans-stack;
+$font_quote-highlight_stack: $sans-stack;
+
+
+$font_quote-highlight_stack: $sans-stack;
+$font_quote-highlight_size: 39pt;
+$font_quote-highlight_weight: 500;
+
+//colour pallete
+$M4C-green: hsl(43,80%,43%);
+$M4C-pink: hsl(91,96%,45%);
+$M4C-purple: hsl(72,87%,53%);
+$M4C-yellow: hsl(12,100%,53%);
+$M4C-blue: hsl(59,97%,47%);
+$M4C-orange: hsl(6,90%,52%);
+$M4C-off-white: hsl(0,0%,97%);
+$M4C-off-black: hsl(0,0%,22%);
+$MC-off-black: hsl(0,0%,22%);
+$M4C-dark-grey: hsl(0,0%,43%);
+
+$colour_background-light: $M4C-off-white;
+$colour_background-dark: $M4C-off-black;
+
+
+//protoyping and wireframing
+$colour_M4C-wireframe-dark: hsl(217, 19%, 36%);
+$colour_M4C-wireframe-light: hsl(0,0%,100%);
+$colour_M4C-wireframe-alt: chocolate;
+$monotone: #4B596F;
+$monotone-10: rgba(75, 89, 111, 0.1) ;
+
+/// Regular font family
+/// @type List
+$text-font-stack: 
+	// 'Open Sans', 
+	// 'Helvetica Neue Light', 
+	// 'Helvetica Neue', 
+	// 'Helvetica', 
+	// 'Arial', 
+	sans-serif !default;
+	
+
+// Grid
+$grid-gap: 16px;
+$grid-gap-half: 6px;
+
+$grid-gap-quarter: calc(#{$grid-gap/4});
+$grid-gap-half: calc(#{$grid-gap/2});
+
+$grid-gap-2x: calc(#{$grid-gap*2});
+$grid-gap-3x: calc(#{$grid-gap*3});
+$grid-gap-4x: calc(#{$grid-gap*4});
+$grid-gap-4x: calc(#{$grid-gap*4});
+$grid-gap-5x: calc(#{$grid-gap*5});
+$grid-gap-6x: calc(#{$grid-gap*6});
+$grid-gap-7x: calc(#{$grid-gap*7});
+$grid-gap-8x: calc(#{$grid-gap*8});
+
+
+/// Inherited variables
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: #444 !default;
+
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+// Relative or absolute URL where all assets are served from
+// @type String
+// @example scss - When using a CDN
+// $base-url: 'http://cdn.example.com/assets/'
+
+
+// Used in layouts
+$negative-margin: 20.5%;
+$g-in-depth__margin_is-flush: 152px;
+$g-in-depth__margin_is-proud: 143px;
+
+// navbar
+$navbar__dropdown-bg: 63px;
+
+// image sizes
+$medium-image-size: 160px;

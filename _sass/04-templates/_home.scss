@@ -23,7 +23,7 @@
 				padding: 40px 40px 0px;
 
 				h2 {
-					color: $brand-primary;
+					color: $brand-primary__green;
 				}
 
 				h3 {
@@ -32,9 +32,9 @@
 
 				p {
 
-					font-size: 18px;
-					font-family: $font1;
-					line-height: 24px;
+					// font-size: 18px;
+					// font-family: $font1;
+					// line-height: 24px;
 
 					&:last-of-type {
 						margin-bottom: 0;
@@ -69,15 +69,15 @@
 				}
 			}
 
-			p {
+			// p {
 
-				font-size: 16px;
-				line-height: 1.2em;
+			// 	font-size: 16px;
+			// 	line-height: 1.2em;
 
-				&:last-of-type {
-					margin-bottom: 0;
-				}
-			}
+			// 	&:last-of-type {
+			// 		margin-bottom: 0;
+			// 	}
+			// }
 		}
 	}
 }

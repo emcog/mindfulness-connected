@@ -3,7 +3,7 @@ image: /assets/images/timeline/CBT.jpg
 published: 1979
 title: Cognitive Behavioural Therapy (CBT)
 subtitle: Provides scientific basis of mindfulness as therapy
-position: left-col
+position: timeline__lh
 
 ---
 - One-to-one therapy
