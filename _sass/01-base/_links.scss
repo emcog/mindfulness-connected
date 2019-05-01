@@ -1,5 +1,4 @@
 .nav__link {
-	padding: 0 12px;
 	color: $brand-primary__dark;
 	@extend %font-size-3;
 }
@@ -8,20 +7,11 @@
 	background: $grey__x-light-tint;
 }
 
-a.nav__link_is-active {
-	// hover: underline border
-}
 
-.nav__top-level,
-//.nav__second-level 
-{
-	display: flex
-}
 
-.nav__logo {
-	width: 140px;
-	margin: auto 0;
-}
+.nav__top-level { display: flex }
+
+
 
 nav ul li {
 	list-style: none;
@@ -31,6 +21,7 @@ nav ul li {
 
 nav ul li:hover {
 	// border-top: solid #00B398;
+	background: $grey__x-light-tint; 
 }
 
 
@@ -40,14 +31,17 @@ p > a {
 	background-color: $grey__x-light-tint;
 	// text-transform: uppercase;
 	// font-feature-settings: 'caps' 1;
+	// font-feature-settings: 'caps' 1;
 }
 
 
 
 p > a:hover { 
-	background: $grey__light-tint; 
 	border-bottom: none;
 	text-decoration: none;
 }
 
 a:link { text-decoration: none; }
+
+
+.feed__item_is-horizontal:hover { background: $grey__x-light-tint; }

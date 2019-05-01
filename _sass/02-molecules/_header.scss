@@ -2,64 +2,64 @@ header{
 	background-color: $white;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.05);
 	position: fixed;
-	height: 65px;
+	// height: 65px;
 	width: 100%;
 	@include transition-1;
 	z-index: 99;
 
-	.inner {
+	// .inner {
 
-		margin: 0 auto;
-		max-width: 1120px;
-		padding: 0 40px;
+		// margin: 0 auto;
+		// max-width: 1120px;
+		// padding: 0 40px;
 
-		.logo {
-			float: left;
-			padding-top: 10px;
+		// .logo {
+			// float: left;
+			// padding-top: 10px;
 
-			img {
-				max-width: 131px;
-				margin-top: 3px;
-			}
-		}
+			// img {
+				// max-width: 131px;
+				// margin-top: 3px;
+			// }
+		// }
 
-		nav {
+		// nav {
 
-			float: right;
-			text-align: right;
+			// float: right;
+			// text-align: right;
 
-			&#main {
+			// &#main {
 
-				ul {
-					line-height: 65px;
-					list-style-type: none;
+				// // ul {
+				// 	line-height: 65px;
+					// list-style-type: none;
 
-					li {
-						display: inline-block;
-						padding: 0 10px;
+					// li {
+						// display: inline-block;
+						// padding: 0 10px;
 
-						&:last-child {
-							padding-right: 0;
-						}
+						// &:last-child {
+							// padding-right: 0;
+						// }
 
-						&.active{
+						// &.active{
 
-							a {
-								color: $brand-primary__green;
-							}
-						}
+							// a {
+								// color: $brand-primary__green;
+							// }
+						// }
 
-						a {
-							color: #000;
-							font-family: $font1;
+						// a {
+							// color: #000;
+							// font-family: $font1;
 							//font-weight: bold;
-							//padding: 10px;
-						}
-					}
-				}
-			}
-		}
-	}
+							// padding: 10px;
+						// }
+					// }
+				// }
+		// 	// }
+		// }
+	// }
 }
 
 // Homepage only
@@ -105,7 +105,7 @@ body.home {
 @include media-upto-990 {
 
 	header {
-		height: 65px;
+		// height: 65px;
 
 		.inner {
 
