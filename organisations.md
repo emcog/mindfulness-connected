@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /workplace-and-community
+permalink: /programmes/organisations
 ---
 <!-- Banner -->
 {% include banner.html
@@ -10,17 +10,16 @@ permalink: /workplace-and-community
 %}
 
 <!-- Approach -->
-  {% include approach.html %}
+{% include approach.html %}
 
 <!-- Banner -->
-  	{% include banner.html
+  {% include banner.html
   	image="/assets/images/banner/IMG_4825.jpg"
   	title="Published"
   	text="Making Mindfulness Meaningful and Accessible. Mark Leonard,  Mindfulness Connected Course Designer and Lead Practitioner, is  author of Chapter 10 of  Mindfulness in The Workplace,  published by Kogan Page."
   %}
 
-<!-- Timeline -->
-{% include timeline-new.html %}
+
 
 <!-- Banner -->
 {% include banner.html
@@ -28,9 +27,6 @@ permalink: /workplace-and-community
   	title="Developing leadership"
   	text="Understanding human social behaviour, self-awareness and the skills to regulate emotions make leaders at every level of an organisation."
 %}
-
-<!-- team -->
-{% include team-strip__of-3.html %}
 
 
 <!-- Banner -->
@@ -42,4 +38,3 @@ permalink: /workplace-and-community
 
 <!-- Contact -->
 {% include contact-form-netlify.html%}    
-</main>

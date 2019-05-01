@@ -8,10 +8,12 @@ navbar:
     url: shop/social-mindfulness
   - page: 'Contact us'
     url: /contact-us
-  - page: 'News'
-    url: /
-  - page: 'About'
+  # - page: 'News'
+    # url: /
+  - page: 'About MBOE & us'
     url: /about
+  - page: 'Champions'
+    url: /mindfulness-champion
   - page: 'Programmes &ensp; &#9662;'
     # url: programmes
     navbar-l2:

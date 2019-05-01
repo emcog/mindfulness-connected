@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: banner-page
 permalink: /contact-us
 ---
 
-{include contact-form-netlify.html }
+{% include contact-form-netlify.html %}
