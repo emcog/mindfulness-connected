@@ -1,8 +1,8 @@
 #contact-form {
-	// height: 350px;
 	margin-bottom: 120px;
-}
+	grid-column: -11/-5;
 
+}
 
 
 
@@ -17,6 +17,7 @@
 		padding: 0;
 	}
 }
+
 
 
 .contact-form__inputs {

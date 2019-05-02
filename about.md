@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: banner-page
 permalink: /about
 ---
 
@@ -9,6 +9,5 @@ permalink: /about
 <!-- team -->
 {% include team-strip__of-3.html %}
 
-
 <!-- Contact -->
-{% include contact-form-netlify.html%}    
+{% include contact-form-netlify.html %}

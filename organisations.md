@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_has-contact
 permalink: /programmes/organisations
 ---
 <!-- Banner -->
@@ -34,7 +34,4 @@ permalink: /programmes/organisations
   	image="/assets/images/banner/IMG_4748.jpg"
   	title="Co-design"
   	text="Mindfulness Connected works closely with organisations at every stage of the process. Here, members of the team review the MBOE programme with ROH champion, Dr Conny Blunt."
-%}
-
-<!-- Contact -->
-{% include contact-form-netlify.html%}    
+%}  

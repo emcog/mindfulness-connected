@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_has-contact
 permalink: /programmes/communities
 ---
 
