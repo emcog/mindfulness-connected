@@ -1,3 +1,14 @@
+.nav__link {
+	z-index: 1;
+}
+
+
+#nav__primary {
+	position: relative;
+}
+
+
+
 .nav__top-level {
 	@extend %g-12;
 	grid-column: 1/-1;
@@ -7,14 +18,24 @@
 
 
 
-
 a.nav_is-left {
 	grid-column: 1/4;
 	align-self: end;
-	padding: 0 0 0 45px;
 	margin: auto 0;
+	@include media('<1134px') { padding: 4px 0px 0 16px; }
+	@include media('≥1134px') { padding: 0 0 0 45px; }
 	background: #00B398;
 }
+
+
+
+.nav__logo {
+	width: 110px;
+	margin: auto 0;
+	padding: 8px 0;
+}
+
+
 
 ul.nav_is-right {
 	grid-column: 4/-1;
@@ -22,7 +43,6 @@ ul.nav_is-right {
 
 	> li {
 		// for dropdown
-		position: relative;
 		float: right;
 		border-right: solid 1px $grey__light-tint;
 		padding: 2px 14px;
@@ -30,28 +50,101 @@ ul.nav_is-right {
 
 	> li:last-child { border-left: solid 1px $grey__light-tint; }
 
+
+	@include media('<1134px') { display: none; }
 }
 
+#nav__mobile-button,
+.nav__mobile-contents {
+	@include media('≥1134px') {	display: none;}
+	float: right;
+}
+
+
+
+button#nav__mobile-button { 
+	@extend %no-drop-shadow; 
+	// float: right;
+}
+
+
+.nav__mobile-button {
+	grid-column: -5/-1;
+	margin: auto 25px auto auto;
+	border: solid 2px $brand-primary__dark;
+	padding: 4px 18px;
+	color: $brand-primary__dark;
+	background: white; //todo
+	transition: all 0.125s;
+	
+	&_is-active {
+		color: white; //todo
+		background: $brand-primary__green;
+		border: solid 2px $brand-primary__green;
+		transition: all 0.125s;
+	}
+}
+
+
+
+
+.nav__mobile-contents.nav__mobile-contents_is-active { 
+	display: block; 
+	padding: 0 43px 0 53px; //43 is 18+25 (padding and margin of menu button)
+	width: 100%;
+}
+
+
+
+.nav__mobile-contents { 
+	display: none; 
+	float: left;
+	// margin: 0 16px;
+	background: white; //todo
+
+	& > li {
+		// float: right;
+		border-top: solid 1px $grey__light-tint;
+		padding: 14px 4px;
+		}
+	
+	& a {  //increase the size of the a tag to match the size of its parent li   
+   		display: block;     
+   		position: relative;    
+   		z-index: 1; 
+	}
+}
+
+
+
 ul.nav__second-level {
-	display: hidden;
 	transition: all 0.5s ease;
+	display: none;
 	opacity: 0;
-	position: absolute;
 	left: 0;
 	background: white; //todo
 	margin: 12px 0 0 0;
 	padding: 0;
+	@include media('<1134px') {
+		float: right;
+	}
 
 	& > li {
-		float: left;
-		padding: 2px 14px 2px 25px;
-		margin: 0 0 6px 0;
-		width: 100%;
+
+		@include media('<1134px') {	float: right; }
+		@include media('≥1134px') { 
+			float: left; 
+			width: 100%;
+			padding: 2px 14px 2px 25px;
+			margin: 0 0 6px 0;
+		}
 	}
 }
 
-ul li:hover > ul,
-ul li ul:hover {
+
+
+.nav_is-right li:hover > ul
+ {
 	visibility: visible;
 	opacity: 1;
 	display: block;
@@ -63,8 +156,37 @@ ul li ul:hover {
 }
 
 
-.nav__logo {
-	width: 110px;
-	margin: auto 0;
-	padding: 8px 0;
+
+ul.nav__mobile-contents  {
+
+	& > li.menu__tab_is-active { background-color: $grey__x-light-tint;
+
+		& > ul {
+			display: block;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+
+
+// override desktop styles
+ul.nav__mobile-contents > li > ul.nav__second-level,
+ul.nav__mobile-contents > li > ul.nav__second-level > li
+ {
+	float: none;
+}
+
+
+
+ul.nav__mobile-contents > li > ul.nav__second-level {
+	// background: $grey__x-light-tint;
+	// transition: all .25s;
+	margin: 12px -4px -14px -4px;
+}
+
+ul.nav__mobile-contents > li > ul.nav__second-level > li {
+	padding: 12px 0 12px 28px;
+	border-top: solid 1px $grey__light-tint;
 }

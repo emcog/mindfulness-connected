@@ -1,11 +1,27 @@
 <header>
-	<nav class="nav__top-level" aria-labelledby="primary-navigation">
-		{% for logo in site.data.navigation.navbar-logo %}
-		<a class ="nav_is-left" href = "{{ logo.url }}" class = ""><img class="nav__logo" src = "{{ logo.source }}"></a>
-		{% endfor %}
-		<ul class="nav_is-right">
+	<nav id="nav-primary" aria-labelledby="primary-navigation">
+		<div class="nav__top-level" >
+			{% for logo in site.data.navigation.navbar-logo %}
+			<a class ="nav_is-left" href = "{{ logo.url }}" class = ""><img class="nav__logo" src = "{{ logo.source }}"></a>
+			{% endfor %}
+			<!-- desktop -->
+			<ul class="nav_is-right">
+				{% for link in site.data.navigation.navbar %}
+					<li><a class="nav__link" href="{{ link.url }}">{{ link.page }}</a>
+						<ul class="nav__second-level">
+							{% for entry in link.navbar-l2 %}
+								<li><a class="nav__link" href="{{ entry.url }}">{{ entry.page }}</a></li>
+							{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
+			<!-- mobile -->
+			<button id="nav__mobile-button" class="nav__mobile-button">Menu</button>
+		</div>
+		<ul class="nav__mobile-contents">
 			{% for link in site.data.navigation.navbar %}
-				<li><a class="nav__link" href="{{ link.url }}">{{ link.page }}</a>
+				<li><a class="nav__link {{ link.class }}" href="{{ link.url }}">{{ link.page }}</a>
 					<ul class="nav__second-level">
 						{% for entry in link.navbar-l2 %}
 							<li><a class="nav__link" href="{{ entry.url }}">{{ entry.page }}</a></li>

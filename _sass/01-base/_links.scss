@@ -45,3 +45,9 @@ a:link { text-decoration: none; }
 
 
 .feed__item_is-horizontal:hover { background: $grey__xx-light-tint; }
+
+
+.link_is-disabled {
+  pointer-events: none;
+  cursor: default;
+}

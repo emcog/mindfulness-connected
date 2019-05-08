@@ -13,14 +13,17 @@ navbar:
   - page: 'Champions'
     url: /mindfulness-champion
   - page: 'Programmes &ensp; &#9662;'
-    # url: programmes
+    # url: /
+    class: 'link_is-disabled'
+    onclick: 'navTabPressed()'
     navbar-l2:
      - page: 'Organisations'
        url: /programmes/organisations
      - page: 'Communities'
        url: /programmes/communities
   - page: 'Practioners &ensp; &#9662;'
-    # url: programs/practioners
+    # url: /
+    class: 'link_is-disabled'
     navbar-l2:
       - page: 'Pathway'
         url: practioners/pathway

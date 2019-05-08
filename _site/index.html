@@ -35,60 +35,92 @@
     </script>
 </head>
 <body>
-    <!-- <header class="sticky">
-        <div class="inner cf">
-            <div class="logo">
-                  <a href="/"><img src="/assets/images/logo/mindfulness-connected-logo.png" alt="Mindfulness 4 Change" /></a>
-            </div>
-            <nav id="main">
-                <ul id="menu-main-menu" class="main-menu">
-                    <li id="menu-item-168" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home first menu-item-168 active current">
-                        <a href="/#approach">Approach</a>
-                    </li>
-                    <li id="menu-item-169" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-169 active">
-                        <a href="/#timeline">Evolution</a>
-                    </li>
-                    <li id="menu-item-170" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-170 active">
-                        <a href="/#team">Team</a>
-                    </li>
-                    <li id="menu-item-172" class="contact menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-172 active"><a href="/#contact">Contact</a></li>
-                    <li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page last menu-item-199"><a href="http://mindfulnessconnected.com/articles/">Articles</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
 <header>
-	<nav class="nav__top-level" aria-labelledby="primary-navigation">
-		
-		<a class ="nav_is-left" href = "/" class = ""><img class="nav__logo" src = "/assets/images/logo/mindfulness-connected-logo_w.svg"></a>
-		
-		<ul class="nav_is-right">
+	<nav id="nav-primary" aria-labelledby="primary-navigation">
+		<div class="nav__top-level" >
 			
-				<li><a class="nav__link" href="/shop/social-mindfulness">Booklet</a>
+			<a class ="nav_is-left" href = "/" class = ""><img class="nav__logo" src = "/assets/images/logo/mindfulness-connected-logo_w.svg"></a>
+			
+			<!-- desktop -->
+			<ul class="nav_is-right">
+				
+					<li><a class="nav__link" href="/shop/social-mindfulness">Booklet</a>
+						<ul class="nav__second-level">
+							
+						</ul>
+					</li>
+				
+					<li><a class="nav__link" href="/contact-us">Contact us</a>
+						<ul class="nav__second-level">
+							
+						</ul>
+					</li>
+				
+					<li><a class="nav__link" href="/about">About MBOE & us</a>
+						<ul class="nav__second-level">
+							
+						</ul>
+					</li>
+				
+					<li><a class="nav__link" href="/mindfulness-champion">Champions</a>
+						<ul class="nav__second-level">
+							
+						</ul>
+					</li>
+				
+					<li><a class="nav__link" href="">Programmes &ensp; &#9662;</a>
+						<ul class="nav__second-level">
+							
+								<li><a class="nav__link" href="/programmes/organisations">Organisations</a></li>
+							
+								<li><a class="nav__link" href="/programmes/communities">Communities</a></li>
+							
+						</ul>
+					</li>
+				
+					<li><a class="nav__link" href="">Practioners &ensp; &#9662;</a>
+						<ul class="nav__second-level">
+							
+								<li><a class="nav__link" href="practioners/pathway">Pathway</a></li>
+							
+								<li><a class="nav__link" href="programmes/register">Register</a></li>
+							
+								<li><a class="nav__link" href="/programmes/registered">Registered</a></li>
+							
+						</ul>
+					</li>
+				
+			</ul>
+			<!-- mobile -->
+			<button id="nav__mobile-button" class="nav__mobile-button">Menu</button>
+		</div>
+		<ul class="nav__mobile-contents">
+			
+				<li><a class="nav__link " href="/shop/social-mindfulness">Booklet</a>
 					<ul class="nav__second-level">
 						
 					</ul>
 				</li>
 			
-				<li><a class="nav__link" href="/contact-us">Contact us</a>
+				<li><a class="nav__link " href="/contact-us">Contact us</a>
 					<ul class="nav__second-level">
 						
 					</ul>
 				</li>
 			
-				<li><a class="nav__link" href="/about">About MBOE & us</a>
+				<li><a class="nav__link " href="/about">About MBOE & us</a>
 					<ul class="nav__second-level">
 						
 					</ul>
 				</li>
 			
-				<li><a class="nav__link" href="/mindfulness-champion">Champions</a>
+				<li><a class="nav__link " href="/mindfulness-champion">Champions</a>
 					<ul class="nav__second-level">
 						
 					</ul>
 				</li>
 			
-				<li><a class="nav__link" href="">Programmes &ensp; &#9662;</a>
+				<li><a class="nav__link link_is-disabled" href="">Programmes &ensp; &#9662;</a>
 					<ul class="nav__second-level">
 						
 							<li><a class="nav__link" href="/programmes/organisations">Organisations</a></li>
@@ -98,7 +130,7 @@
 					</ul>
 				</li>
 			
-				<li><a class="nav__link" href="">Practioners &ensp; &#9662;</a>
+				<li><a class="nav__link link_is-disabled" href="">Practioners &ensp; &#9662;</a>
 					<ul class="nav__second-level">
 						
 							<li><a class="nav__link" href="practioners/pathway">Pathway</a></li>
@@ -194,9 +226,10 @@
 </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup
+<!--End mc_embed_signup -->
 </div>
-		<footer>
+			<script type="text/javascript" src="/assets/js/nav.js"></script>
+			<footer>
 			<div class="inner">
 				<p>© Mindfulness Connected 2019 | All rights reserved</p>
 			</div>
