@@ -4,8 +4,8 @@
 const navContent = document.querySelector('.nav__mobile-contents');
 const navButton = document.querySelector('#nav__mobile-button');
 
-navButton.addEventListener('click', navButtonPressed);
-// navButton.addEventListener('mouseup', navButtonPressed, false);
+// navButton.addEventListener('touchend', navButtonPressed, false);
+navButton.addEventListener('click', navButtonPressed, false);
 
 // ['mouseup', 'touchend'].forEach(evnt => navButton.addEventListener(evnt, navButtonPressed, false));
 
@@ -17,13 +17,13 @@ function navButtonPressed(event) {
 	//colapse menu 
     navContent.classList.remove('nav__mobile-contents_is-active');
     navButton.classList.remove('nav__mobile-button_is-active')
-    // console.log(event)
+    console.log(event)
     // hide open tabs/expanded drop-down
     deactivateTabs()
   } else { 
     // stop a touch event becoming a mouse event, ie, stop the event sequence at this event
     // event.preventDefault();
-    // console.log(event)
+    console.log(event)
   	//expand menu
     navContent.classList.add('nav__mobile-contents_is-active');
     navButton.classList.add('nav__mobile-button_is-active');
