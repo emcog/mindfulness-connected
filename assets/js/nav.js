@@ -4,8 +4,8 @@
 const navContent = document.querySelector('.nav__mobile-contents');
 const navButton = document.querySelector('#nav__mobile-button');
 
-navButton.addEventListener('touchstart', navButtonPressed);
-navButton.addEventListener('mousedown', navButtonPressed);
+navButton.addEventListener('touchend', navButtonPressed);
+navButton.addEventListener('mouseup', navButtonPressed);
 
 function navButtonPressed() { 
 	if (navContent.classList.contains('nav__mobile-contents_is-active')) {
@@ -26,8 +26,8 @@ function navButtonPressed() {
 //navTab 
 let navTabs = document.querySelectorAll('.nav__mobile-contents > li');
 
-navTabs.forEach(navTab => navTab.addEventListener('touchstart', navTabPressed));
-navTabs.forEach(navTab => navTab.addEventListener('mousedown', navTabPressed));
+navTabs.forEach(navTab => navTab.addEventListener('touchend', navTabPressed));
+navTabs.forEach(navTab => navTab.addEventListener('mouseup', navTabPressed));
 
 
 function deactivateTabs() {
