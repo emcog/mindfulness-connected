@@ -4,22 +4,57 @@
 const navContent = document.querySelector('.nav__mobile-contents');
 const navButton = document.querySelector('#nav__mobile-button');
 
-navButton.addEventListener('touchend', navButtonPressed);
-navButton.addEventListener('mouseup', navButtonPressed);
+navButton.addEventListener('touchend', navButtonTouched, false);
+navButton.addEventListener('mouseup', navButtonClicked, false);
 
-function navButtonPressed() { 
+function navButtonClicked(event) { 
 	if (navContent.classList.contains('nav__mobile-contents_is-active')) {
 	//colapse menu 
     navContent.classList.remove('nav__mobile-contents_is-active');
     navButton.classList.remove('nav__mobile-button_is-active')
+    // console.log(event)
     // hide open tabs/expanded drop-down
     deactivateTabs()
+    // stop a touch event becoming a mouse event, ie, stop the event sequence at this event
+    // event.preventDefault();
   } else { 
+    console.log(event)
   	//expand menu
     navContent.classList.add('nav__mobile-contents_is-active');
-    navButton.classList.add('nav__mobile-button_is-active')
+    navButton.classList.add('nav__mobile-button_is-active');
+    // stop a touch event becoming a mouse event, ie, stop the event sequence at this event
+    // event.preventDefault();
   }
 }
+
+
+/* this WET is implemented because I couldn't get event.preventDefault to suppress the generation of further mouse click events. 
+the only fix I could find was to call a separate function for mouse events and touch events */
+
+function navButtonTouched(event) { 
+	if (navContent.classList.contains('nav__mobile-contents_is-active')) {
+	//colapse menu 
+    navContent.classList.remove('nav__mobile-contents_is-active');
+    navButton.classList.remove('nav__mobile-button_is-active')
+    // console.log(event)
+    // hide open tabs/expanded drop-down
+    deactivateTabs()
+    // stop a touch event becoming a mouse event, ie, stop the event sequence at this event
+    // event.preventDefault();
+  } else { 
+    console.log(event)
+  	//expand menu
+    navContent.classList.add('nav__mobile-contents_is-active');
+    navButton.classList.add('nav__mobile-button_is-active');
+    // stop a touch event becoming a mouse event, ie, stop the event sequence at this event
+    // event.preventDefault();
+  }
+}
+
+
+
+
+
 
 
 
