@@ -33,13 +33,21 @@
 	// slideshow/shop page
 	#slideshow-gallery {
 		@include media('≥1134px') { grid-column: 4/-5; }
-		@include media('<1134px', '≥tablet') { grid-column: 3/-5; }
-		// @include media('<1100px', '≥tablet') { grid-column: 4/-3; }
+		@include media('<1134px', '≥1024px') { grid-column: 3/-5; }
+		@include media('<1024px', '≥tablet') { grid-column: 3/-3; }
+		@include media('<tablet', '≥phone-plus') { grid-column: 2/-3; }
+		@include media('<phone-plus') { 
+			grid-column: 1/-1;
+			margin: 0 8px; 
+		}
 	}
 
 	#paypal-basket {
-		@include media('≥1100px') { grid-column: -5/-2; }
-		@include media('<1100px', '≥tablet') { grid-column: 4/-3; }
+		@include media('≥1134px') { grid-column: -5/-2; }
+		@include media('<1134px', '≥1024px') { grid-column: -5/-2; }
+		@include media('<1024px', '≥tablet') { grid-column: -11/-2; }
+		@include media('<tablet', '≥phone-plus') { grid-column: 2/-3; }
+		@include media('<phone-plus') { grid-column: 1/-1; }
 	}
 
 

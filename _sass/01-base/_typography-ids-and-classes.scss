@@ -2,15 +2,11 @@ article.is-longform {
 
   font-family: $serif-stack;
 
-  & p { line-height: 1.325; }
+  & p { line-height: 1.4; }
+  p:nth-of-type(1) { @extend %body-copy__long_1st-p; }
+  p { @extend %body-copy__long; }
 
-  p:nth-of-type(1) {
-    @extend %body-copy__long_1st-p;
-  }
-  
-  p {
-    @extend %body-copy__long;
-  }
+  & h2 { margin: 4px 0 12px 0; }
 }
 
 

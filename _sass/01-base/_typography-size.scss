@@ -48,10 +48,15 @@
   
   @include media ('≥tablet') {
     // margin: 30px 0 0 0; todo changed for product page
-    margin: 0px 0 30px 0px;
+    // margin: 0px 0 30px 0px;
     font-size: 24pt;
   }
+
+  @include media ('<tablet', '≥phone-plus') { font-size: 20pt; }
+  @include media ('<phone-plus') { font-size: 14pt; }
 }
+
+
 
 %sub-section_title {
   font-family: $sans-stack;
@@ -60,8 +65,14 @@
   
   @include media ('≥tablet') {
     // margin: 30px 0 0 0; todo changed for product page
-    margin: 0px 0 30px 0px;
+    // margin: 0px 0 30px 0px;
     font-size: 20pt;
+  }
+
+  @include media ('<tablet') {
+    // margin: 30px 0 0 0; todo changed for product page
+    // margin: 0px 0 30px 0px;
+    font-size: 16pt;
   }
 }
 
@@ -207,6 +218,7 @@
 @mixin font-size-4 {
   font-size: 13pt;
   line-height: 1.15;
+  // @include media('<tablet', '≥phone-plus') { font-size:  }
 }
 
 

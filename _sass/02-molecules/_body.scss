@@ -10,8 +10,8 @@ body {
     text-rendering: optimizeLegibility;
 
     p {
-    	font-size: 20px;
-		line-height: 30px;
+  //   	font-size: 20px;
+		// line-height: 30px;
     }
 
 	section {
@@ -38,10 +38,10 @@ body {
 
 // Media Queries
 
-@include media-upto-768 {
+// @include media-upto-768 {
 
-	body p {
-		font-size: 16px;
-		line-height: 22px;
-	}
-}
+// 	body p {
+// 		font-size: 16px;
+// 		line-height: 22px;
+// 	}
+// }

@@ -3,20 +3,27 @@
 	box-shadow: 0 5px rgba(0,0,0,0.1);
 }
 
+
 #paypal-basket {
 	grid-column: -5/-2;
 	align-self: center;
 	padding: 0 0 0 20px;
 }
 
+
+
 .paypal-title {
 	padding-bottom: 08px;
 	@extend %body-copy__long_1st-p;
 }
 
+
+
 .paypal-dropdown {
-	@extend %font-size-4;
+	@extend %font-size-3;
 }
+
+
 
 .paypal__button {
 	// float: right;
@@ -24,25 +31,39 @@
 	min-width: 145px;
 }
 
+
+
 .shipping-details {
 	margin-top: 32px;
 }
 
+
+
 .shipping-details__text-title {
 	margin-top: 6px;
 	font-family: $serif-stack;
-	@extend %font-size-4;
+	@extend %font-size-3;
+
+	& li {
+		@extend %font-size-3;
+	}
 }
+
+
 
 .shipping-details__text {
 	font-family: $serif-stack;
-	@extend %font-size-4;
+	@extend %font-size-3;
 }
 
-// adobe publish online
-.banding-default {
+
+
+// adobe publish online /////////////////////////
+.branding-default {
 	display: hidden;
 }
+
+
 
 div.embed-branding-overlay{ 
 	& a#embed-branding-link {
@@ -55,6 +76,8 @@ div.embed-branding-overlay{
 		}
 	}
 }
+
+
 
 #embed-branding-link .branding-default, #embed-branding-link:hover .branding-on-hover {
 	display: hidden !important;

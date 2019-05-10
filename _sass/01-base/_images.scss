@@ -2,9 +2,13 @@
 	grid-column: 4/-4;
 }
 
+
+
 .centred-image_w-title {
 
 }
+
+
 
 .double-image-block {
 	grid-column: 2/-2;
@@ -12,30 +16,50 @@
 	justify-content: center;
 }
 
+
+
 .banner {
 	grid-column: 1/-1;
 }
+
+
 
 .banners {
 	
 }
 
+
+
 .in-body__icon {
 	float: left;
 	margin: 0px 0px 0 0;
 	max-width: 80px;
+	height: 100%;
 }
 
-.in-body__icon-text {
+
+p.in-body__icon-text {
 	margin: auto 0 auto 16px;
 	padding-bottom: 13px;
+	font-family: futura-pt, sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	// font-size: 200px;
+    @extend %sub-section_title;
+	// @extend %sub-section_title;
 }
+
+
 
 .in-body__image {
 	float: left;
 	margin: 10px 16px 0px 0;
 	max-width: 201px;
+
+	@include media('<phone-plus') { max-width: 130px; }
 }
+
+
 
 .in-body__icon-wrapper {
 	display: flex;
