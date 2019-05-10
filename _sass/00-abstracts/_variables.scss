@@ -50,7 +50,8 @@ $breakpoints: (
   'phone': 320px,
   'phone-plus': 414px,
   'tablet': 768px,
-  'desktop': 1024px
+  'desktop': 1024px,
+  'useful': 1134px,
 ) !default;
 
 
@@ -179,8 +180,8 @@ $max-width: 1180px !default;
 
 // Used in layouts
 $negative-margin: 20.5%;
-$g-in-depth__margin_is-flush: 152px;
-$g-in-depth__margin_is-proud: 143px;
+$page__g-12__margin_is-flush: 152px;
+$page__g-12__margin_is-proud: 143px;
 
 // navbar
 $navbar__dropdown-bg: 63px;

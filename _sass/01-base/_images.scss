@@ -41,3 +41,43 @@
 	display: flex;
 	align-content: center;
 }
+
+
+// content must be nested inside the element on which the aspect ratio is called
+
+// aspect-ratios
+%is-ratio_1to1
+.is-ratio_1to1 {
+	@include aspect-ratio(1, 1);
+}
+
+
+
+.image-medium {
+
+	@include media('≥500px') {
+	width:  $medium-image-size;
+	height: $medium-image-size;
+	}
+
+	@include media('<500px') {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+
+
+.image-bg {
+	position: relative;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.image-pos_is-1third-x { object-position: 33%; }
+.image-pos_is-2third-x { object-position: 66%; }
+
+// .image-pos_is-1third_y
+// .image-pos_is-2third_y

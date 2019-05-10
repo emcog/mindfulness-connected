@@ -1,0 +1,107 @@
+.page__g-12 {
+	@extend %g-12;
+
+
+	@include media('≥1134px') {
+		.banner__feed-item, .banner__article { grid-column: 4/-4; }
+		.banner__header-title { grid-column: 4/-1; }
+	}
+
+
+	@include media('<1134px', '≥tablet') {
+		.banner__feed-item, .banner__article { grid-column: 3/-3; }
+		.banner__header-title { grid-column: 3/-1; }
+	}
+
+
+	@include media ('<tablet', '≥500px') {
+		.banner__feed-item, .banner__article { grid-column: 2/-2; } 
+		.banner__header-title { grid-column: 2/-1; }
+	}
+
+
+	@include media ('<500px') {
+		.banner__feed-item, .banner__article { 
+			grid-column: 1/-1; 
+		} 
+		.banner__header-title { 
+			grid-column: 1/-1; 
+			margin-left: 8px;
+		}
+	}
+	
+	// slideshow/shop page
+	#slideshow-gallery {
+		@include media('≥1134px') { grid-column: 4/-5; }
+		@include media('<1134px', '≥tablet') { grid-column: 3/-5; }
+		// @include media('<1100px', '≥tablet') { grid-column: 4/-3; }
+	}
+
+	#paypal-basket {
+		@include media('≥1100px') { grid-column: -5/-2; }
+		@include media('<1100px', '≥tablet') { grid-column: 4/-3; }
+	}
+
+
+	
+
+	@include media('<1000px', '≥tablet') { 
+		
+		#mc-embedded-subscribe-form
+			{ grid-column: 3/10; } 
+		
+		& > p { 
+			grid-column: 3/10;
+			margin: 70px 0 0 50px; 
+		}
+	}
+
+
+	@include media('≥1000px') {
+
+		& .section__sub-head,
+		  #mc-embedded-subscribe-form
+		  {
+			grid-column: 3/10;
+			// width: 80%;
+		}
+
+		& > p {
+			grid-column: 3/5;
+			margin: 70px 0 0 96px;
+		}
+
+		.is-flush { margin-left: 0; }
+		
+		.is-proud { 
+			float: left;
+			margin: 3px 0 0 -$negative-margin;
+
+			@include media('<tablet') { margin: 3px 0 0 0; }
+		 }
+
+		
+		.is-full-width, 
+		%is-full-width { 
+			margin-left: -$page__g-12__margin_is-proud;
+			width: calc(100% + #{$negative-margin});
+
+			img {
+				width:100%;
+			}
+
+			figcaption {
+				@include in-depth_left();
+				@include font-size-4();
+			}
+		}
+	}
+
+}
+ 
+share-blocks { grid-column: 2/-2; }
+
+
+
+.full-height,
+.wrapper-signup { grid-column: 1/-1; }

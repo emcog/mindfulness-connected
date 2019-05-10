@@ -27,16 +27,19 @@
   }
 }
 
+
+
 %headline_sml,
 .headline_sml {
   font-family: $sans-stack;
   line-height: 1;
   font-weight: 600;
   
-  @include media ('≥tablet') {
-    font-size: 18pt;
-  }
+  @include media ('≥tablet', '≥500px') { font-size: 18pt;  }
+  @include media ('<500px') {  font-size: 13pt; }
 }
+
+
 
 %section_title {
   font-family: $sans-stack;

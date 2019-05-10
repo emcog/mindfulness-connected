@@ -1,10 +1,33 @@
+.banner__feed-item {
+		grid-column: 4/-4;
+		justify-self: start;
+		margin-top: 10px;
+		max-width: 800px
+}
+
+
+
 .feed__item_is-horizontal {
 	display: grid;
-	grid-template-columns: $medium-image-size 1fr;
-	grid-template-rows: $medium-image-size;
-	grid-gap: 12px;
 	border-top: 2px solid black;
-	padding-top: 12px;
+	
+
+	@include media('≥500px') {
+		grid-template-columns: $medium-image-size 1fr;
+		grid-template-rows: $medium-image-size;
+		grid-gap: 12px;
+		padding-top: 12px;
+	}
+
+
+	@include media('<500px') {
+		grid-template-columns: 90px 1fr;
+		grid-template-rows: 90px;
+		grid-gap: 08px;
+		margin: 0 8px 0 14px;
+		padding-top: 08px;
+	}
+
 
 	& > .feed-item__image{
 		grid-column: 1/2;

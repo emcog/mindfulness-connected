@@ -39,7 +39,13 @@
 	<nav id="nav-primary" aria-labelledby="primary-navigation">
 		<div class="nav__top-level" >
 			
-			<a class ="nav_is-left" href = "/" class = ""><img class="nav__logo" src = "/assets/images/logo/mindfulness-connected-logo_w.svg"></a>
+			<a class ="nav_is-left" href = "/" class = "">
+				<picture>
+					<source srcset="/assets/images/logo/emcog_w.svg" media="(max-width: 899px)"/>
+					<source srcset="/assets/images/logo/mindfulness-connected-logo_w.svg" media="(min-width: 900px)"/>
+					<img class="nav__logo" src = "/assets/images/logo/mindfulness-connected-logo_w.svg"/>
+				<picture>
+			</a>
 			
 			<!-- desktop -->
 			<ul class="nav_is-right">
@@ -145,8 +151,8 @@
 		</ul>
 	</nav>
 </header>
-<div class="g-in-depth">
-	<div class="banner__image g-in-depth" style='background-image: url("assets/images/banner/IMG_4164.jpg");'>
+<div class="page__g-12">
+	<div class="banner__image page__g-12" style='background-image: url("assets/images/banner/IMG_4164.jpg");'>
 	<h1 class="banner__header-title is-highlighted is-uppercase headline">Mindfulness Connected. The best.</h1>
 </div>
 	<article class="banner__article is-longform">
@@ -156,7 +162,7 @@
 
 	</article>
 	
-<a class="feed__item_wrapper" href="/news/new-site">
+<a class="banner__feed-item" href="/news/new-site">
 	<article class="feed__item_is-horizontal">
 			<img class="image-medium image-bg is-square feed-item__image" src="">
 		<h2 class="feed-item__title headline_sml is-uppercase">What the</h2>
@@ -164,7 +170,7 @@
 	</article>
 </a>
 
-<a class="feed__item_wrapper" href="/news/new-site">
+<a class="banner__feed-item" href="/news/new-site">
 	<article class="feed__item_is-horizontal">
 			<img class="image-medium image-bg is-square feed-item__image" src="/assets/images/banner/IMG_4748-square.jpg">
 		<h2 class="feed-item__title headline_sml is-uppercase">This is our new site</h2>

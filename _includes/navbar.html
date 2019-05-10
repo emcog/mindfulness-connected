@@ -2,7 +2,13 @@
 	<nav id="nav-primary" aria-labelledby="primary-navigation">
 		<div class="nav__top-level" >
 			{% for logo in site.data.navigation.navbar-logo %}
-			<a class ="nav_is-left" href = "{{ logo.url }}" class = ""><img class="nav__logo" src = "{{ logo.source }}"></a>
+			<a class ="nav_is-left" href = "{{ logo.url }}" class = "">
+				<picture>
+					<source srcset="/assets/images/logo/emcog_w.svg" media="(max-width: 899px)"/>
+					<source srcset="/assets/images/logo/mindfulness-connected-logo_w.svg" media="(min-width: 900px)"/>
+					<img class="nav__logo" src = "{{ logo.source }}"/>
+				<picture>
+			</a>
 			{% endfor %}
 			<!-- desktop -->
 			<ul class="nav_is-right">

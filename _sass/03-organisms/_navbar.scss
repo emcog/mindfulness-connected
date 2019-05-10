@@ -21,18 +21,24 @@
 a.nav_is-left {
 	grid-column: 1/4;
 	align-self: end;
-	margin: auto 0;
-	@include media('<1134px') { padding: 4px 0px 0 16px; }
-	@include media('≥1134px') { padding: 0 0 0 45px; }
+	margin: auto -6px auto 0;
 	background: #00B398;
+	@include media('≥1134px') { padding: 0 0 0 45px; }
+	@include media('<1134px') { 
+		padding: 4px 0px 0 16px; 
+		grid-column: 1/3; 
+	}
 }
 
 
 
 .nav__logo {
-	width: 110px;
+	
 	margin: auto 0;
 	padding: 8px 0;
+
+	@include media('≥900px') { width: 110px; }
+	@include media('<900px') { width: 30px; }
 }
 
 
