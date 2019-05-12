@@ -1,0 +1,10 @@
+%button-cta,
+.button-cta {
+	padding: 4px 18px 6px 18px !important;
+	font-family: $sans-stack !important;
+  	border: solid 2px $brand-primary__dark !important;
+  	padding: 8px 18px !important;
+  	color: $brand-primary__dark !important;
+  	background: white !important; //todo
+  	transition: all 0.125s !important;
+}

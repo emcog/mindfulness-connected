@@ -8,14 +8,19 @@ navbar:
     url: /shop/social-mindfulness
   - page: 'Contact us'
     url: /contact-us
-  - page: 'About MBOE & us'
-    url: /about
+  - page: 'About &ensp; &#9662;'
+    # url: About
+    class: 'link_is-disabled'
+    navbar-l2:
+      - page: 'MBOE'
+        url: /about/history-of-modern-mindfulness
+      - page: 'Team'
+        url: /about/team
   - page: 'Champions'
     url: /mindfulness-champion
   - page: 'Programmes &ensp; &#9662;'
     # url: /
     class: 'link_is-disabled'
-    onclick: 'navTabPressed()'
     navbar-l2:
      - page: 'Organisations'
        url: /programmes/organisations

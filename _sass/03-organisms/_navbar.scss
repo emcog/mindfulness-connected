@@ -44,6 +44,7 @@ a.nav_is-left {
 
 
 ul.nav_is-right {
+	@include media('<1134px') { display: none; }
 	grid-column: 4/-1;
 	margin: auto 65px auto auto;
 
@@ -52,13 +53,18 @@ ul.nav_is-right {
 		float: right;
 		border-right: solid 1px $grey__light-tint;
 		padding: 2px 14px;
+		position: relative;
 	}
 
 	> li:last-child { border-left: solid 1px $grey__light-tint; }
 
-
-	@include media('<1134px') { display: none; }
+	& ul { 
+		position: absolute;
+		top: 32px;
+		}
 }
+
+// // //
 
 #nav__mobile-button,
 .nav__mobile-contents {
@@ -124,16 +130,15 @@ button#nav__mobile-button {
 
 
 ul.nav__second-level {
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
+	visibility: hidden;
 	display: none;
 	opacity: 0;
 	left: 0;
 	background: white; //todo
-	margin: 12px 0 0 0;
-	padding: 0;
-	@include media('<1134px') {
-		float: right;
-	}
+	padding: 12px 0 0 0;
+	box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
+	@include media('<1134px') { float: right; }
 
 	& > li {
 
@@ -148,13 +153,17 @@ ul.nav__second-level {
 }
 
 
+// allow animation effect on desktop
+.nav_is-right ul.nav__second-level { display: block; }
 
-.nav_is-right li:hover > ul
+
+
+.nav_is-right li:hover > ul,
+.nav_is-right li ul:hover
  {
 	visibility: visible;
 	opacity: 1;
 	display: block;
-	// background: #00B398;
 	
 	& > a {
 		color: white;
@@ -164,6 +173,8 @@ ul.nav__second-level {
 
 
 ul.nav__mobile-contents  {
+
+	& .nav__second-level { padding: 0 0 0 0; }
 
 	& > li.menu__tab_is-active { background-color: $grey__x-light-tint;
 

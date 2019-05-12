@@ -3,9 +3,9 @@
 	@extend %font-size-3;
 }
 
-.nav__link:hover {
-	background: $grey__x-light-tint;
-}
+// .nav__link:hover {
+// 	background: $grey__x-light-tint;
+// }
 
 
 
@@ -17,6 +17,7 @@ nav ul li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	transition: all 0.3s ease;
 }
 
 nav ul li:hover {

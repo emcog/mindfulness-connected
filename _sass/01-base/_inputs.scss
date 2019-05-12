@@ -16,14 +16,18 @@
  input[type=submit], 
  input[type=reset],
  button {
-	background: $brand-primary__green;
-	border: none;
-	@extend %drop-shadow;
+  border-radius: 0px !important;
+	// background: $brand-primary__green;
+	// border: none;
+	// // @extend %drop-shadow;
 	@extend %font-size-4;
-	font-family: $sans-stack;
-	color: white //todo
+	// font-family: $sans-stack;
+	// color: white //todo
  }
 
+
+
+#mc_embed_signup input { border-radius: 0px !important; }
 
 
  button:active {
@@ -40,3 +44,89 @@ textarea {
 	font-family: Arial, sans-serif;
 	@extend %font-size-6;
 }
+
+
+/* custom checkbox
+https://hackernoon.com/hacking-custom-checkboxes-and-radios-5d48230440d */
+
+// hide the default checkbox (with custom class)
+input[type='checkbox'].check-custom {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+
+// style the basic appearance
+input[type='checkbox'].check-custom ~ .check-toggle {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 2px solid #969696;
+  margin: 0px 8px 3px 5px;
+  height: 1.25rem;
+  width: 1.25rem;
+ 
+
+  > span { 	
+  	@extend %font-size-4;
+  	margin: 0 0 0 0;
+    padding: 0 0 0 26px;
+    width: 100%; 
+   }
+}
+
+
+/* Styles for the hover state of the custom checkbox */
+input[type='checkbox'].check-custom:hover ~ .check-toggle {
+  border-color: #4a4a4a;
+}
+
+/* Styles for the focus state of the custom checkbox */
+input[type='checkbox'].check-custom:focus ~ .check-toggle {
+  border-color: #b0d5ff;
+  box-shadow: 0 0 0 2px rgba(23, 133, 255, 0.25);
+}
+
+/* Styles for the checked state of the custom checkbox */
+input[type='checkbox'].check-custom:checked ~ .check-toggle {
+  border-color: $brand-primary__green;
+  background: $brand-primary__green url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=) center no-repeat;
+  background-size: 75%;
+}
+
+
+// checkbox button
+label.check-button {
+  margin: 0 0 9px 0 !important;
+	padding: 9px 8px 7px 8px !important;
+	cursor: pointer;
+}
+
+
+.check-button:hover { 
+  background: $grey__light-tint;
+  }
+
+// mailchimp
+fieldset.mc_fieldset {
+  width: 50%  !important;
+}
+
+label { @extend %font-size-4; }
+
+
+input#mc-embedded-subscribe {
+  float: right !important;
+  @extend %font-size-4;
+  @extend %button-cta;
+  margin: 0 0 0 0;
+  min-width: 200px;
+}
+
+div.mc-field-group { width: 100%; }

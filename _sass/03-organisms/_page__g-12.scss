@@ -68,11 +68,7 @@
 	@include media('≥1000px') {
 
 		& .section__sub-head,
-		  #mc-embedded-subscribe-form
-		  {
-			grid-column: 3/10;
-			// width: 80%;
-		}
+		  #mc-embedded-subscribe-form { grid-column: 4/-4; }
 
 		& > p {
 			grid-column: 3/5;

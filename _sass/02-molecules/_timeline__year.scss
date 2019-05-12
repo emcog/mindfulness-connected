@@ -1,9 +1,16 @@
 article.g-timeline__year {
-	grid-column: 4/12;
+	grid-column: 1/-1;
 	display: grid;
 	z-index: 2;
+
 	grid-template-columns: calc(#{$grid-gap} + 145px) 1fr;
-	grid-template-rows: 95px auto 1fr;
+	
+	@include media('<tablet') { 
+		grid-template-columns: calc(#{$grid-gap} + 90px) 1fr; 
+		grid-template-rows: auto auto auto auto;
+	}
+	
+	grid-template-rows: auto auto auto;
 	grid-gap: $grid-gap;
 	margin: 27px 0 0 0;
 	background: white; //todo
@@ -30,6 +37,12 @@ article.g-timeline__year {
 		grid-row: 1/-1;	 
 		width: 145px;
 		margin: $grid-gap 0 0 $grid-gap;
+		border:solid 1px $grey__medium-tint;
+		
+		@include media('<tablet') { 
+			grid-row: 1/3; 
+			width: 90px; 
+		}
 	}
 
 
@@ -48,6 +61,14 @@ article.g-timeline__year {
 		padding: 0 $grid-gap $grid-gap 35px;
 		@extend %body-copy__long;
 
+		@include media ('<tablet') {
+			grid-column: 1/-1;
+			padding: $grid-gap $grid-gap $grid-gap 35px;
+		}
+
+		@include media ('<tablet') { grid-row: 4/-1; }
+		@include media ('<tablet', '≥phone-plus') { grid-row: 4/-1; }
+
 		& li {
 			padding-left: 5px;
 			margin-bottom: 6px;
@@ -56,17 +77,19 @@ article.g-timeline__year {
 }
 
 
-.timeline__header_bg {
 
+.timeline__header_bg {
 	grid-column: 1/-1;
 	grid-row: 1/2;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	// display: grid;
+	// grid-template-columns: repeat(12, 1fr);
 	z-index: 1;
 	background-color: $brand-primary__green;
 	min-width: 100px;
 	min-height: 100%;
 }
+
+
 
 .timeline__header_txt {
 	z-index: 1;
@@ -77,22 +100,40 @@ article.g-timeline__year {
 
 	& > h3 {
 		margin: 14px 0 0 0;
-		font-size: 24pt;
+		font-weight: 600;
+		@extend %section_title;
 	}
 
 	& > span {
 		font-family: $sans-stack;
-		font-size: 20pt;
-		line-height: 0;
+		@extend %sub-section_title;
+		display: inline-block;
+		line-height: 1.1;
 	}
 }
+
+
+
+h4.timeline__sub-title {
+	font-family: $serif-stack;
+	@extend %body-copy__long_1st-p;
+	@include media('<tablet') { 
+		margin: 0 $grid-gap;
+		grid-column: 1/-1;
+		grid-row: 3;
+	}
+}
+
+
 
 span.timeline-summary {
 	@extend %body-copy__long;
 }
 
+
+
 article.g-timeline__year.timeline__lh {
-	grid-column: 4/10;
+	grid-column: 1/11;
 
 	// &:before{
 	// 	grid-column: 1/-9;
@@ -105,6 +146,8 @@ article.g-timeline__year.timeline__lh {
 	// }
 }
 
+
+
 article.g-timeline__year.timeline__rh {
-	grid-column: 6/12
+	grid-column: 3/-1;
 }

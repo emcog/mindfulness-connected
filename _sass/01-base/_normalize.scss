@@ -34,12 +34,19 @@ time, mark, audio, video {
 }
 
 button {
-	-webkit-appearance: none;
-  	-moz-appearance:    none;
-   	appearance:         none;   
-   	-webkit-border-radius: 0;
-   	-moz-border-radius: 0;   
-   	border-radius: 0;
+	font-family: $sans-stack;
+  border: solid 2px $brand-primary__dark;
+  padding: 4px 18px;
+  color: $brand-primary__dark;
+  background: white; //todo
+  transition: all 0.125s;
+}
+
+
+button:active {
+  border: solid 2px $brand-primary__green;
+  color: white; //todo
+  background: $brand-primary__green;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }

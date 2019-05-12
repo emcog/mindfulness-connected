@@ -1,0 +1,13 @@
+{% for member in site.team %}
+<div class="feed__team-member-wrapper">
+<!-- <a class="banner__feed-item" href="{{post.permalink}}"> -->
+<article class="feed__item_is-horizontal">
+	<img class="image-medium image-bg is-square feed-item__image" src="{{ 	member.square-preview-image }}">
+	<h2 class="feed-item__title headline_sml is-uppercase">{{ member.name }}</h2>
+	<p>{{ member.description }}</p>
+	{{ member.content}}
+	<!-- {{ member.content | truncate: 120 }} -->
+</article>
+</div>
+<!-- </a> -->
+{% endfor %}

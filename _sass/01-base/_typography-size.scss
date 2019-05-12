@@ -4,14 +4,19 @@
   font-size: 18pt;
   line-height: 1.4;
  }
+  @include media ('<tablet', '≥phone-plus') { font-size: 16pt; }
+  @include media ('<phone-plus') { font-size: 13pt; }
 }
 
 
-%body-copy__long {
+%body-copy__long,
+.body-copy__long {
     @include media ('≥tablet') {
     font-size: 17pt;
     line-height: 1.4;
   }
+    @include media ('<tablet', '≥phone-plus') { font-size: 15pt; }
+    @include media ('<phone-plus') { font-size: 12pt; }
 }
 
 
@@ -167,8 +172,8 @@
 // secondary nav links, folio-title
 .font-size-4, 
 %font-size-4 {
-  font-size: 14pt;
-  line-height: 1.15;
+  font-size: 14pt !important;
+  line-height: 1.15 !important;
 }
 
 
