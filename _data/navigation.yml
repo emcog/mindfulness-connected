@@ -4,38 +4,37 @@ navbar-logo:
     url: /
 
 navbar:
-  - page: 'Booklet'
-    url: /shop/social-mindfulness
   - page: 'Contact us'
     url: /contact-us
   - page: 'About &ensp; &#9662;'
-    # url: About
     class: 'link_is-disabled'
     navbar-l2:
       - page: 'MBOE'
         url: /about/history-of-modern-mindfulness
-      - page: 'Team'
-        url: /about/team
-  - page: 'Champions'
-    url: /mindfulness-champion
-  - page: 'Programmes &ensp; &#9662;'
-    # url: /
-    class: 'link_is-disabled'
-    navbar-l2:
-     - page: 'Organisations'
-       url: /programmes/organisations
-     - page: 'Communities'
-       url: /programmes/communities
+      - page: 'People'
+        url: /about/people
   - page: 'Practioners &ensp; &#9662;'
-    # url: /
     class: 'link_is-disabled'
     navbar-l2:
       - page: 'Pathway'
         url: practioners/pathway
       - page: 'Register'
         url: programmes/register
-      - page: 'Registered'
-        url: /programmes/registered
+      - page: 'Directory'
+        url: /programmes/directory
+  - page: 'Organisations &ensp; &#9662;'
+    class: 'link_is-disabled'
+    navbar-l2:
+     - page: 'Champions'
+       url: /organisations/champions
+     - page: 'Evidence'
+       url: /organisation/evidence
+  - page: 'Programmes'
+    url: /programmes
+  - page: 'Booklet'
+    url: /shop/social-mindfulness
+  - page: 'News'
+    url: /
 
   # - page: 'Mindfulness Champion'
     # url: /mindfulness-champion

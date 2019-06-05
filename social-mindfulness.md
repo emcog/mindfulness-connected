@@ -13,6 +13,11 @@ banner-image: /assets/images/banner/social-mindfulness__banner.jpg
 %}
 
 ---
+> _“I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain._
+
+> _“It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?”_
+
+> Nick Pole, Director, London Mindful Practitioners.
 
 
 ## Are idealistic values naive and impractical? 
@@ -31,5 +36,3 @@ the problem.
 	src="/assets/images/social-mindfulness/mark-leonard.jpg"
 	alt="Mark"
 %} Mark Leonard has searched for a means to make meditation accessible to a mass audience since the early 2000s. He played a key role in establishing the Oxford Mindfulness Centre, opened in 2008, and then adapted Mindfulness-Based Cognitive Therapy for the workplace. The result of a series of innovations, Mindfulness-Based Organisational Education represents a new approach to fostering social leadership and systemic change.
-
-<!-- {% include adobe__published-online.html %} -->

@@ -5,7 +5,11 @@ banner-image: /assets/images/banner/IMG_4748.jpg
 title: Mindfulness Champion
 
 ---
+Mindfulness champions are natural leaders in a organisation. We work with mindfulness champions to understand how we can make mindfulness accessible and meaningful to their colleagues.
 
-A mindfulness champion is someone who helps bring mindfulness in to their organisation.
+To sustain the impact of our work, we offer training to mindfulness champions to lead short guided mindfulness practices for teams, groups and in meetings. They may also wish to go on to train to provide Mindfulness-Based Organisational Education for colleagues.
 
-We're building some resources to help you do this, for now try joining a facebook group we moderate.
+We also moderate the Mindfulness Champions [Facebook group][1], where people who wish to bring mindfulness to their organisation or community can share resources and experiences with others.
+
+
+[1]: https://www.facebook.com/groups/1792658324380983/
