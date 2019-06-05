@@ -15,9 +15,9 @@ Little will change if mindfulness is merely applied as a means of coping with st
 
 https://youtu.be/iFhQl-iAdic?t=22
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=v=iFhQl-iAdic
+<!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=v=iFhQl-iAdic
 " target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 ## The evidence
 Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Fig. 4 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Fig. 3. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. This study has been published in the journal, Mindfulness making our programme 
