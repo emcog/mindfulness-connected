@@ -29,8 +29,8 @@ navbar:
        url: /organisations/champions
      - page: 'Evidence'
        url: /organisation/evidence
-  - page: 'Programmes'
-    url: /programmes
+  - page: 'MBOE'
+    url: /mboe
   - page: 'Booklet'
     url: /shop/social-mindfulness
   - page: 'News'

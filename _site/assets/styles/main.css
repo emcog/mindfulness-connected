@@ -2375,7 +2375,8 @@ q {
   font-family: classica-pro, serif; }
 
 h2 {
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.2 !important; }
 
 label {
   font-family: classica-pro, serif; }
