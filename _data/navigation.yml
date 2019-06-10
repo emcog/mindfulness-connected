@@ -14,12 +14,12 @@ navbar:
       - page: 'People'
         url: /about/people
   - page: 'Practioners pathway'
-    url: /practioners
+    url: /practitioners 
   #- page: 'Practioners &ensp; &#9662;'
   #  class: 'link_is-disabled'
   #  navbar-l2:
   #    - page: 'Pathway'
-  #      url: practioners/pathway
+  #      url: practitioners/pathway
   #    - page: 'Register'
   #      url: programmes/register
   #    - page: 'Directory'

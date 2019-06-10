@@ -11,7 +11,9 @@
 //00-dependencies
 @import "00-dependencies/animate",
 		"00-dependencies/include-media",
-		"00-dependencies/include-media-export";
+		"00-dependencies/include-media-export",
+		"00-dependencies/responsive-media";
+
 
 //01-base
 @import "01-base/image-sizes",
@@ -55,6 +57,7 @@
 		"03-organisms/home-feature",
 		"03-organisms/navbar",
 		"03-organisms/feed-item",
+		"03-organisms/embedded-image",
 		"03-organisms/home-content-block";
 
 //04-templates

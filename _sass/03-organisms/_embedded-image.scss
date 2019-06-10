@@ -1,0 +1,10 @@
+.embedded-image {
+	margin: 40px 0;
+	& h2 { 
+		// display: inline;
+		// font-family: $sans-stack;
+		margin: 0 0 40px 0;
+		text-align: center;
+		// @extend %font-size-3;
+	 }
+}

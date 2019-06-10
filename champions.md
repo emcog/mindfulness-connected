@@ -1,5 +1,5 @@
 ---
-permalink: /mindfulness-champion
+permalink: /champion
 layout: banner-page
 banner-image: /assets/images/banner/IMG_4748.jpg
 title: Mindfulness Champion
