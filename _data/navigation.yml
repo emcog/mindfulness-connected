@@ -9,29 +9,33 @@ navbar:
   - page: 'About &ensp; &#9662;'
     class: 'link_is-disabled'
     navbar-l2:
-      - page: 'MBOE'
+      - page: 'Evolution'
         url: /about/history-of-modern-mindfulness
       - page: 'People'
         url: /about/people
-  - page: 'Practioners &ensp; &#9662;'
-    class: 'link_is-disabled'
-    navbar-l2:
-      - page: 'Pathway'
-        url: practioners/pathway
-      - page: 'Register'
-        url: programmes/register
-      - page: 'Directory'
-        url: /programmes/directory
-  - page: 'Organisations &ensp; &#9662;'
-    class: 'link_is-disabled'
-    navbar-l2:
-     - page: 'Champions'
-       url: /organisations/champions
-     - page: 'Evidence'
-       url: /organisation/evidence
+  - page: 'Practioners pathway'
+    url: /practioners
+  #- page: 'Practioners &ensp; &#9662;'
+  #  class: 'link_is-disabled'
+  #  navbar-l2:
+  #    - page: 'Pathway'
+  #      url: practioners/pathway
+  #    - page: 'Register'
+  #      url: programmes/register
+  #    - page: 'Directory'
+  #      url: /programmes/directory
+  - page: 'Champions'
+    url: /champions
+  #- page: 'Organisations &ensp; &#9662;'
+  #  class: 'link_is-disabled'
+  #  navbar-l2:
+  #   - page: 'Champions'
+  #     url: /organisations/champions
+  #   - page: 'Evidence'
+  #     url: /organisation/evidence
   - page: 'MBOE'
     url: /mboe
-  - page: 'Booklet'
+  - page: 'Book'
     url: /shop/social-mindfulness
   - page: 'News'
     url: /

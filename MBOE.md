@@ -23,13 +23,12 @@ https://youtu.be/iFhQl-iAdic?t=22
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 ## How is it delivered?
-### 6 weeek courses
+### 6 week course
 ### One-day team-building workshops
-### Taster 
 The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. The programme is supported by out booklet[1] One-day team-building workshops can also be provided.
 
 
-
+### What do partici
 * Self-awareness
 * Understanding each other
 * Confidence and trust
@@ -53,3 +52,6 @@ Krusche, A., Jack, C.D., Blunt, C. et al. Mindfulness (2019). https://doi.org/10
 
 >“At the ROH we work very hard anyway, but with regards to this course, I think everybody should do it.”
 Paul Hawker, Senior Scrub Nurse, The Royal Orthopaedic Hospital, Birmingham.
+
+
+<!-- include contact us -->

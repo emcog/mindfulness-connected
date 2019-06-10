@@ -5,6 +5,8 @@ title: Social Mindfulness – the book
 banner-image: /assets/images/banner/social-mindfulness__banner.jpg
 ---
 
+## Social Mindfulness: A guide to meditations from Mindfulness-Based Organisational Education
+
 {% include inbody__icon_parameters.html 
 	class="in-body__icon"
 	src="/assets/images/icons/listen.png"
@@ -12,13 +14,17 @@ banner-image: /assets/images/banner/social-mindfulness__banner.jpg
 	copy="Included with the book is access to unique guided meditations."
 %}
 
+
+{% include quote.html
+	quote="&ldquo;I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain...<br><br>
+	...It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?&rdquo;"
+	
+	footer="Nick Pole, Director, London Mindful Practitioners."
+%}
+
 ---
-> _“I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain._
 
-> _“It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?”_
-
-> Nick Pole, Director, London Mindful Practitioners.
-
+From the back
 
 ## Are idealistic values naive and impractical? 
 
@@ -36,3 +42,44 @@ the problem.
 	src="/assets/images/social-mindfulness/mark-leonard.jpg"
 	alt="Mark"
 %} Mark Leonard has searched for a means to make meditation accessible to a mass audience since the early 2000s. He played a key role in establishing the Oxford Mindfulness Centre, opened in 2008, and then adapted Mindfulness-Based Cognitive Therapy for the workplace. The result of a series of innovations, Mindfulness-Based Organisational Education represents a new approach to fostering social leadership and systemic change.
+
+---
+
+Contents:
+* Acknowledgments
+* Prologue
+* Introduction
+	* The importance of relatedness
+	* Following the programme
+*  Stopping and starting again with the three-step reset
+	* Neurotechnology
+	* The three-step reset practice
+*  Building foundations of mindfulness with the bodyscan
+	* Slowing down
+	* Body-based feelings
+	* The nature of threat
+	* Developing a regular meditation practice
+	* Bodyscan meditation
+*  Building focus and confidence with posture and breath
+	* Motivation
+	* Being specific
+	* Posture and breath meditation
+		* Working with posture
+		* Mindfulness of breathing
+*  Releasing patterns held in the body with stretching and sitting
+	* Embodied imprints and old stories
+	* Stretching and sitting meditation
+*  Understanding our social selves with mindfulness of feelings
+	* Mindless self
+	* Feelings and objects
+	* Group-mind
+	* Mindfulness of feelings meditation
+*  Deepening mindfulness meditation with concentration and allowing the mind to wander
+	* Living in an uncertain world
+	* Concentration and allowing the mind to wander meditation
+*  Epilogue
+	* The path of no return
+	* Enlightenment
+*  Glossary
+
+<!-- include comments -->

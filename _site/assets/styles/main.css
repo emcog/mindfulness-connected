@@ -2382,17 +2382,18 @@ label {
   font-family: classica-pro, serif; }
 
 blockquote {
-  margin: 12px 0 12px 0;
+  margin: 22px 0 28px 0;
   border-style: solid;
-  border-color: #4B596F;
-  border-width: 0 0 0 6px;
-  padding: 6px 12px;
+  border-color: #00B398;
+  border-width: 0 0 0 10px;
+  padding: 22px 22px;
   background-color: rgba(75, 89, 111, 0.1); }
   blockquote p {
     margin: 0;
     padding: 0;
-    font-family: classica-pro, serif;
-    line-height: 1.4; }
+    font-family: classica-pro, serif; }
+  blockquote footer {
+    margin: 22px 0 0 0; }
 
 @media (min-width: 769px) {
   article.is-longform p:nth-of-type(1), .paypal-title, h4.timeline__sub-title {
@@ -2407,17 +2408,17 @@ blockquote {
     font-size: 13pt; } }
 
 @media (min-width: 768px) {
-  article.is-longform p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
+  article.is-longform p, blockquote p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
   .body-copy__long {
     font-size: 17pt;
     line-height: 1.4; } }
 @media (max-width: 767px) and (min-width: 414px) {
-  article.is-longform p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
+  article.is-longform p, blockquote p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
   .body-copy__long {
     font-size: 15pt; } }
 
 @media (max-width: 413px) {
-  article.is-longform p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
+  article.is-longform p, blockquote p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
   .body-copy__long {
     font-size: 12pt; } }
 
@@ -2618,7 +2619,7 @@ button,
 input[type='checkbox'].check-custom ~ .check-toggle > span,
 label,
 input#mc-embedded-subscribe,
-blockquote p,
+blockquote footer,
 .inputs__col-1 label,
 .inputs__col-2 label,
 .feed__item_is-horizontal ul {
