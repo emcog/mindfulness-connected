@@ -1,7 +1,7 @@
 // body copy
 %body-copy__long_1st-p {
   @include media ('>tablet') {
-  font-size: 18pt;
+  font-size: 17pt;
   line-height: 1.4;
  }
   @include media ('<tablet', '≥phone-plus') { font-size: 16pt; }
@@ -12,7 +12,7 @@
 %body-copy__long,
 .body-copy__long {
     @include media ('≥tablet') {
-    font-size: 17pt;
+    font-size: 16pt;
     line-height: 1.4;
   }
     @include media ('<tablet', '≥phone-plus') { font-size: 15pt; }
@@ -28,7 +28,7 @@
   font-weight: 600;
 
   @include media ('≥tablet') {
-    font-size: 32pt;
+    font-size: 24pt;
   }
 }
 

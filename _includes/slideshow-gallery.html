@@ -1,7 +1,10 @@
 <section id="slideshow-gallery">
+  <a class="look-inside_button" href = "https://indd.adobe.com/view/fe913d08-894a-4ac7-b099-e4627948599a" target = "_blank">Look inside &#8600;</a> 
 {% for photo in site.products__social-mindfulness %}
   <div class="product-photo">
-      <img src="{{ photo.img }}" alt="{{ photo.alt }}" style="width:100%">
+      <a href="https://indd.adobe.com/view/fe913d08-894a-4ac7-b099-e4627948599a" target = "_blank" style="cursor: pointer;"> <!-- to do --> 
+        <img src="{{ photo.img }}" alt="{{ photo.alt }}" style="width:100%">
+    </a>
   </div>
 {% endfor %}
 
@@ -23,7 +26,7 @@
 
 <script type="text/javascript">
   var slideIndex = 1;
-showSlides(slideIndex);
+      showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {

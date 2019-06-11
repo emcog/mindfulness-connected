@@ -22,19 +22,10 @@
 }
 
 
-// .page__g-12 {
-
-// 	@include media('≥1000px') {
-// 		grid-template-columns: repeat(2, 1fr ) 800px repeat(4, 1fr);
-// 	}
-
-
-// 	@include media('≥phone-plus', '<1000px') {
-// 		grid-template-columns: 1fr 300px repeat(10, 1fr);
-// 	}
-
-
-// 	@include media('<phone-plus') {
-// 		grid-template-columns: 1px repeat(10, 1fr) 1px;
-// 	}
-// }
+.g-09,
+%g-09 {
+	display: grid;
+	grid-column: 4/-1;
+	grid-template-columns: repeat(09, 1fr);
+	@extend %g-gap-1;
+}

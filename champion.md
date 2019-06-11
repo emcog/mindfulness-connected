@@ -11,5 +11,6 @@ To sustain the impact of our work, we offer training to mindfulness champions to
 
 We also moderate the Mindfulness Champions [Facebook group][1], where people who wish to bring mindfulness to their organisation or community can share resources and experiences with others.
 
+{% include contact-form-netlify.html %}
 
 [1]: https://www.facebook.com/groups/1792658324380983/

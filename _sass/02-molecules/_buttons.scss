@@ -8,3 +8,13 @@
   	background: white !important; //todo
   	transition: all 0.125s !important;
 }
+
+.look-inside_button {
+	cursor: pointer;
+	display: inline-block;
+	margin: 12px 0 0 -10px;
+	border: solid 2px $brand-primary__dark;
+	padding: 2px 12px;
+	color: $brand-primary__dark;
+	background: white; //todo
+}

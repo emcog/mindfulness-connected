@@ -24,8 +24,8 @@ navbar:
   #      url: programmes/register
   #    - page: 'Directory'
   #      url: /programmes/directory
-  - page: 'Champions'
-    url: /champions
+  - page: 'Champion'
+    url: /champion
   #- page: 'Organisations &ensp; &#9662;'
   #  class: 'link_is-disabled'
   #  navbar-l2:

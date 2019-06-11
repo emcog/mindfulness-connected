@@ -2,7 +2,7 @@
 permalink: /practitioners
 layout: banner-page
 banner-image: /assets/images/banner/IMG_4748.jpg
-title: Mindfulness Champion
+title: Practitioners pathway
 
 ---
 
@@ -10,4 +10,4 @@ We're currently working on developing a formal training program. We're expecting
 
 To stay up to date sign up to our occassional news letter. 
 
-{% include contact-form-netlify.html %} 
+{% include mailchimp__signup-form.html %} 

@@ -4,19 +4,22 @@
 
 	@include media('≥1134px') {
 		.banner__feed-item, .banner__article { grid-column: 4/-4; }
-		.banner__header-title { grid-column: 4/-1; }
+		// .banner__header-title { grid-column: 4/-1; }
+		.banner__header-title { grid-column: 1/-1; }
 	}
 
 
 	@include media('<1134px', '≥tablet') {
 		.banner__feed-item, .banner__article { grid-column: 3/-3; }
-		.banner__header-title { grid-column: 3/-1; }
+		// .banner__header-title { grid-column: 3/-1; }
+		.banner__header-title { grid-column: 1/-1; }
 	}
 
 
 	@include media ('<tablet', '≥500px') {
 		.banner__feed-item, .banner__article { grid-column: 2/-2; } 
-		.banner__header-title { grid-column: 2/-1; }
+		// .banner__header-title { grid-column: 2/-1; }
+		.banner__header-title { grid-column: 1/-1; }
 	}
 
 

@@ -1,4 +1,4 @@
 ---
-img: /assets/images/social-mindfulness/inside-01.jpg
+img: /assets/images/social-mindfulness/inside-cover.jpg
 alt: Inside spread of Social Mindfulness
 ---

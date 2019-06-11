@@ -42,11 +42,20 @@ The MBOE programme runs over six weeks. Classes come together each week for an h
 
 Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Fig. 4 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Fig. 3. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. This study has been published in the journal, Mindfulness making our programme 
 
-{% include image.html title="Psychological needs at work" src="/assets/images/diagrams/chart-1.svg" description="The change in BPNWS over time by group with standard error"%}
+{% include image.html title="Psychological needs at work" 
+	src="/assets/images/diagrams/chart-1.svg" 
+	description="The change in BPNWS over time by group with standard error"
+	link="https://doi.org/10.1007/s12671-019-01121-x"
+	link-text="Krusche, A., Jack, C.D., Blunt, C. et al. Mindfulness (2019)."
+%}
 
-{% include image.html title="Stress" src="/assets/images/diagrams/chart-2.svg" description="Stress over time by group with standard error"%}
+{% include image.html title="Stress" 
+	src="/assets/images/diagrams/chart-2.svg" 
+	description="Stress over time by group with standard error."
+	link="https://doi.org/10.1007/s12671-019-01121-x"
+	link-text="Krusche, A., Jack, C.D., Blunt, C. et al. Mindfulness (2019)."
+%}
 
-Krusche, A., Jack, C.D., Blunt, C. et al. Mindfulness (2019). https://doi.org/10.1007/s12671-019-01121-x
 
 {% include quote.html
 	quote="&ldquo;At the ROH we work very hard anyway, but with regards to this course, I think everybody should do it.&rdquo;"
@@ -54,4 +63,4 @@ Krusche, A., Jack, C.D., Blunt, C. et al. Mindfulness (2019). https://doi.org/10
 	footer="Paul Hawker, Senior Scrub Nurse, The Royal Orthopaedic Hospital, Birmingham."
 %}
 
-{% include contact-form-netlify.html %}
+{% include contact-form-netlify.html %} 

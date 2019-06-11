@@ -2203,20 +2203,20 @@ ol, ul, li {
   .g-12,
   #mc_embed_signup,
   .nav__top-level,
-  .page__g-12 {
+  .page__g-12, .g-09 {
     grid-gap: 16px; } }
 @media (max-width: 767px) and (min-width: 414px) {
   .g-12,
   #mc_embed_signup,
   .nav__top-level,
-  .page__g-12 {
+  .page__g-12, .g-09 {
     grid-gap: 12px; } }
 
 @media (max-width: 413px) {
   .g-12,
   #mc_embed_signup,
   .nav__top-level,
-  .page__g-12 {
+  .page__g-12, .g-09 {
     grid-gap: 6px; } }
 
 .g-12,
@@ -2226,6 +2226,11 @@ ol, ul, li {
   display: grid;
   grid-column: 1/-1;
   grid-template-columns: repeat(12, 1fr); }
+
+.g-09 {
+  display: grid;
+  grid-column: 4/-1;
+  grid-template-columns: repeat(9, 1fr); }
 
 .image-block {
   grid-column: 4/-4; }
@@ -2413,7 +2418,7 @@ blockquote {
 
 @media (min-width: 769px) {
   article.is-longform p:nth-of-type(1), .paypal-title, h4.timeline__sub-title {
-    font-size: 18pt;
+    font-size: 17pt;
     line-height: 1.4; } }
 @media (max-width: 767px) and (min-width: 414px) {
   article.is-longform p:nth-of-type(1), .paypal-title, h4.timeline__sub-title {
@@ -2426,7 +2431,7 @@ blockquote {
 @media (min-width: 768px) {
   article.is-longform p, blockquote p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
   .body-copy__long {
-    font-size: 17pt;
+    font-size: 16pt;
     line-height: 1.4; } }
 @media (max-width: 767px) and (min-width: 414px) {
   article.is-longform p, blockquote p, #approach.page__g-12 p, article.g-timeline__year > ul, span.timeline-summary,
@@ -2444,7 +2449,7 @@ blockquote {
   font-weight: 600; }
   @media (min-width: 768px) {
     .headline {
-      font-size: 32pt; } }
+      font-size: 24pt; } }
 
 .headline_sml {
   font-family: futura-pt, sans-serif;
@@ -2638,7 +2643,8 @@ input#mc-embedded-subscribe,
 blockquote footer,
 .inputs__col-1 label,
 .inputs__col-2 label,
-.feed__item_is-horizontal ul {
+.feed__item_is-horizontal ul,
+.embedded-image figcaption {
   font-size: 14pt !important;
   line-height: 1.15 !important; }
 
@@ -3166,6 +3172,15 @@ input#mc-embedded-subscribe,
   color: #444 !important;
   background: white !important;
   transition: all 0.125s !important; }
+
+.look-inside_button {
+  cursor: pointer;
+  display: inline-block;
+  margin: 12px 0 0 -10px;
+  border: solid 2px #444;
+  padding: 2px 12px;
+  color: #444;
+  background: white; }
 
 #default section {
   background-color: #fff;
@@ -3971,6 +3986,10 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
       margin: 0 0 -13px -10px;
       padding: 6px 0 8px 6px; } }
 
+.banner__bg {
+  background-color: #00B398;
+  width: 100%; }
+
 @media (min-width: 768px) and (max-width: 999px) {
   .banner__header,
   .banner__header-folio,
@@ -4008,18 +4027,18 @@ article.banner__article {
   .page__g-12 .banner__feed-item, .page__g-12 .banner__article {
     grid-column: 4/-4; }
   .page__g-12 .banner__header-title {
-    grid-column: 4/-1; } }
+    grid-column: 1/-1; } }
 @media (max-width: 1133px) and (min-width: 768px) {
   .page__g-12 .banner__feed-item, .page__g-12 .banner__article {
     grid-column: 3/-3; }
   .page__g-12 .banner__header-title {
-    grid-column: 3/-1; } }
+    grid-column: 1/-1; } }
 
 @media (max-width: 767px) and (min-width: 500px) {
   .page__g-12 .banner__feed-item, .page__g-12 .banner__article {
     grid-column: 2/-2; }
   .page__g-12 .banner__header-title {
-    grid-column: 2/-1; } }
+    grid-column: 1/-1; } }
 
 @media (max-width: 499px) {
   .page__g-12 .banner__feed-item, .page__g-12 .banner__article {
