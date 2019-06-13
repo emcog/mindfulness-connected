@@ -3177,10 +3177,13 @@ input#mc-embedded-subscribe,
   cursor: pointer;
   display: inline-block;
   margin: 12px 0 0 -10px;
-  border: solid 2px #444;
   padding: 2px 12px;
   color: #444;
   background: white; }
+  .look-inside_button > span {
+    color: #BC442F; }
+  .look-inside_button > span + span {
+    color: #1796E5; }
 
 #default section {
   background-color: #fff;

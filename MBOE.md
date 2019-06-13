@@ -10,9 +10,24 @@ permalink: /mboe
 
 ## Our approach
 
+{% include youtube.html video-id="iFhQl-iAdic?start=22" height="450px" %}
+case study of our work at the ROH Birmingham
+
 Little will change if mindfulness is merely applied as a means of coping with stress and enhancing individual performance. The Mindfulness Connected approach brings people together to apply ‘social mindfulness’ as a catalyst for change.
 
+Our approach has some unique ..............
+* Group effects or workshop activities as experiential learning
+* Theory that explains what, why and how of what is going on
+* Developing language to describe experience
+* Social/group meaning for mindfulness meditation
 
+{% include quote.html
+	quote="&ldquo;At the ROH we work very hard anyway, but with regards to this course, I think everybody should do it.&rdquo;"
+	
+	footer="Paul Hawker, Senior Scrub Nurse, The Royal Orthopaedic Hospital, Birmingham."
+%}
+
+## Leadership
 
 {% include quote.html
 	quote="&ldquo;I have learnt to allow more silence, particularly in difficult conversations. I have also learnt to accept and even encourage the voice of dissent from others. 
@@ -23,20 +38,19 @@ Little will change if mindfulness is merely applied as a means of coping with st
 	footer="Erin Price, Head of School, Holy Trinity C of E School, Ramsgate, Kent."
 %}
 
-{% include youtube.html video-id="iFhQl-iAdic?start=22" height="450px" %}
-
-
-## How is it delivered?
-### 6 week course
-### One-day team-building workshops
-The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. The programme is supported by out booklet[1] One-day team-building workshops can also be provided.
-
-### What do partici
+What do participants take away?
 * Self-awareness
 * Understanding each other
 * Confidence and trust
 * Presence while listening
 * Skilful communication
+* Understanding the way group mind works
+
+
+## How is it delivered?
+The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. The programme is supported by our [book][1]. One-day team-building workshops can also be provided.
+
+<!-- image -->
 
 ## The evidence
 
@@ -56,11 +70,10 @@ Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has be
 	link-text="Krusche, A., Jack, C.D., Blunt, C. et al. Mindfulness (2019)."
 %}
 
+<!-- evolution -->
 
-{% include quote.html
-	quote="&ldquo;At the ROH we work very hard anyway, but with regards to this course, I think everybody should do it.&rdquo;"
-	
-	footer="Paul Hawker, Senior Scrub Nurse, The Royal Orthopaedic Hospital, Birmingham."
-%}
+Some nice invitational content about contacting us
 
 {% include contact-form-netlify.html %} 
+
+[1]: /social-mindfulness
