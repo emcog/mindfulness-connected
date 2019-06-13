@@ -1980,7 +1980,7 @@ p > a:hover {
 a:link {
   text-decoration: none; }
 
-.feed__item_is-horizontal:hover {
+.feed_item__is-horizontal:hover {
   background: #EBEBEB; }
 
 .link_is-disabled {
@@ -2643,7 +2643,7 @@ input#mc-embedded-subscribe,
 blockquote footer,
 .inputs__col-1 label,
 .inputs__col-2 label,
-.feed__item_is-horizontal ul,
+.feed_item__is-horizontal ul,
 .embedded-image figcaption {
   font-size: 14pt !important;
   line-height: 1.15 !important; }
@@ -3855,45 +3855,54 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
   margin-top: 10px;
   max-width: 800px; }
 
-.feed__item_is-horizontal {
-  display: grid;
-  border-top: 2px solid black; }
+.feed_item__is-horizontal {
+  display: grid; }
   @media (min-width: 500px) {
-    .feed__item_is-horizontal {
+    .feed_item__is-horizontal {
       grid-template-columns: 160px 1fr;
       grid-template-rows: 160px;
       grid-gap: 12px;
       padding-top: 12px; } }
   @media (max-width: 499px) {
-    .feed__item_is-horizontal {
+    .feed_item__is-horizontal {
       grid-template-columns: 90px 1fr;
       grid-template-rows: 90px;
       grid-gap: 08px;
       margin: 0 8px 0 14px;
       padding-top: 08px; } }
-  .feed__item_is-horizontal > .feed-item__image {
+  .feed_item__is-horizontal > .feed-item__image {
     grid-column: 1/2;
     grid-row: 1; }
-  .feed__item_is-horizontal > .feed-item__title {
+  .feed_item__is-horizontal > .feed-item__title {
     grid-column: 2/-1;
     grid-row: 1;
     margin-top: -4px; }
-  .feed__item_is-horizontal > p, .feed__item_is-horizontal ul {
+  .feed_item__is-horizontal > p, .feed_item__is-horizontal ul {
     grid-column: 2/-1;
     grid-row: 1;
     margin-top: 24px; }
-  .feed__item_is-horizontal ul {
+  .feed_item__is-horizontal ul {
     margin: 60px 0 0 0;
     padding: 0 0 0 26px; }
-  .feed__item_is-horizontal li {
+  .feed_item__is-horizontal li {
     margin: 6px 0 0 0;
     line-height: 1.2;
     padding: 4px; }
 
+.feed_item__blk {
+  border-top: 2px solid #444; }
+.feed_item__grn {
+  border-top: 2px solid #00B398; }
+
 .feed__team-member-wrapper {
   margin: 0 0 180px 0; }
-  .feed__team-member-wrapper .feed__item_is-horizontal:hover {
+  .feed__team-member-wrapper .feed_item__is-horizontal:hover {
     background: none; }
+
+.feed__section-title {
+  grid-column: 4/-4;
+  margin-top: 50px;
+  font-weight: 600; }
 
 .embedded-image {
   margin: 40px 0; }

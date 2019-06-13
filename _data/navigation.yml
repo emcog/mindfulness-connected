@@ -4,6 +4,8 @@ navbar-logo:
     url: /
 
 navbar:
+  - page: 'Home'
+    url: /
   - page: 'Contact us'
     url: /contact-us
   - page: 'About &ensp; &#9662;'
@@ -24,8 +26,8 @@ navbar:
   #      url: programmes/register
   #    - page: 'Directory'
   #      url: /programmes/directory
-  - page: 'Champion'
-    url: /champion
+  - page: 'Champions'
+    url: /champions
   #- page: 'Organisations &ensp; &#9662;'
   #  class: 'link_is-disabled'
   #  navbar-l2:
@@ -37,8 +39,6 @@ navbar:
     url: /mboe
   - page: 'Book'
     url: /shop/social-mindfulness
-  - page: 'News'
-    url: /
 
   # - page: 'Mindfulness Champion'
     # url: /mindfulness-champion

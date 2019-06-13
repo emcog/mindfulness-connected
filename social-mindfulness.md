@@ -28,8 +28,7 @@ From the back
 
 ## Or is the belief that we are selfish beings who must compete to survive a toxic myth?
 
-The prevailing narrative tells us that society provides the opportunity to improve our lot by developing skills that we sell for fair return in the marketplace. While we have succeeded in satisfying our material needs, many of us live unhappy, lonely lives. Mindfulness as self-help or therapy is effective at managing the stress of modern living, but this does not go to the root of 
-the problem. 
+The prevailing narrative tells us that society provides the opportunity to improve our lot by developing skills that we sell for fair return in the marketplace. While we have succeeded in satisfying our material needs, many of us live unhappy, lonely lives. Mindfulness as self-help or therapy is effective at managing the stress of modern living, but this does not go to the root of the problem. 
 
 ‘Social mindfulness’ is a new approach that applies mindfulness to understand the social causes of stress and empower change. Mindfulness-Based Organisational Education (MBOE) combines mindfulness with a sense of relatedness to break the illusion of the separate self. This book explains the workings of the human, embodied social mind and how social mindfulness gives us the power to change the way things work.
 

@@ -6,6 +6,12 @@ layout: default
 	<article class="banner__article is-longform">
 	{{ content }}
 	</article>
+	<h2 class="feed__section-title is-uppercase">Overview</h2>
+	{% include overview.html %}
+	<br>
+	<br>
+	<!-- <hr class="feed__section-title"> -->
+	<h2 class="feed__section-title is-uppercase">Updates</h2>
 	{% include newsfeed.html %}
 	{% include mailchimp__signup-form.html %}
 </div>

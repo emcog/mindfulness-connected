@@ -7,9 +7,8 @@
 
 
 
-.feed__item_is-horizontal {
+.feed_item__is-horizontal {
 	display: grid;
-	border-top: 2px solid black;
 	
 
 	@include media('≥500px') {
@@ -59,11 +58,23 @@
 	}
 }
 
+.feed_item {
+	&__blk { border-top: 2px solid $brand-primary__dark; }
+	&__grn { border-top: 2px solid $brand-primary__green; }
+}
+
 
 
 .feed__team-member-wrapper { 
 	
 	margin: 0 0 180px 0; 
 
-	& .feed__item_is-horizontal:hover { background: none; }
+	& .feed_item__is-horizontal:hover { background: none; }
+}
+
+
+.feed__section-title {
+	grid-column: 4/-4;
+	margin-top: 50px;
+	font-weight: 600;
 }
