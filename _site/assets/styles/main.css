@@ -2307,14 +2307,15 @@ article.is-longform {
   font-family: classica-pro, serif; }
   article.is-longform p {
     line-height: 1.4; }
-  article.is-longform h2 {
-    margin: 4px 0 12px 0; }
 
 .is-uppercase {
   text-transform: uppercase; }
 
 .is-lowercase {
   text-transform: lowercase; }
+
+.is-heavy {
+  font-weight: 600; }
 
 .attribute {
   font-family: var(--font3);
@@ -2394,6 +2395,10 @@ h6 {
 
 q {
   font-family: classica-pro, serif; }
+
+.banner__article > h2 {
+  font-weight: 600;
+  text-transform: uppercase; }
 
 h2 {
   font-weight: 400;
@@ -2643,8 +2648,7 @@ input#mc-embedded-subscribe,
 blockquote footer,
 .inputs__col-1 label,
 .inputs__col-2 label,
-.feed_item__is-horizontal ul,
-.embedded-image figcaption {
+.feed_item__is-horizontal ul {
   font-size: 14pt !important;
   line-height: 1.15 !important; }
 
@@ -2656,14 +2660,32 @@ textarea {
   font-size: 12pt; }
 
 p, .body-copy {
-  margin-top: .25rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.25rem; }
   p > a, .body-copy > a {
     padding: 0 .125rem;
     text-decoration: none; }
   p > a:hover, .body-copy > a:hover {
     padding-bottom: .25rem;
     text-decoration: none; }
+
+.is-longform > h2 {
+  margin: 64px 0 12px 0; }
+
+.is-longform > h2:first-child {
+  margin-top: 12px; }
+
+.is-longform > h3 {
+  margin: 0px 0 0.55em 0;
+  font-family: classica-pro, serif;
+  font-size: 16pt; }
+
+.is-longform > p {
+  margin: 0 0 1.25em 0; }
+
+.is-longform > ul {
+  margin: 0 0 0 0;
+  font-size: 16pt;
+  line-height: 1.6; }
 
 /******************************************************************
 Wordpress Core
@@ -2816,6 +2838,22 @@ body.home header {
 @media (max-width: 700px) {
   header .inner nav#main ul > li {
     padding: 0 1px; } }
+.image-video {
+  margin: 0 0 12px 0; }
+
+.image-video > figcaption {
+  font-size: 11pt;
+  margin-top: 4px; }
+
+.image-video > figcaption > span {
+  font-size: 8pt;
+  vertical-align: 3px;
+  margin-right: 3px; }
+
+.image-video > h3 {
+  margin: 0 0 40px 0;
+  text-align: center; }
+
 .fixed-basket #paypal-basket {
   box-shadow: 0 5px rgba(0, 0, 0, 0.1); }
 
@@ -3903,12 +3941,6 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
   grid-column: 4/-4;
   margin-top: 50px;
   font-weight: 600; }
-
-.embedded-image {
-  margin: 40px 0; }
-  .embedded-image h2 {
-    margin: 0 0 40px 0;
-    text-align: center; }
 
 #content-block ul.block {
   list-style-type: none; }

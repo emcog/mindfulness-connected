@@ -1,0 +1,17 @@
+.is-longform > h2 { margin: 64px 0 12px 0; }
+
+.is-longform > h2:first-child { margin-top: 12px; }
+
+.is-longform > h3 { 
+	margin: 0px 0 0.55em 0;
+	font-family: $serif-stack;
+	font-size: 16pt;
+}
+
+.is-longform > p { margin: 0 0 1.25em 0; }
+
+.is-longform > ul { 
+	margin: 0 0 0 0;
+	font-size: 16pt;
+	line-height: 1.6;
+}

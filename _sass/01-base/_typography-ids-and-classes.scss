@@ -6,12 +6,13 @@ article.is-longform {
   p:nth-of-type(1) { @extend %body-copy__long_1st-p; }
   p { @extend %body-copy__long; }
 
-  & h2 { margin: 4px 0 12px 0; }
+  // & h2 { margin: 4px 0 12px 0; }
 }
 
 
 // cases
-.is-uppercase {
+.is-uppercase,
+%is-uppercase {
   text-transform: uppercase;
 }
 
@@ -19,6 +20,10 @@ article.is-longform {
   text-transform: lowercase;
 }
 
+.is-heavy,
+%is-heavy {
+  font-weight: 600;
+}
 
 //share block
 .attribute {
