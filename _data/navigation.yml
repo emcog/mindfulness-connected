@@ -4,17 +4,17 @@ navbar-logo:
     url: /
 
 navbar:
-  - page: 'Home'
-    url: /
   - page: 'Contact us'
     url: /contact-us
-  - page: 'About &ensp; &#9662;'
-    class: 'link_is-disabled'
-    navbar-l2:
-      - page: 'Evolution'
-        url: /about/history-of-modern-mindfulness
-      - page: 'People'
-        url: /about/people
+  - page: 'People'
+    url: /people
+  # - page: 'About &ensp; &#9662;'
+    # class: 'link_is-disabled'
+    # navbar-l2:
+      # - page: 'Evolution'
+        # url: /about/history-of-modern-mindfulness
+      # - page: 'People'
+        # url: /people
   - page: 'Practioners pathway'
     url: /practitioners 
   #- page: 'Practioners &ensp; &#9662;'
@@ -39,6 +39,8 @@ navbar:
     url: /mboe
   - page: 'Book'
     url: /shop/social-mindfulness
+  - page: 'Home'
+    url: /
 
   # - page: 'Mindfulness Champion'
     # url: /mindfulness-champion

@@ -1,7 +1,7 @@
 ---
 layout: banner-page
 title: Mindfulness-Based Organisational Education (MBOE)
-banner-image: /assets/images/diagrams/individual-and-group-mindfulness.svg
+banner-image: /assets/images/images/mark-anesthatist.jpg
 permalink: /mboe
 
 ---

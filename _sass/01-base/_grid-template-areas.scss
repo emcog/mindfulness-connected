@@ -24,8 +24,9 @@
 
 .g-09,
 %g-09 {
+	align-self: end;
 	display: grid;
-	grid-column: 4/-1;
+	// grid-column: 4/-1;
 	grid-template-columns: repeat(09, 1fr);
 	@extend %g-gap-1;
 }

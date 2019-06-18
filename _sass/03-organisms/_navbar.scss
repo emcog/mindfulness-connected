@@ -95,6 +95,8 @@ button#nav__mobile-button {
 		border: solid 2px $brand-primary__green;
 		transition: all 0.125s;
 	}
+
+	@include media('<500px') { margin: auto 10px auto auto; }
 }
 
 

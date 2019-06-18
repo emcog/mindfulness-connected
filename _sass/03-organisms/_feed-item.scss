@@ -23,7 +23,7 @@
 		grid-template-columns: 90px 1fr;
 		grid-template-rows: 90px;
 		grid-gap: 08px;
-		margin: 0 8px 0 14px;
+		margin: 0 10px 0 10px;
 		padding-top: 08px;
 	}
 
@@ -42,7 +42,12 @@
 	& > p, ul {
 		grid-column: 2/-1;
 		grid-row: 1;
-		margin-top: 24px;
+		// margin-top: 24px;
+	}
+
+	& > p { 
+		align-self: end;
+		margin: 0 0 0 0;
 	}
 
 	& ul {
@@ -75,6 +80,6 @@
 
 .feed__section-title {
 	grid-column: 4/-4;
-	margin-top: 50px;
+	margin-top: 64px;
 	font-weight: 600;
 }
