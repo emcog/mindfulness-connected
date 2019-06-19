@@ -3964,6 +3964,9 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
   margin-top: 64px;
   font-weight: 600; }
 
+h2.feed__section-title:first-child {
+  margin-top: 0px; }
+
 #content-block ul.block {
   list-style-type: none; }
   #content-block ul.block li {
@@ -4143,7 +4146,7 @@ article.banner__article {
   .page__g-12 .feed__section-title {
     grid-column: 1/-1; }
   .page__g-12 .feed__section-title {
-    margin: 0 0 0 12px; }
+    margin: 32px 0 0 12px; }
   .page__g-12 .banner__header-title {
     grid-column: 1/-1; } }
 @media (min-width: 1134px) {
