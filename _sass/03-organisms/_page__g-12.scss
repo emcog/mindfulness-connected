@@ -74,6 +74,13 @@
 	}
 
 
+
+	@include media('≥500px', '<tablet') { #mc-embedded-subscribe-form { grid-column: 2/-2; } }
+
+
+	@include media('<500px') { #mc-embedded-subscribe-form { grid-column: 1/-1; } }
+
+
 	@include media('≥1000px') {
 
 		& .section__sub-head,

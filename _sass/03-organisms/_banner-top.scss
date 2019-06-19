@@ -34,7 +34,7 @@
 
 .banner__header-title { 
   grid-row: 2;
-  @include media ('<tablet') { margin: 0 0 -14px -12px; }
+  @include media ('<tablet') { margin: 0 0 0px -12px; }
 }
 
 

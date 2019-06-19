@@ -1,5 +1,5 @@
 ---
-layout: banner-page
+layout: no-banner
 permalink: /people
 title: people
 ---

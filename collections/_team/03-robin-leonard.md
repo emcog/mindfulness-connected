@@ -1,5 +1,5 @@
 ---
-image:  /assets/images/people/Robin-Leonard.png
+image:  /assets/images/people/robin.jpg
 name: Robin Leonard
 description: Practitioner & Designer
 
