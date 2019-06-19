@@ -32,9 +32,16 @@
 
 
 
-.banner__header-title { @include media ('<tablet') { margin: 0 0 -14px -12px; } }
+.banner__header-title { 
+  grid-row: 2;
+  @include media ('<tablet') { margin: 0 0 -14px -12px; }
+}
 
-// margin: 0 0 2px 0;
+
+
+.banner__header-blank { grid-row: 2; }
+
+
 
 .banner__header,
 .banner__header-folio,

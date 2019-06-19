@@ -1,7 +1,7 @@
 ---
 layout: banner-page
 title: Mindfulness-Based Organisational Education (MBOE)
-banner-image: /assets/images/images/mark-anesthatist.jpg
+banner-image: /assets/images/images/mark-anesthatist-4.jpg
 permalink: /mboe
 
 ---
@@ -55,7 +55,7 @@ The MBOE programme runs over six weeks. Classes come together each week for an h
 
 {% include image.html
 	src="/assets/images/images/team-2.jpg"
-	description="Learning to guide mindfulness meditation is a easy as teaching people to juggle..."%}
+	description="Embedding MBOE in organisations with a one day workshop for graduates to develop \'mindfulness-guides\'"%}
 
 ## The evidence
 
