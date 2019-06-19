@@ -2230,6 +2230,8 @@ ol, ul, li {
 .g-09 {
   align-self: end;
   display: grid;
+  grid-template-rows: 1px;
+  grid-row-gap: 0;
   grid-template-columns: repeat(9, 1fr); }
 
 .image-block {
@@ -4062,6 +4064,10 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
 
 .banner__header-blank {
   grid-row: 2; }
+
+.banner__header-blank-safari {
+  grid-row: 1;
+  height: 1px; }
 
 @media (min-width: 768px) and (max-width: 999px) {
   .banner__header,
