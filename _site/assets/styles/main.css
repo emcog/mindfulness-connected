@@ -2067,6 +2067,10 @@ input[type="submit"] {
   -webkit-appearance: none;
   border-radius: 0; }
 
+input[type="email"],
+input[type="text"] {
+  width: 100%; }
+
 div.mc-field-group {
   width: 100%; }
 

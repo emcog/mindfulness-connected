@@ -132,10 +132,19 @@ input#mc-embedded-subscribe {
   min-width: 200px;
 }
 
+
+// ios fixes
 input[type="submit"] {
   -webkit-appearance: none;
   border-radius: 0;
 }
+
+
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+}
+
 
 
 
