@@ -2069,7 +2069,12 @@ input[type="submit"] {
 
 input[type="email"],
 input[type="text"] {
+  padding: 0 0 16px 0;
   width: 100%; }
+
+input[for="gdpr_21269"] {
+  padding: 8px 0;
+  min-width: 200px; }
 
 div.mc-field-group {
   width: 100%; }
