@@ -118,7 +118,10 @@ fieldset.mc_fieldset {
   width: 50%  !important;
 }
 
+
+
 label { @extend %font-size-4; }
+
 
 
 input#mc-embedded-subscribe {
@@ -128,5 +131,12 @@ input#mc-embedded-subscribe {
   margin: 0 0 0 0;
   min-width: 200px;
 }
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+
 
 div.mc-field-group { width: 100%; }
