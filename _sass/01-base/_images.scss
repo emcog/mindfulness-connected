@@ -35,6 +35,8 @@
 	margin: 0px 0px 0 0;
 	max-width: 80px;
 	height: 100%;
+	// safari fix
+	width: 100%;
 }
 
 
@@ -85,8 +87,17 @@ p.in-body__icon-text {
 	}
 
 	@include media('<500px') {
-		width: 90px;
-		height: 90px;
+		width: $medium-image-size;
+		height: $medium-image-size;
+	}
+}
+
+
+
+.image-team {
+	@include media('≥500px') {
+		width: 320px;
+		height: 320px;
 	}
 }
 

@@ -1955,7 +1955,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border: 3px solid #D1D1D1; }
 
 .nav__link {
-  color: #444; }
+  color: #444;
+  background-color: rgba(255, 255, 255, 0); }
 
 .nav__top-level {
   display: flex; }
@@ -2069,12 +2070,12 @@ input[type="submit"] {
 
 input[type="email"],
 input[type="text"] {
-  padding: 0 0 16px 0;
+  margin: 0 0 16px 0;
   width: 100%; }
 
-input[for="gdpr_21269"] {
-  padding: 8px 0;
-  min-width: 200px; }
+label[for="gdpr_21269"] {
+  margin: 0 0 9px 0;
+  width: 200px; }
 
 div.mc-field-group {
   width: 100%; }
@@ -2262,7 +2263,8 @@ ol, ul, li {
   float: left;
   margin: 0px 0px 0 0;
   max-width: 80px;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 p.in-body__icon-text {
   margin: auto 0 auto 16px;
@@ -2289,8 +2291,13 @@ p.in-body__icon-text {
     height: 160px; } }
 @media (max-width: 499px) {
   .image-medium {
-    width: 90px;
-    height: 90px; } }
+    width: 160px;
+    height: 160px; } }
+
+@media (min-width: 500px) {
+  .image-team {
+    width: 320px;
+    height: 320px; } }
 
 .image-bg {
   position: relative;
@@ -2377,11 +2384,15 @@ article.is-longform {
   line-height: 0; }
 
 a {
-  color: #00B398; }
+  color: #444;
+  background-color: #DEDEDE; }
 
 p {
   margin-bottom: 0.5em;
   font-family: classica-pro, serif; }
+
+ul {
+  margin: 0; }
 
 @media only screen and (max-width: 768px) {
   #homepage h1, #homepage h2 {
@@ -2682,7 +2693,7 @@ textarea {
   font-size: 12pt; }
 
 p, .body-copy {
-  margin-bottom: 1.25rem; }
+  margin-bottom: .25em; }
   p > a, .body-copy > a {
     padding: 0 .125rem;
     text-decoration: none; }
@@ -3924,7 +3935,8 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
   grid-column: 4/-4;
   justify-self: start;
   margin-top: 10px;
-  max-width: 800px; }
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0); }
 
 .feed_item__is-horizontal {
   display: grid; }
@@ -3977,7 +3989,7 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
   margin-top: 64px;
   font-weight: 600; }
 
-h2.feed__section-title:first-child {
+h2.feed__section-title:nth-child(3) {
   margin-top: 0px; }
 
 #content-block ul.block {

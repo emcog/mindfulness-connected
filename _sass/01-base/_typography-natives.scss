@@ -1,11 +1,14 @@
-a {
-    color: $brand-primary__green;
+a { 
+  color: #444;
+  background-color: #DEDEDE;
 }
 
 p {
     margin-bottom: 0.5em;
     font-family: $serif-stack;
 }
+
+ul { margin: 0; }
 
 // Media Queries
 

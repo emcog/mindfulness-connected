@@ -1,6 +1,7 @@
 .nav__link {
 	color: $brand-primary__dark;
 	@extend %font-size-3;
+	background-color: rgba(255, 255, 255, 0.0);
 }
 
 // .nav__link:hover {

@@ -142,14 +142,15 @@ input[type="submit"] {
 // ios fixes
 input[type="email"],
 input[type="text"] {
-  padding: 0 0 16px 0;
+  margin: 0 0 16px 0;
   width: 100%;
 }
 
 // ios fixes
-input[for="gdpr_21269"] {
+label[for="gdpr_21269"] {
   margin: 0 0 9px 0;
-  min-width: 200px;
+  // width: 50%;
+  width: 200px;
 }
 
 
