@@ -6,4 +6,4 @@ permalink: /mboe#the-evidence
 
 ---
 
-Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Fig. 4 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Fig. 3. BPNWS is a validated self-report scale from Self Determination Theory,
+Our programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Fig. 4 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Fig. 3. BPNWS is a validated self-report scale from Self Determination Theory,

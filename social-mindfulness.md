@@ -22,11 +22,11 @@ comments: true
 
 ---
 
-From the back
+From the back:
 
-## Are idealistic values naive and impractical? 
+<h2 style = "margin: 32px 0">Are idealistic values naive and impractical?</h2> 
 
-## Or is the belief that we are selfish beings who must compete to survive a toxic myth?
+<h2 style = "margin: 32px 0">Or is the belief that we are selfish beings who must compete to survive a toxic myth?</h2> 
 
 The prevailing narrative tells us that society provides the opportunity to improve our lot by developing skills that we sell for fair return in the marketplace. While we have succeeded in satisfying our material needs, many of us live unhappy, lonely lives. Mindfulness as self-help or therapy is effective at managing the stress of modern living, but this does not go to the root of the problem. 
 

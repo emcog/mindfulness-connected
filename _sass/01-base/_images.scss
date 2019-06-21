@@ -87,8 +87,8 @@ p.in-body__icon-text {
 	}
 
 	@include media('<500px') {
-		width: $medium-image-size;
-		height: $medium-image-size;
+		width: 110px;
+		height: 110px;
 	}
 }
 

@@ -2291,8 +2291,8 @@ p.in-body__icon-text {
     height: 160px; } }
 @media (max-width: 499px) {
   .image-medium {
-    width: 160px;
-    height: 160px; } }
+    width: 110px;
+    height: 110px; } }
 
 @media (min-width: 500px) {
   .image-team {
@@ -2499,7 +2499,7 @@ blockquote {
 
   @media (max-width: 499px) {
     .headline_sml {
-      font-size: 13pt; } }
+      font-size: 14pt; } }
 
 h2, .card-text > h2, #approach.page__g-12 > h2, .timeline__header_txt > h3 {
   font-family: futura-pt, sans-serif;
@@ -2613,7 +2613,7 @@ p,
     .shipping-details__text,
     .card-text > .person-role,
     .card-text > ul {
-      font-size: 14pt; } }
+      font-size: 16pt; } }
 @media (max-width: 767px) and (min-width: 660px) {
   .font-size-3,
   .nav__link,
@@ -2626,7 +2626,7 @@ p,
   .shipping-details__text,
   .card-text > .person-role,
   .card-text > ul {
-    font-size: 13pt; } }
+    font-size: 16pt; } }
 
 @media (max-width: 659px) and (min-width: 490px) {
   .font-size-3,
@@ -2640,7 +2640,7 @@ p,
   .shipping-details__text,
   .card-text > .person-role,
   .card-text > ul {
-    font-size: 12pt; } }
+    font-size: 14pt; } }
 
 @media (max-width: 489px) and (min-width: 414px) {
   .font-size-3,
@@ -2654,7 +2654,7 @@ p,
   .shipping-details__text,
   .card-text > .person-role,
   .card-text > ul {
-    font-size: 11pt; } }
+    font-size: 14pt; } }
 
   @media (max-width: 413px) {
     .font-size-3,
@@ -2668,7 +2668,7 @@ p,
     .shipping-details__text,
     .card-text > .person-role,
     .card-text > ul {
-      font-size: 10pt; } }
+      font-size: 14pt; } }
 
 .font-size-4,
 input[type=button],
@@ -3938,6 +3938,9 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
   max-width: 800px;
   background: rgba(255, 255, 255, 0); }
 
+.feed-item__title {
+  margin: -4px 0 8px 0; }
+
 .feed_item__is-horizontal {
   display: grid; }
   @media (min-width: 500px) {
@@ -3948,18 +3951,14 @@ ul.nav__mobile-contents > li > ul.nav__second-level > li {
       padding-top: 12px; } }
   @media (max-width: 499px) {
     .feed_item__is-horizontal {
-      grid-template-columns: 90px 1fr;
-      grid-template-rows: 90px;
+      grid-template-columns: 110px 1fr;
+      grid-template-rows: 110px;
       grid-gap: 08px;
       margin: 0 10px 0 10px;
       padding-top: 08px; } }
   .feed_item__is-horizontal > .feed-item__image {
     grid-column: 1/2;
     grid-row: 1; }
-  .feed_item__is-horizontal > .feed-item__title {
-    grid-column: 2/-1;
-    grid-row: 1;
-    margin-top: -4px; }
   .feed_item__is-horizontal > p, .feed_item__is-horizontal ul {
     grid-column: 2/-1;
     grid-row: 1; }

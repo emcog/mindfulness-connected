@@ -1,9 +1,11 @@
 {% for view in site.overview %}
 <a class="banner__feed-item" href="{{ view.permalink}}">
 	<article class="feed_item__is-horizontal feed_item__grn">
-			<img class="image-medium image-bg is-square feed-item__image" src="{{ view.square-preview-image }}">
-		<h3 class="feed-item__title headline_sml is-uppercase">{{ view.title }}</h3>
-		{{view.content | truncate: 120 }}
+		<img class="image-medium image-bg is-square feed-item__image" src="{{ view.square-preview-image }}">
+		<div>
+			<h3 class="feed-item__title headline_sml is-uppercase">{{ view.title }}</h3>
+			{{view.content | truncate: 90 }}
+		</div>
 	</article>
 </a>
 {% endfor %}
