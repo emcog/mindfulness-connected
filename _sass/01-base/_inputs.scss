@@ -103,7 +103,7 @@ input[type='checkbox'].check-custom:checked ~ .check-toggle {
 
 // checkbox button
 label.check-button {
-  margin: 0 0 9px 0 !important;
+  // margin: 0 0 9px 0 !important;
 	padding: 9px 8px 7px 8px !important;
 	cursor: pointer;
 }
@@ -157,4 +157,12 @@ label[for="gdpr_21269"] {
 
 
 
-div.mc-field-group { width: 100%; }
+div.mc-field-group { 
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 0 8px 0;
+
+  & label {
+    margin-bottom: 6px !important;
+  }
+}

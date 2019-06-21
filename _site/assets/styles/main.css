@@ -2049,7 +2049,6 @@ input[type='checkbox'].check-custom:checked ~ .check-toggle {
   background-size: 75%; }
 
 label.check-button {
-  margin: 0 0 9px 0 !important;
   padding: 9px 8px 7px 8px !important;
   cursor: pointer; }
 
@@ -2078,7 +2077,11 @@ label[for="gdpr_21269"] {
   width: 200px; }
 
 div.mc-field-group {
-  width: 100%; }
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 0 8px 0; }
+  div.mc-field-group label {
+    margin-bottom: 6px !important; }
 
 /******************************************************************
 Stylesheet: Normalize
@@ -2682,7 +2685,7 @@ blockquote footer,
 .inputs__col-1 label,
 .inputs__col-2 label,
 .feed_item__is-horizontal ul {
-  font-size: 14pt !important;
+  font-size: 16pt !important;
   line-height: 1.15 !important; }
 
 .font-size-5 {
@@ -3622,7 +3625,7 @@ section#approach .content {
   grid-row: 2; }
 
 #contact-form {
-  margin-bottom: 120px;
+  margin: 64px 0 120px 0;
   grid-column: -11/-5; }
 
 #contact-title {
@@ -3754,6 +3757,8 @@ section#slideshow-gallery {
   margin: 64px 0 160px 0 !important; }
   #mc_embed_signup #mc_embed_signup_scroll h2 {
     font-size: 24pt; }
+  #mc_embed_signup #mc_embed_signup_scroll p {
+    margin: 0.625em 0; }
 
 #mc_embed_signup form {
   padding: 0 !important; }
