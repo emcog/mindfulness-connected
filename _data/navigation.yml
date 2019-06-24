@@ -15,8 +15,8 @@ navbar:
         # url: /about/history-of-modern-mindfulness
       # - page: 'People'
         # url: /people
-  - page: 'Practioners pathway'
-    url: /practitioners 
+  - page: 'Pathway'
+    url: /practitioners-pathway
   #- page: 'Practioners &ensp; &#9662;'
   #  class: 'link_is-disabled'
   #  navbar-l2:
@@ -45,10 +45,10 @@ navbar:
   # - page: 'Mindfulness Champion'
     # url: /mindfulness-champion
 
-# footer:
-#   - page: 'Occasional news letter'
-#     url: /https://mailchi.mp/mindfulnessconnected.com/ow4xy4w3kb
-#   - page: 'Privacy policy'
-#     url: /privacy
-#   - page: 'Contact us'
-#     url: /contact
+footer:
+  - page: 'News letter'
+    url: /https://mailchi.mp/mindfulnessconnected.com/ow4xy4w3kb
+  - page: 'Privacy policy'
+    url: /privacy
+  - page: 'Contact'
+    url: /contact

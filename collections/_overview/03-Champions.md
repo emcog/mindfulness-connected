@@ -1,7 +1,7 @@
 ---
 title: Mindfulness Champions
 banner-image: /assets/images/banner/IMG_4748.jpg
-square-preview-image: /assets/images/banner/IMG_4748-square.jpg
+square-preview-image: /assets/images/banner/4748-square.jpg
 permalink: /news/new-site
 
 ---

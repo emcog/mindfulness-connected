@@ -2,7 +2,7 @@
 title: "Social-Mindfuness: A guide to..."
 banner-image: /assets/images/banner/IMG_4748.jpg
 square-preview-image: /assets/images/banner/social-mindfulness__banner--square.jpg
-permalink: /social-mindfulness
+permalink: /shop/social-mindfulness
 
 ---
 

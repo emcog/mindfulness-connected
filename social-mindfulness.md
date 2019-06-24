@@ -14,8 +14,8 @@ comments: true
 %}
 
 {% include quote.html
-	quote="&ldquo;I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain...<br><br>
-	...It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?&rdquo;"
+	quote="I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain.<br><br>
+	&ldquo;It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?"
 	
 	footer="Nick Pole, Director, London Mindful Practitioners."
 %}

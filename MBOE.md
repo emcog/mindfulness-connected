@@ -19,10 +19,14 @@ Little will change if mindfulness is merely applied as a means of coping with st
 %}
 
 ### A pioneering programme which explores:
-* Group effects or workshop activities as experiential learning
-* Theory that explains what, why and how of what is going on
-* Developing language to describe experience
-* Social/group meaning for mindfulness meditation
+
+* Mindfulness and group effects
+* Language to describe experience
+* Listening with awareness
+* Decision making, identity and bias
+* Mindfulness in courageous conversations
+* Intention, resilience and purposeful action
+
 
 {% include quote.html
 	quote="At the ROH we work very hard anyway, but with regards to this course, I think everybody should do it."
@@ -47,11 +51,13 @@ Little will change if mindfulness is merely applied as a means of coping with st
 * Confidence and trust
 * Presence while listening
 * Skilful communication
-* Understanding the way group mind works
+* Understanding the way &lsquo;group mind&rsquo; works
 
 
 ## How is it delivered?
-The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. The programme is supported by our [book][1]. One-day team-building workshops can also be provided.
+The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. Building relationships and meditating with peers during the programme plays and important role in brining teams together.
+The programme can also be provided as a on-day team-building workshop. For benefits comparable to the six-week format this day can be followed by individual and/or group meditation practice listening to recordings. 
+All our programmes are supported by our [book][1] which includes links to guided meditations and clear explanations of the what, why and how of 'social mindfulness'.
 
 {% include image.html
 	src="/assets/images/images/team-2.jpg"
@@ -59,7 +65,8 @@ The MBOE programme runs over six weeks. Classes come together each week for an h
 
 ## The evidence
 
-Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Figure 2 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Figure 1. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. This study has been published in the journal, Mindfulness making our programme 
+Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Figure 2 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Figure 1. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. 
+This study has been published in the journal, Mindfulness making our programme one of only a small number of evidence-based programmes.
 
 {% include image.html title="Psychological needs at work" 
 	src="/assets/images/diagrams/chart-1.svg" 

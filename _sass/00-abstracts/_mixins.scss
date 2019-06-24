@@ -97,10 +97,12 @@ Stylesheet: Mixins & Constants
 }
 
 
+
 // https://codepen.io/jordyvg/pen/PByqap
 @mixin ratio($width, $height) {
   min-height: calc((#{$height} / #{$width}) * 100vw);
 }
+
 
 
 //breakpoints

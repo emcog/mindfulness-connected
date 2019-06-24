@@ -1,5 +1,5 @@
 ---
-permalink: /practitioners
+permalink: /practitioners-pathway
 layout: banner-signup
 banner-image: /assets/images/images/group-bw.jpg
 title: Practitioners pathway
