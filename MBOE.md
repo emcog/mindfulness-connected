@@ -15,7 +15,7 @@ Little will change if mindfulness is merely applied as a means of coping with st
 
 {% include image.html
 	src="/assets/images/diagrams/individual-behaviour_culture__diagram.svg"
-	description="Short description"
+	description="Individual - group mindfulness diagram"
 %}
 
 ### A pioneering programme which explores:
@@ -33,6 +33,14 @@ Little will change if mindfulness is merely applied as a means of coping with st
 	
 	footer="Paul Hawker, Senior Scrub Nurse, The Royal Orthopaedic Hospital, Birmingham."
 %}
+
+## Clear explanations throughout
+
+{% include image.html
+	src="/assets/images/diagrams/mindfulness-flow-chart.svg"
+	description="Flow chart of the stages of mindfulness"
+%}
+
 
 ## Leadership
 
