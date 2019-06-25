@@ -1,8 +1,10 @@
 			<script type="text/javascript" src="/assets/js/nav.js"></script>
 			<footer>
-			<div class="inner">
-				<p>© Mindfulness Connected 2019 | All rights reserved</p>
-			</div>
+				<nav id="nav__footer">
+				{% for link in site.data.navigation.footer %}
+					<a href="link.url">{{ link.page }}</a>
+				{% endfor %}
+				</nav>
 		</footer>
 	</body>
 </html>

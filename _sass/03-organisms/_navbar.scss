@@ -68,6 +68,7 @@ ul.nav_is-right {
 
 #nav__mobile-button,
 .nav__mobile-contents {
+	cursor: pointer;
 	@include media('≥1134px') {	display: none;}
 	float: right;
 }
@@ -208,4 +209,25 @@ ul.nav__mobile-contents > li > ul.nav__second-level {
 ul.nav__mobile-contents > li > ul.nav__second-level > li {
 	padding: 12px 0 12px 28px;
 	border-top: solid 1px $grey__light-tint;
+}
+
+
+#nav__footer {
+	text-align:center;
+	width: 100%;
+	height: 40px;
+
+	> a {
+		font-size: 12pt;
+		background-color: rgba(255, 255, 255, 0);
+		padding: 2px 14px;
+	}
+
+	a:first-child {
+		border-right: solid 1px #D1D1D1;
+	}
+
+	a:last-child {
+		border-left: solid 1px #D1D1D1;
+	}
 }

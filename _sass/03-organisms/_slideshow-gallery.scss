@@ -6,6 +6,11 @@ section#slideshow-gallery {
 /* Hide the images by default */
 .product-photo {
   display: none;
+
+  > a {
+    background-color: white;
+    color: white;
+  }
 }
 
 /* Add a pointer when hovering over the thumbnail images */

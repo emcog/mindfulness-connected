@@ -125,6 +125,7 @@ label { @extend %font-size-4; }
 
 
 input#mc-embedded-subscribe {
+  cursor: pointer;
   float: right !important;
   @extend %font-size-4;
   @extend %button-cta;

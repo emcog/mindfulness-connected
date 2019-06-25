@@ -13,6 +13,12 @@ comments: true
 	copy="Included with the book is access to unique guided meditations."
 %}
 
+
+'Social Mindfulness' explains how we create a sense of self in relationship to others. Mindfulness practice enables us to diffuse the sense of a separate self and work with others in the service of collective interests.
+
+The book acts as a support to Mindfulness-Based Organisational Education (MBOE) as well as explaining the theory that underpins 'social mindfulness'. The book may also be used as a self-study guide.
+
+
 {% include quote.html
 	quote="I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain.<br><br>
 	&ldquo;It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?"
