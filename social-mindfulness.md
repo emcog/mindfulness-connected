@@ -1,8 +1,8 @@
 ---
 layout: banner-product
 permalink: /shop/social-mindfulness
-title: "Social Mindfulness: A guide to meditations from Mindfulness-Based Organisational Education"
-banner-image: /assets/images/banner/social-mindfulness__banner.jpg
+title: "Social Mindfulness: A guide to meditations from MBOE"
+banner-image: /assets/images/banner/social-mindfulness.jpg
 comments: true
 ---
 
@@ -22,7 +22,7 @@ The book acts as a support to Mindfulness-Based Organisational Education (MBOE) 
 
 {% include quote.html
 	quote="I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain.<br><br>
-	&ldquo;It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?"
+	It’s very clear and practical, it's delightful, it's authoritative and it’s short - what more could you ask for?"
 	
 	footer="Nick Pole, Director, London Mindful Practitioners."
 %}
@@ -48,5 +48,14 @@ The prevailing narrative tells us that society provides the opportunity to impro
 %} Mark Leonard has searched for a means to make meditation accessible to a mass audience since the early 2000s. He played a key role in establishing the Oxford Mindfulness Centre, opened in 2008, and then adapted Mindfulness-Based Cognitive Therapy for the workplace. The result of a series of innovations, Mindfulness-Based Organisational Education represents a new approach to fostering social leadership and systemic change.
 
 ---
+
+{% include quote.html
+	quote="Social Mindfulness breaks new ground: relevant and poignant. These original concepts and practises are succinctly and clearly expressed. A major (and needed) contribution to today's mindfulness movement."
+	
+	footer="Alistair Macdonald, retired solicitor and long term mindfulness practitioner."
+%}
+
+---
+
 
 {% include disqus.html %}

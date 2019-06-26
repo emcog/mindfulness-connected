@@ -1,7 +1,7 @@
 ---
 layout: banner-page
 title: Mindfulness-Based Organisational Education (MBOE)
-banner-image: /assets/images/images/mark-anesthatist-4.jpg
+banner-image: /assets/images/banner/IMG_5054.jpg
 permalink: /mboe
 
 ---
@@ -38,7 +38,7 @@ Little will change if mindfulness is merely applied as a means of coping with st
 
 {% include image.html
 	src="/assets/images/diagrams/mindfulness-flow-chart.svg"
-	description="Flow chart of the stages of mindfulness"
+	description="Flow chart of the stages of mindfulness meditation"
 %}
 
 
@@ -63,9 +63,11 @@ Little will change if mindfulness is merely applied as a means of coping with st
 
 
 ## How is it delivered?
-The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. Building relationships and meditating with peers during the programme plays and important role in brining teams together.
+The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. Building relationships and meditating with peers during the programme plays and important role in bringing teams together.
+
 The programme can also be provided as a on-day team-building workshop. For benefits comparable to the six-week format this day can be followed by individual and/or group meditation practice listening to recordings. 
-All our programmes are supported by our [book][1] which includes links to guided meditations and clear explanations of the what, why and how of 'social mindfulness'.
+
+All our programmes are supported by our [book][1], which includes links to guided meditations and clear explanations of the what, why and how of 'social mindfulness'.
 
 {% include image.html
 	src="/assets/images/images/team-2.jpg"
@@ -74,6 +76,7 @@ All our programmes are supported by our [book][1] which includes links to guided
 ## The evidence
 
 Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Figure 2 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Figure 1. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. 
+
 This study has been published in the journal, Mindfulness making our programme one of only a small number of evidence-based programmes.
 
 {% include image.html title="Psychological needs at work" 

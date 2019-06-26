@@ -1,7 +1,7 @@
 ---
 title: MBOE/Approach
 banner-image: /assets/images/banner/IMG_4748.jpg
-square-preview-image: /assets/images/banner/IMG_4748-square.jpg
+square-preview-image: /assets/images/banner/mboe-approach.jpg
 permalink: /mboe/#our-approach
 preview: 
 

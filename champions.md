@@ -1,7 +1,7 @@
 ---
 permalink: /champions
 layout: banner-page
-banner-image: /assets/images/banner/IMG_4748.jpg
+banner-image: /assets/images/banner/champions.jpg
 title: Mindfulness Champions
 
 ---
