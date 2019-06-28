@@ -46,7 +46,7 @@ navbar:
     # url: /mindfulness-champion
 
 footer:
-  - page: 'News letter'
+  - page: 'Newsletter'
     url: /https://mailchi.mp/mindfulnessconnected.com/ow4xy4w3kb
   - page: 'Privacy policy'
     url: /privacy

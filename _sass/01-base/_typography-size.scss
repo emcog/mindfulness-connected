@@ -29,7 +29,7 @@
 
   @include media ('≥tablet') { font-size: 32pt; }
   @include media ('≥phone-plus', '<tablet') { font-size: 26pt; }
-  @include media ('<phone-plus') { font-size: 18pt; }
+  @include media ('<phone-plus') { font-size: 16pt; }
 }
 
 
@@ -40,7 +40,7 @@
   line-height: 1;
   font-weight: 600;
   
-  @include media ('≥tablet', '≥500px') { font-size: 18pt;  }
+  @include media ('<tablet') { font-size: 16pt;  }
   @include media ('<500px') {  font-size: 14pt; }
 }
 

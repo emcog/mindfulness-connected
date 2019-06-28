@@ -17,7 +17,7 @@
 
   @include media('<phone-plus') {
     grid-column: 2/-1;
-    margin: 0 8px -13px -10px;
+    margin: 0 8px -22px -10px;
     padding: 6px 0 8px 6px;
   }
 }
@@ -34,8 +34,7 @@
 .banner__header-title { 
   grid-row: 2;
   @include media ('<tablet') { margin: 0 0 0px -12px; }
-}
-
+ }
 
 
 .banner__header-blank { grid-row: 2; }
@@ -83,7 +82,7 @@
 article.banner__article {
   grid-column: -11/-5;
   max-width: 800px;
-  @include media('<500px') { margin: 12px 10px 0px 10px; } 
+  @include media('<500px') { margin: 20px 10px 0px 10px; } 
   @include media('≥500px', '<tablet') { margin: 16px 0 0 0; }
   @include media('≥tablet') { margin: 16px 0 0 0; } 
 } 
