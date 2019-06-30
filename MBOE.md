@@ -11,14 +11,14 @@ permalink: /mboe
 	video-id="iFhQl-iAdic?start=22" height="450px"
 	caption="Case study of our approach (MBOE) with the Royal Orthopaedic Hospital" %}
 
-Little will change if mindfulness is merely applied as a means of coping with stress and enhancing individual performance. The Mindfulness Connected approach brings people together to apply ‘social mindfulness’ as a catalyst for change.
+Our flagship programme, Mindfulness-Based Organisational Education (MBOE), brings people together to apply ‘social mindfulness’ as a catalyst for change.
 
 {% include image.html
 	src="/assets/images/diagrams/individual-behaviour_culture__diagram.svg"
 	description="Individual - group mindfulness diagram"
 %}
 
-### A pioneering programme which explores:
+### MBOE is a pioneering programme which explores:
 
 * Mindfulness and group effects
 * Language to describe experience
@@ -79,7 +79,7 @@ All our programmes are supported by our [book][1], which includes links to guide
 
 ## The evidence
 
-Our flagship programme, Mindfulness-Based Organisational Education (MBOE) has been tested under trial conditions with hospitals staff. It not only reduces stress, see Figure 2 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Figure 1. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. 
+Our flagship programme, MBOE has been tested under trial conditions with hospitals staff. It not only reduces stress, see Figure 2 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Figure 1. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. 
 
 This study has been published in the journal, Mindfulness making our programme one of only a small number of evidence-based programmes.
 
