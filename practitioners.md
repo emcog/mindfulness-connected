@@ -2,7 +2,7 @@
 permalink: /practitioners-pathway
 layout: banner-signup
 banner-image: /assets/images/banner/pathway.jpg
-title: Practitioners pathway
+title: Practitioners' pathway
 
 ---
 
