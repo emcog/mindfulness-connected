@@ -19,6 +19,14 @@ comments: true
 The book acts as a support to Mindfulness-Based Organisational Education (MBOE) as well as explaining the theory that underpins 'social mindfulness'. The book may also be used as a self-study guide.
 
 
+{% include quote.html
+	quote="From the first sentence this book is beautifully and succinctly written; there is not one superfluous word!  It clearly explains what social mindfulness is and how it differs from the individual mindfulness most of us are familiar with. As a behavioural scientist, sociology lecturer and mindfulness teacher, I love the marriage of sociology, anthropology, social psychology and mindfulness here.  <br><br>
+	The message is we can all be agents of social change by becoming aware of our self-narratives and waking up to the often unconscious biases shaping our behaviours.  We could then choose to cooperate rather than compete and relate to each other in healthier ways. <br><br>
+	The MBOE course looks perfect for anyone interested in enriching the culture and wellbeing of their organisation and this will be ideal as the core text."
+	
+	footer="Susan Mcavoy, Social Sciences Lecturer, Dundee College and Independant Mindfulness Teacher."
+%}
+
 
 {% include quote.html
 	quote="I read it in one sitting, totally absorbed and rather excited. I really appreciate the way you present it as a continuum all the way from the physiology of mind-body connection, through the mindfulness practices, to bringing mindfulness into the social domain.<br><br>
