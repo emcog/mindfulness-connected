@@ -2,7 +2,7 @@
 			<footer>
 				<nav id="nav__footer">
 				{% for link in site.data.navigation.footer %}
-					<a href="link.url">{{ link.page }}</a>
+					<a href="{{ link.url }}">{{ link.page }}</a>
 				{% endfor %}
 				</nav>
 		</footer>
