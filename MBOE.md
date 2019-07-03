@@ -63,6 +63,7 @@ Our flagship programme, Mindfulness-Based Organisational Education (MBOE), bring
 
 
 ## How is it delivered?
+
 The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. Building relationships and meditating with peers during the programme plays and important role in bringing teams together.
 
 {% include image.html
@@ -81,7 +82,7 @@ All our programmes are supported by our [book][1], which includes links to guide
 
 MBOE has been tested under trial conditions with hospitals staff. It not only reduces stress, see Figure 2 from the paper published in the journal, Mindfulness, but increases Basic Psychological Needs at Work Scale (BPNWS), see Figure 1. BPNWS is a validated self-report scale from Self Determination Theory, which includes three elements: autonomy, competence and relatedness. 
 
-This study has been published in the journal, Mindfulness making our programme one of only a small number of evidence-based programmes.
+This study makes MBOE one of only a small number of evidence-based programmes.
 
 {% include image.html title="Psychological needs at work" 
 	src="/assets/images/diagrams/chart-1.svg" 

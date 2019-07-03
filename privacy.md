@@ -5,11 +5,11 @@ banner-image: /assets/images/diagrams/individual-and-group-mindfulness.svg
 permalink: /privacy
 ---
 
-#Privacy Policy Notice
+# Privacy Policy Notice
 
 The policy: This privacy policy notice is served by Mindfulness Connected LTD under the website; www.mindfulnessconnected.com. The purpose of this policy is to explain to you how we control, process, handle and protect your personal information through the business and while you browse or use this website. If you do not agree to the following policy you may wish to cease viewing / using this website, and or refrain from submitting your personal data to us.
 
-##Policy key definitions:
+## Policy key definitions:
 
     "I", "our", "us", or "we" refer to the business, [Mindfulness Connected LTD].
     "you", "the user" refer to the person(s) using this website.
@@ -23,7 +23,7 @@ Key principles of GDPR:
 Our privacy policy embodies the following key principles; (a) Lawfulness, fairness and transparency, (b) Purpose limitation, (c) Data minimisation, (d) Accuracy, (e) Storage limitation, (f) Integrity and confidence, (g) Accountability.
 
 
-##Processing of your personal data
+## Processing of your personal data
 
 Under the GDPR (General Data Protection Regulation) we control and / or process any personal information about you electronically using the following lawful bases.
 
@@ -38,7 +38,7 @@ Sharing your information: We do not share your information with third parties.
 
 If, as determined by us, the lawful basis upon which we process your personal information changes, we will notify you about the change and any new lawful basis to be used if required. We shall stop processing your personal information if the lawful basis used is no longer relevant.
 
-##Your individual rights
+## Your individual rights
 
 Under the GDPR your rights are as follows. You can read more about your rights in [detail here][1];
 
@@ -55,7 +55,7 @@ You also have the right to complain to the ICO [www.ico.org.uk] if you feel ther
 
 We handle subject access requests in accordance with the GDPR.
 
-##Internet cookies
+## Internet cookies
 
 We do not currently use cookies on this website.
 <!-- to provide you with a better user experience. We do this by placing a small text file on your device / computer hard drive to track how you use the website, to record or log whether you have seen particular messages that we display, to keep you logged into the website where applicable, to display relevant adverts or content, referred you to a third party website. -->
@@ -69,15 +69,15 @@ We do not currently use cookies on this website.
 <!-- 	[list of cookies used] -->
 
 
-##Data security and protection
+## Data security and protection
 
 We ensure the security of any personal information we hold by using secure data storage technologies and precise procedures in how we store, access and manage that information. Our methods meet the GDPR compliance requirement.
 
-##Fair & Transparent Privacy Explained
+## Fair & Transparent Privacy Explained
 
 We have provided some further explanations about user privacy and the way we use this website to help promote a transparent and honest user privacy methodology.
 
-##Sponsored links, affiliate tracking & commissions
+## Sponsored links, affiliate tracking & commissions
 
 Our website may contain adverts, sponsored and affiliate links on some pages. These are typically served through our advertising partners; Google Adsense, eBay Partner Network, Amazon Affiliates, or are self served through our own means. We only use trusted advertising partners who each have high standards of user privacy and security. However we do not control the actual adverts seen / displayed by our advertising partners. Our ad partners may collect data and use cookies for ad personalisation and measurement. Where ad preferences are requested as 'non-personalised' cookies may still be used for frequency capping, aggregated ad reporting and to combat fraud and abuse.
 
@@ -89,7 +89,7 @@ We use advertising partners in these ways to help generate an income from the we
 
 If you have any concerns about this we suggest you do not click on any adverts, sponsored or affiliate links found throughout the website.
 
-##Email marketing messages & subscription
+## Email marketing messages & subscription
 
 Under the GDPR we use the consent lawful basis for anyone subscribing to our newsletter or marketing mailing list. We only collect certain data about you, as detailed in the "Processing of your personal data" above. Any email marketing messages we send are done so through an EMS, email marketing service provider. An EMS is a third party service provider of software / applications that allows marketers to send out email marketing campaigns to a list of users.
 
@@ -104,7 +104,7 @@ Our EMS provider is; [Mail Chimp][4]. We hold the following information about yo
     Subscription time & date
     Your first name
 
-##Resources & further information
+## Resources & further information
 
 * [Overview of the GDPR - General Data Protection Regulation](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/)
 * [Data Protection Act 2018](http://www.legislation.gov.uk/ukpga/2018/12/contents/enacted)
