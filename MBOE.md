@@ -70,7 +70,7 @@ The MBOE programme runs over six weeks. Classes come together each week for an h
 	src="/assets/images/images/mboe-delivery.jpg"
 	description="Didactic and experiential teaching with supporting PowerPoint in cabaret seating"%}
 
-The programme can also be provided as a on-day team-building workshop. For benefits comparable to the six-week format this day can be followed by individual and/or group meditation practice listening to recordings. 
+The programme can also be provided as a one-day team-building workshop. For benefits comparable to the six-week format this day can be followed by individual and/or group meditation practice listening to recordings. 
 
 All our programmes are supported by our [book][1], which includes links to guided meditations and clear explanations of the what, why and how of 'social mindfulness'.
 
