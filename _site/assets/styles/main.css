@@ -2730,8 +2730,8 @@ p, .body-copy {
     padding: 0 .125rem;
     text-decoration: none; }
   p > a:hover, .body-copy > a:hover {
-    padding-bottom: .25rem;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
 
 .is-longform > h2 {
   margin: 64px 0 12px 0; }

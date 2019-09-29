@@ -253,7 +253,8 @@ p, .body-copy {
 
   > a:hover {
     // border-bottom: 1px solid;
-    padding-bottom: .25rem;
+    // padding-bottom: .25rem;
     text-decoration: none;
+    cursor: pointer;
   }
 }
