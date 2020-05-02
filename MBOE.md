@@ -64,7 +64,7 @@ Our flagship programme, Mindfulness-Based Organisational Education (MBOE), bring
 
 ## How is it delivered?
 
-The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. Building relationships and meditating with peers during the programme plays and important role in bringing teams together.
+The MBOE programme runs over six weeks. Classes come together each week for an hour and a quarter. Building relationships and meditating with peers during the programme plays and important role in bringing teams together. We are currently providing programmes by Zoom.
 
 {% include image.html
 	src="/assets/images/images/mboe-delivery.jpg"
