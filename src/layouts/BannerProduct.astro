@@ -22,6 +22,11 @@ const { title, description, bannerImage, paypal } = Astro.props.frontmatter ?? A
 		<BannerImage image={bannerImage} title={title} />
 		<SlideshowGallery />
 		<PaypalButton {...paypal} />
+		<p>
+			<a class="button-cta" href="https://mindswellmarket.com/products/social-mindfulness-a-guide-to-meditations-from-mindfulness-based-organisational-education" target="_blank" rel="noopener">
+				Prefer an ebook? Buy it on Mindswell Market
+			</a>
+		</p>
 		<article class="banner__article is-longform">
 			<slot />
 		</article>
