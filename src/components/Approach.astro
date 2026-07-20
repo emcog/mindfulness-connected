@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+
+const sections = await getCollection('approach');
+sections.sort((a, b) => a.id.localeCompare(b.id));
+const rendered = await Promise.all(sections.map((section) => render(section)));
+---
+<article id="approach" class="page__g-12">
+	{sections.map((section, i) => {
+		const { Content } = rendered[i];
+		return i === 0 ? (
+			<>
+				<h2>{section.data.title}</h2>
+				<Content />
+				{section.data.image && <img src={section.data.image} alt={section.data['image-alt']} class="approach-diagram" />}
+			</>
+		) : (
+			<>
+				<h3>{section.data.title}</h3>
+				<Content />
+			</>
+		);
+	})}
+</article>

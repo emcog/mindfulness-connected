@@ -1,0 +1,11 @@
+---
+interface Props {
+	quote: string;
+	footer: string;
+}
+const { quote, footer } = Astro.props;
+---
+<blockquote>
+	<p>&ldquo;<Fragment set:html={quote} />&rdquo;</p>
+	<footer>{footer}</footer>
+</blockquote>

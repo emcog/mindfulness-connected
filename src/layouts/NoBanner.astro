@@ -1,0 +1,18 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+	frontmatter?: { title: string; description?: string };
+}
+const { title, description } = Astro.props.frontmatter ?? Astro.props;
+---
+<Layout title={title} description={description}>
+	<div class="page__g-12">
+		<div style="height: 60px; grid-column: 1/-1;"></div>
+		<article class="banner__article is-longform">
+			<slot />
+		</article>
+	</div>
+</Layout>

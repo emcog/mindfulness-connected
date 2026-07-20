@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import { truncate } from '../lib/text';
+
+const posts = await getCollection('posts');
+posts.sort((a, b) => b.id.localeCompare(a.id));
+---
+{posts.map((post) => (
+	<a class="banner__feed-item" href={post.data.permalink}>
+		<article class="feed_item__is-horizontal feed_item__blk">
+			<img class="image-medium image-bg is-square feed-item__image" src={post.data['square-preview-image']} />
+			<div>
+				<h3 class="feed-item__title headline_sml is-uppercase">{post.data.title}</h3>
+				<p>{truncate(post.body ?? '', 90)}</p>
+			</div>
+		</article>
+	</a>
+))}

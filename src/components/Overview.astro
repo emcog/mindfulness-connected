@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import { truncate } from '../lib/text';
+
+const items = await getCollection('overview');
+items.sort((a, b) => a.id.localeCompare(b.id));
+---
+{items.map((item) => (
+	<a class="banner__feed-item" href={item.data.permalink}>
+		<article class="feed_item__is-horizontal feed_item__grn">
+			<img class="image-medium image-bg is-square feed-item__image" src={item.data['square-preview-image']} />
+			<div>
+				<h3 class="feed-item__title headline_sml is-uppercase">{item.data.title}</h3>
+				<p>{truncate(item.body ?? '', 90)}</p>
+			</div>
+		</article>
+	</a>
+))}

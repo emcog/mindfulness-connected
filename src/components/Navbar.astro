@@ -1,0 +1,25 @@
+---
+import { navbar } from '../data/navigation';
+import MobileNav from './MobileNav.svelte';
+---
+<header>
+	<nav id="nav-primary" aria-labelledby="primary-navigation">
+		<div class="nav__top-level">
+			<a class="nav_is-left" href="/">
+				<picture>
+					<source srcset="/assets/images/logo/emcog_w.svg" media="(max-width: 899px)" />
+					<source srcset="/assets/images/logo/mindfulness-connected-logo_w.svg" media="(min-width: 900px)" />
+					<img class="nav__logo" src="/assets/images/logo/mindfulness-connected-logo_w.svg" alt="Mindfulness Connected" />
+				</picture>
+			</a>
+			<!-- desktop -->
+			<ul class="nav_is-right">
+				{navbar.map((link) => (
+					<li><a class="nav__link" href={link.url}>{link.page}</a></li>
+				))}
+			</ul>
+			<!-- mobile -->
+			<MobileNav links={navbar} client:load />
+		</div>
+	</nav>
+</header>

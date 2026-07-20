@@ -1,0 +1,10 @@
+---
+import { getCollection } from 'astro:content';
+import Slideshow from './Slideshow.svelte';
+
+const items = await getCollection('products');
+items.sort((a, b) => a.id.localeCompare(b.id));
+const products = items.map((item) => ({ img: item.data.img, alt: item.data.alt }));
+const lookInsideUrl = 'https://indd.adobe.com/view/fe913d08-894a-4ac7-b099-e4627948599a';
+---
+<Slideshow products={products} lookInsideUrl={lookInsideUrl} client:visible />

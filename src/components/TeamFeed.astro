@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from 'astro:content';
+
+const members = await getCollection('team');
+members.sort((a, b) => a.id.localeCompare(b.id));
+const rendered = await Promise.all(members.map((member) => render(member)));
+---
+{members.map((member, i) => {
+	const { Content } = rendered[i];
+	return (
+		<div class="feed__team-member-wrapper">
+			<article class="feed_item__is-horizontal__blk">
+				<img class="image-team image-bg is-square feed-item__image" src={member.data.image} alt={member.data.name} />
+				<h2 class="feed-item__title headline_sml is-uppercase">{member.data.name}</h2>
+				<p>{member.data.description}</p>
+				<Content />
+			</article>
+		</div>
+	);
+})}

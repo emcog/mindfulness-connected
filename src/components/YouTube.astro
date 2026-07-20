@@ -1,0 +1,26 @@
+---
+interface Props {
+	videoId: string;
+	caption?: string;
+	attribute?: string;
+}
+const { videoId, caption, attribute } = Astro.props;
+---
+<figure class="image-video">
+	<div class="u-responsive-ratio-16x9">
+		<iframe
+			style="width: 100%; height: 100%;"
+			class="embeded-video"
+			src={`https://www.youtube.com/embed/${videoId}`}
+			frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen
+		></iframe>
+	</div>
+	{caption && (
+		<figcaption>
+			<span>&#9650;</span>{caption}
+			{attribute && <span class="attribute"><br />{attribute}</span>}
+		</figcaption>
+	)}
+</figure>

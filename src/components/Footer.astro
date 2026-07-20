@@ -1,0 +1,10 @@
+---
+import { footer } from '../data/navigation';
+---
+<footer>
+	<nav id="nav__footer">
+		{footer.map((link) => (
+			<a href={link.url}>{link.page}</a>
+		))}
+	</nav>
+</footer>

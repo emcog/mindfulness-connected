@@ -1,0 +1,29 @@
+<section id="contact-form">
+	<div id="contact-inputs">
+		<div id="contact-title">
+			<h2>Contact us,</h2>
+			<span>to take the next step in your journey.</span>
+		</div>
+
+		<form class="contact-form__inputs" name="contact" method="POST" netlify-honeypot="bot-field" action="/contact-us/success" data-netlify="true">
+			<div class="inputs__col-1">
+				<p>
+					<label>Name<input type="text" name="name" placeholder="Name" required /></label>
+				</p>
+				<p>
+					<label>Email<input type="email" name="email" placeholder="Email" required /></label>
+				</p>
+			</div>
+			<p class="inputs__col-2">
+				<label>Message: <textarea name="message" placeholder="Message"></textarea></label>
+			</p>
+			<p class="inputs__col-2_below">
+				<button type="submit">Send</button>
+			</p>
+			<div style="display:none;">
+				<label>Keep this field blank</label>
+				<input type="text" name="bot-field" id="honeypot" />
+			</div>
+		</form>
+	</div>
+</section>

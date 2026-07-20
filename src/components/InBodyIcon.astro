@@ -1,0 +1,12 @@
+---
+interface Props {
+	src: string;
+	alt: string;
+	copy: string;
+}
+const { src, alt, copy } = Astro.props;
+---
+<div class="in-body__icon-wrapper">
+	<img class="in-body__icon" {src} {alt} />
+	<p class="in-body__icon-text">{copy}</p>
+</div>
