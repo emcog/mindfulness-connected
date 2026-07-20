@@ -1,0 +1,17 @@
+---
+interface Props {
+	image: string;
+	title: string;
+}
+const { image, title } = Astro.props;
+---
+<div class="hero hero--21-9 g-12">
+	<img src={image} />
+</div>
+<div class="g-12">
+	<span class="g-09 is-highlighted is-uppercase headline" style="margin-top: -79px;">
+		<span class="banner__header-blank-safari"></span>
+		<h1 class="banner__header-title">{title}</h1>
+		<span class="banner__header-blank"></span>
+	</span>
+</div>

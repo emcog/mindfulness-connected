@@ -1,0 +1,20 @@
+---
+import Layout from './Layout.astro';
+import BannerImage from '../components/BannerImage.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+	bannerImage: string;
+	frontmatter?: { title: string; description?: string; bannerImage: string };
+}
+const { title, description, bannerImage } = Astro.props.frontmatter ?? Astro.props;
+---
+<Layout title={title} description={description}>
+	<div class="page__g-12">
+		<BannerImage image={bannerImage} title={title} />
+		<article class="banner__article is-longform">
+			<slot />
+		</article>
+	</div>
+</Layout>

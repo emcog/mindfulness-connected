@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+
+const events = await getCollection('timeline');
+events.sort((a, b) => a.id.localeCompare(b.id));
+const rendered = await Promise.all(events.map((event) => render(event)));
+---
+<article id="t-line" class="page__g-12">
+	{events.map((event, i) => {
+		const { Content } = rendered[i];
+		return (
+			<article class={`g-timeline__year is-bordered ${i === 0 ? 'timeline__year_first' : ''} ${event.data.position ?? ''}`}>
+				<img src={event.data.image} />
+				<div class="timeline__header_bg"></div>
+				<div class="timeline__header_txt">
+					<h3 class="headline_sml">{event.data.published}</h3>
+					<span>{event.data.title}</span>
+				</div>
+				<h4 class="timeline__sub-title">{event.data.subtitle}</h4>
+				<Content />
+			</article>
+		);
+	})}
+</article>

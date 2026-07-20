@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+
+const members = await getCollection('team');
+members.sort((a, b) => a.id.localeCompare(b.id));
+const rendered = await Promise.all(members.map((member) => render(member)));
+---
+<section id="team">
+	<div class="heading">
+		<div class="inner"><h2>Meet the team</h2></div>
+	</div>
+	<div class="content">
+		<div class="inner cf">
+			<ul class="team cf">
+				{members.map((member, i) => {
+					const { Content } = rendered[i];
+					return (
+						<li>
+							<img src={member.data.image} alt={member.data.name} />
+							<div class="inner level" style="height: 435px;">
+								<h3>{member.data.name}</h3>
+								<h4>{member.data.description}</h4>
+								<ul>
+									<Content />
+								</ul>
+							</div>
+						</li>
+					);
+				})}
+			</ul>
+		</div>
+	</div>
+</section>

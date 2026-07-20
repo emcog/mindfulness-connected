@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+
+const banners = await getCollection('overviewbanners');
+banners.sort((a, b) => a.id.localeCompare(b.id));
+---
+<section class="page__g-12">
+	{banners.map((banner) => (
+		<div class={`page__g-12 banner-image ${banner.data['text-position']}`} style={`background:url('${banner.data.image}');`}>
+			<div class="banner-text">
+				<h2>{banner.data.title}</h2>
+				<p>{banner.data.subtitle}</p>
+			</div>
+		</div>
+	))}
+</section>

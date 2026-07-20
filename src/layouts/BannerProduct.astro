@@ -1,0 +1,29 @@
+---
+import Layout from './Layout.astro';
+import BannerImage from '../components/BannerImage.astro';
+import SlideshowGallery from '../components/SlideshowGallery.astro';
+import PaypalButton from '../components/PaypalButton.astro';
+
+interface PaypalConfig {
+	hostedButtonId: string;
+	ukPrice: string;
+}
+interface Props {
+	title: string;
+	description?: string;
+	bannerImage: string;
+	paypal: PaypalConfig;
+	frontmatter?: { title: string; description?: string; bannerImage: string; paypal: PaypalConfig };
+}
+const { title, description, bannerImage, paypal } = Astro.props.frontmatter ?? Astro.props;
+---
+<Layout title={title} description={description}>
+	<div class="page__g-12">
+		<BannerImage image={bannerImage} title={title} />
+		<SlideshowGallery />
+		<PaypalButton {...paypal} />
+		<article class="banner__article is-longform">
+			<slot />
+		</article>
+	</div>
+</Layout>

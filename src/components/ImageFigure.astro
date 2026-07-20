@@ -1,0 +1,18 @@
+---
+interface Props {
+	src: string;
+	description: string;
+	title?: string;
+	link?: string;
+	linkText?: string;
+}
+const { src, description, title, link, linkText } = Astro.props;
+---
+<figure class="image-video">
+	{title && <h3 class="image-title">{title}</h3>}
+	<img src={src} alt={description} />
+	<figcaption>
+		<span>&#9650;</span>{description}
+		{link && <a href={link}> {linkText}</a>}
+	</figcaption>
+</figure>
