@@ -12,6 +12,23 @@
 
 
 
+.format-available {
+	margin-bottom: 16px;
+	font-family: $serif-stack;
+	@extend %font-size-3;
+}
+
+
+
+.format-title {
+	margin-top: 4px;
+	font-family: $serif-stack;
+	font-weight: bold;
+	@extend %font-size-3;
+}
+
+
+
 .paypal-title {
 	padding-bottom: 08px;
 	@extend %body-copy__long_1st-p;
@@ -54,6 +71,25 @@
 .shipping-details__text {
 	font-family: $serif-stack;
 	@extend %font-size-3;
+}
+
+
+
+.ebook-sales {
+	margin-top: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.ebook-sales__copy {
+	margin-top: 4px;
+	font-family: $serif-stack;
+	@extend %font-size-3;
+}
+
+.ebook-sales__button {
+	margin-top: 12px;
 }
 
 

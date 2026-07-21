@@ -6,6 +6,8 @@ interface Props {
 const { hostedButtonId, ukPrice } = Astro.props;
 ---
 <div id="paypal-basket">
+	<p class="format-available">Paper back and Ebook available</p>
+	<p class="format-title">Paper back</p>
 	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 		<input type="hidden" name="cmd" value="_s-xclick" />
 		<input type="hidden" name="hosted_button_id" value={hostedButtonId} />
@@ -24,4 +26,9 @@ const { hostedButtonId, ukPrice } = Astro.props;
 			<li>For multiples or bulk, please <a href="/contact-us">contact us</a></li>
 		</ul>
 	</div>
+	<p class="ebook-sales">
+		<span class="format-title">Ebook</span>
+		<span class="ebook-sales__copy">Buy an ebook from Mindswell Market</span>
+		<a class="ebook-sales__button button-cta" href="https://mindswellmarket.com/products/social-mindfulness-a-guide-to-meditations-from-mindfulness-based-organisational-education" target="_blank" rel="noopener">Buy ebook</a>
+	</p>
 </div>
